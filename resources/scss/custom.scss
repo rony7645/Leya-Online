@@ -1,0 +1,83 @@
+// Image box
+.image-box {
+  .image-box-body {
+    text-align: center;
+    h4 {
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+
+// Icon box
+.icon-box {
+  .icon {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid #3c4b54;
+    border-radius: 100px;
+    margin: auto;
+    img {
+      width: 42px;
+    }
+  }
+  .icon-box-details {
+    h4 {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-weight: 400;
+      color: $body-color-2;
+      text-align: center;
+      margin-top: 15px;
+    }
+  }
+}
+
+// Categories grid for icon box list
+.icon-box-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 25px;
+}
+
+@media (min-width: 768px) {
+  .icon-box-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .icon-box-wrapper {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+
+
+
+
+
+.product-video-details {
+  .thumbnail-video-wrapper {
+    display: flex;
+    column-gap: 20px;
+  }
+  .product {
+    .product-thumbnail {
+      width: 235px;
+    }
+  }
+  .product-video{
+    video {
+      height: 330px !important;
+    }
+  }
+}

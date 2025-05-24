@@ -1,0 +1,39 @@
+.product {
+  padding: 15px;
+  transition: all 0.4s;
+  &:hover {
+    background: $lightBlue-color;
+  }
+  .product-thumbnail {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // padding: 5px 0px 3.9109px 0px;
+    margin-bottom: 20px;
+    .thumbnail-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .product-details {
+    text-align: center;
+    .product-title {
+      a {
+        color: $heading;
+        font-size: 15px;
+      }
+    }
+    .product-category {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+    .product-price {
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+}

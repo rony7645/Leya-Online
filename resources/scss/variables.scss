@@ -1,0 +1,25 @@
+// Color variables
+$primary-color: #6aa161;
+$secondary-color: #3c4b54;
+$body-color: #4e626e;
+$body-color-2: #7694a6;
+$heading: #4e626e;
+$accent-color: #bc1521;
+$lightBlue-color: #e9f2f5;
+$light: #fff;
+
+// Typographiy fonts
+$font-primary: "Inter";
+$font-secondary: "Times";
+
+.text-body {
+  color: $body-color;
+}
+
+.text-body-2 {
+  color: #7694a6;
+}
+
+.text-accent {
+  color: $accent-color;
+}

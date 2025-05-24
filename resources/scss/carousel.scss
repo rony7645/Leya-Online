@@ -1,0 +1,37 @@
+// carousel navition arrow
+.swiper-button {
+  &:after {
+    font-size: 16px !important;
+    color: $secondary-color;
+  }
+}
+.swiper-button-next {
+  right: 0 !important;
+}
+.swiper-button-prev {
+  left: 0 !important;
+}
+
+// Banner sidder
+.banner {
+  .swiper-button {
+    &:after {
+      color: $light;
+    }
+  }
+}
+.swiper-navigaton {
+  display: none;
+}
+
+// product carousel
+@media (min-width: 768px) {
+  .products-swiper,
+  .categories-swiper, .slider-wrapper {
+    overflow: hidden;
+    margin: 0px 30px;
+  }
+  .swiper-navigaton {
+    display: block;
+  }
+}

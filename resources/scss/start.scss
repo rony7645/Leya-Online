@@ -1,0 +1,30 @@
+@import "./variables";
+@import "bootstrap/scss/bootstrap";
+@import "@fortawesome/fontawesome-free/css/fontawesome.css";
+@import "@fortawesome/fontawesome-free/css/brands.css";
+@import "@fortawesome/fontawesome-free/css/solid.css";
+@import "./fontsFamily.scss";
+@import "../scss/custom.scss";
+
+@import "../scss/base.scss";
+
+
+@media (min-width: 768px) {
+  :root {
+    --bs-body-font-size: 14px;
+  }
+}
+
+@media (min-width: 992px) {
+  :root {
+    --bs-body-font-size: 14px;
+  }
+}
+
+// features
+@import "../scss/button.scss";
+@import "../scss/head.scss";
+@import "../scss/ribon.scss";
+@import "../scss/carousel.scss";
+@import "../scss/product.scss";
+@import "../scss/product-overview.scss";

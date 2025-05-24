@@ -1,0 +1,77 @@
+.ribon-wrapper{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  top:8px;
+}
+.ribon {
+  background: $accent-color;
+  font-weight: 400;
+  text-transform: uppercase;
+  width: 122px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: $light;
+  transform: translateX(-12px);
+  z-index: 2;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 20px;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #791c17 #791c17 transparent transparent;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: $accent-color transparent $accent-color $accent-color;
+    border-right: 5px solid transparent;
+  }
+}
+
+.ribon-2 {
+  position: absolute;
+  bottom:12px;
+  background: $primary-color;
+  &::before {
+    border-color: #006837 #006837 transparent transparent !important;
+  }
+  &::after {
+    border-color: $primary-color transparent $primary-color $primary-color;
+  }
+}
+
+.favorite {
+  width: 23.5px;
+  height: 23.5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.5px solid $lightBlue-color;
+  border-radius: 100px;
+  cursor: pointer;
+  margin-right: 8px;
+  z-index: 2;
+  svg {
+    width: 12px;
+    fill: transparent;
+    stroke: $lightBlue-color;
+    stroke-miterlimit: 10;
+    stroke-width: 0.5px;
+  }
+}
+.active {
+  svg {
+    fill: $accent-color !important;
+  }
+}

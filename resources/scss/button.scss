@@ -1,0 +1,29 @@
+.leya-btn {
+  a {
+    background: $primary-color;
+    color: $light;
+    padding: 12px 20px;
+    font-weight: 300;
+    font-size: 13px;
+    letter-spacing: .8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    span {
+      svg {
+        fill: #fff;
+        width: 20px;
+      }
+    }
+  }
+}
+
+
+
+.banner {
+  img {
+    width: 100%;
+  }
+}
