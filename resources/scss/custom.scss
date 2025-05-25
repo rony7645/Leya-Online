@@ -59,25 +59,3 @@
     grid-template-columns: repeat(9, 1fr);
   }
 }
-
-
-
-
-
-
-.product-video-details {
-  .thumbnail-video-wrapper {
-    display: flex;
-    column-gap: 20px;
-  }
-  .product {
-    .product-thumbnail {
-      width: 235px;
-    }
-  }
-  .product-video{
-    video {
-      height: 330px !important;
-    }
-  }
-}

@@ -1,3 +1,4 @@
+// Product overview 2 column seciton 
 .product-overview {
   width: 1000px;
   margin: auto;
@@ -14,7 +15,7 @@
   }
 }
 
-// product overview section
+// product  video overview 2 column section
 .product-video-overview {
   .product-video {
     video {
@@ -31,11 +32,10 @@
       background: none;
     }
     .product-thumbnail {
-      margin-bottom: 0px;
+      margin-left: 12px;
     }
   }
 }
-
 @media (min-width: 768px) {
   .product-video-overview {
     .product-video {
@@ -49,6 +49,7 @@
       align-items: stretch;
       .product-thumbnail {
         margin-bottom: 30px;
+        margin-left: 0px;
         .thumbnail-img {
           img {
             width: 100%;
@@ -74,4 +75,35 @@
   span {
     font-weight: 300;
   }
+}
+
+
+
+// Product overview 3 column section 
+.product-video-details {
+  .thumbnail-video-wrapper {
+    display: flex;
+  }
+  .product {
+    .product-thumbnail {
+      width: 235px;
+    }
+  }
+  .product-video{
+    video {
+      height:250px !important;
+    }
+  }
+}
+@media (min-width:768px) {
+  .product-video-details {
+  .thumbnail-video-wrapper {
+    column-gap: 20px;
+  }
+  .product-video{
+    video {
+      height: 330px !important;
+    }
+  }
+}
 }

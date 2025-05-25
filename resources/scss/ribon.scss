@@ -23,15 +23,16 @@
     position: absolute;
     left: 0;
     top: 20px;
-    border-width: 6px;
+    border-width: 6.4px;
     border-style: solid;
     border-color: #791c17 #791c17 transparent transparent;
   }
   &::after {
     content: "";
     position: absolute;
-    right: -12px;
+    right: -10px;
     top: 0;
+    height: inherit;
     border-width: 10px;
     border-style: solid;
     border-color: $accent-color transparent $accent-color $accent-color;
@@ -41,7 +42,7 @@
 
 .ribon-2 {
   position: absolute;
-  bottom:12px;
+  bottom:12.2px;
   background: $primary-color;
   &::before {
     border-color: #006837 #006837 transparent transparent !important;

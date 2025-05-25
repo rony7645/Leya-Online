@@ -24,14 +24,36 @@
   display: none;
 }
 
+.products-swiper,
+  .categories-swiper,
+  .slider-wrapper {
+    margin-bottom: 50px;
+  }
 // product carousel
 @media (min-width: 768px) {
   .products-swiper,
-  .categories-swiper, .slider-wrapper {
+  .categories-swiper,
+  .slider-wrapper {
     overflow: hidden;
     margin: 0px 30px;
+    margin-bottom: 0px;
   }
   .swiper-navigaton {
     display: block;
+  }
+}
+// pagination bullets 
+.swiper-pagination {
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8.4px;
+    background: transparent;
+    border: 1px solid $heading;
+    opacity: 1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $heading;
+    border: none;
   }
 }
