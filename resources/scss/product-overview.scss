@@ -3,6 +3,7 @@
   max-width: 780px;
   margin: auto;
   .product-thumbnail {
+    width: 275px;
     .thumbnail-img {
       img {
         object-fit: cover;
@@ -38,7 +39,6 @@
       .thumbnail-img {
         img {
           width: 100%;
-
         }
       }
     }
@@ -71,6 +71,9 @@
 }
 @media (min-width: 768px) {
   .product-video-details {
+    .product-thumbnail {
+      margin-left: 12px;
+    }
     .product-video {
       video {
         height: 330px !important;

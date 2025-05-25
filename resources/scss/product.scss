@@ -5,9 +5,13 @@
     background: $lightBlue-color;
   }
   .product-thumbnail {
+    height: 242px;
     .thumbnail-img {
       img {
+        height: 242px;
         width: 100%;
+        object-fit: contain;
+        object-position: top;
       }
     }
   }
