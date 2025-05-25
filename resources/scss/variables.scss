@@ -12,14 +12,12 @@ $light: #fff;
 $font-primary: "Inter";
 $font-secondary: "Times";
 
-.text-body {
-  color: $body-color;
-}
 
-.text-body-2 {
-  color: #7694a6;
-}
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1200px
+);
 
-.text-accent {
-  color: $accent-color;
-}

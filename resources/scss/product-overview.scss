@@ -1,15 +1,13 @@
-// Product overview 2 column seciton 
+// Product overview 2 column seciton
 .product-overview {
-  width: 1000px;
+  max-width: 780px;
   margin: auto;
-  .product {
-    .product-thumbnail {
-      width: 275px;
-      .thumbnail-img {
-        img {
-          width: 100%;
-          height: 405px;
-        }
+  .product-thumbnail {
+    .thumbnail-img {
+      img {
+        object-fit: cover;
+        width: 275px;
+        height: 405px;
       }
     }
   }
@@ -23,38 +21,24 @@
       height: 250px;
     }
   }
-  .product {
-    padding: 0;
-    display: flex;
-    align-items: end;
-    column-gap: 20px;
-    &:hover {
-      background: none;
-    }
-    .product-thumbnail {
-      margin-left: 12px;
-    }
+  .product-thumbnail {
+    margin-left: 12px;
   }
 }
 @media (min-width: 768px) {
   .product-video-overview {
     .product-video {
       video {
-        height: 265px;
+        height: 250px;
       }
     }
-    .product {
-      width: 235px;
-      flex-direction: column;
-      align-items: stretch;
-      .product-thumbnail {
-        margin-bottom: 30px;
-        margin-left: 0px;
-        .thumbnail-img {
-          img {
-            width: 100%;
-            height: 330px;
-          }
+    .product-thumbnail {
+      margin-bottom: 29px;
+      margin-left: 0px;
+      .thumbnail-img {
+        img {
+          width: 100%;
+
         }
       }
     }
@@ -77,33 +61,20 @@
   }
 }
 
-
-
-// Product overview 3 column section 
+// Product overview 3 column section
 .product-video-details {
-  .thumbnail-video-wrapper {
-    display: flex;
-  }
-  .product {
-    .product-thumbnail {
-      width: 235px;
-    }
-  }
-  .product-video{
+  .product-video {
     video {
-      height:250px !important;
+      height: 250px !important;
     }
   }
 }
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .product-video-details {
-  .thumbnail-video-wrapper {
-    column-gap: 20px;
-  }
-  .product-video{
-    video {
-      height: 330px !important;
+    .product-video {
+      video {
+        height: 330px !important;
+      }
     }
   }
-}
 }

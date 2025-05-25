@@ -322,7 +322,7 @@
                         </div>
 
                         <!-- Pagination buttons  -->
-                         <div class="swiper-pagination d-md-none"></div>
+                        <div class="swiper-pagination d-md-none"></div>
                         <!-- Navigation buttons -->
                         <div class="swiper-navigaton">
                             <div class="swiper-button-next swiper-button"></div>
@@ -339,13 +339,13 @@
     <!-- Product Overview  -->
     <section class="spacing-xl bg-light-blue">
         <div class="container">
-            <div class="swiper product-overview-swiper">
-                <div class="swiper-wrapper">
-                    <!-- Slide here  -->
-                    <div class="swiper-slide ">
-                        <div class="row gx-5 align-items-center product-overview">
-                            <div class="col-md-4">
-                                <div class="product">
+            <div class="swiper">
+                <div class="slider-wrapper product-overview-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide here  -->
+                        <div class="swiper-slide">
+                            <div class="row product-overview">
+                                <div class="col-12 d-flex flex-column flex-md-row flex-nowrap gap-30">
                                     <!-- product thumbnail  -->
                                     <div class="product-thumbnail">
                                         <div class="ribon-wrapper">
@@ -366,50 +366,64 @@
                                                 alt="">
                                         </a>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="d-flex flex-column gap-3 ">
-                                    <h1 class="product-title">Despedidas Impossíveis <br><span>HAN KANG</span></h1>
-                                    <p class="product-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                            industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
-                            an unknown printer took a galley of type and scrambled it to make. </p>
-                                    <div class="product-price">
-                                        <span class="price-text text-body-2">Livro</span>
-                                        <span class="sale-price text-accent"> 19,71€</span>
-                                        <span class="regular-price">
-                                            <del>21,90€</del>
-                                        </span>
-                                    </div>
-                                    <div class="leya-btn "><a href="#">
-                                            <span class="btn-icon">
-                                                <?xml version="1.0" encoding="UTF-8"?>
-                                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
-                                                    viewBox="0 0 18.77 18.31">
-                                                    <g id="Layer_1-2" data-name="Layer 1">
-                                                        <g>
-                                                            <path class="cls-1"
-                                                                d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
-                                                            <path class="cls-1"
-                                                                d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                            <path class="cls-1"
-                                                                d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                    <!-- Product details  -->
+                                    <div class="d-flex flex-column gap-3">
+                                        <h1 class="product-title">Despedidas Impossíveis <br><span>HAN KANG</span></h1>
+                                        <p class="product-text">Lorem Ipsum is simply dummy text of the printing and
+                                            typesetting
+                                            industry. Lorem Ipsum has been the industry's standard dummy text ever since
+                                            the 1500s, when
+                                            an unknown printer took a galley of type and scrambled it to make.Lorem
+                                            Ipsum is simply
+                                            dummy
+                                            text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard
+                                            dummy text ever since the 1500s, when an unknown printer took a galley of
+                                            type and scrambled
+                                            it
+                                            to make. Lorem Ipsum has been the industry's standard dummy </p>
+                                        <div class="product-price mt-1">
+                                            <span class="price-text text-body-2">Livro</span>
+                                            <span class="sale-price text-accent"> 19,71€</span>
+                                            <span class="regular-price">
+                                                <del>21,90€</del>
+                                            </span>
+                                        </div>
+                                        <div class="leya-btn "><a href="#">
+                                                <span class="btn-icon">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.77 18.31">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <g>
+                                                                <path class="cls-1"
+                                                                    d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
+                                                                <path class="cls-1"
+                                                                    d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                                <path class="cls-1"
+                                                                    d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                            </g>
                                                         </g>
-                                                    </g>
-                                                </svg>
-                                            </span>ADICIONAR AO CARRINHO</a>
+                                                    </svg>
+                                                </span>ADICIONAR AO CARRINHO</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Pagination buttons  -->
+                <div class="swiper-pagination"></div>
                 <!-- Navigation buttons -->
+
                 <div class="swiper-navigaton">
                     <div class="swiper-button-next swiper-button"></div>
                     <div class="swiper-button-prev swiper-button"></div>
                 </div>
             </div>
+
         </div>
     </section>
 
@@ -418,7 +432,7 @@
         <img class="w-100" src="../img/31800_Skinny_Hero_2_MostAnticipated_01_21_25.jpg" alt="">
     </section>
 
-    <!-- product overview with video  -->
+    <!-- product overview with video 2 columns -->
     <section class="product-video-overview">
         <div class="container container-md">
             <div class="swiper ">
@@ -427,7 +441,7 @@
                         <!-- Slide here  -->
                         <div class="swiper-slide ">
                             <div class="row gx-5 gy-3">
-                                <div class="col-md-8">
+                                <div class="col-md-7 col-lg-8">
                                     <div class="product-video">
                                         <video controls>
                                             <source src="movie.mp4" type="video/mp4">
@@ -436,127 +450,59 @@
                                         </video>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="product">
-                                        <div class="product-thumbnail">
-                                            <div class="ribon-wrapper">
-                                                <div class="ribon"> - 10%</div>
-                                                <div class="favorite active">
+                                <div
+                                    class="col-md-5 col-lg-4 d-flex align-items-end align-items-md-center align-items-lg-start flex-row flex-md-column gap-3 gap-md-0">
+                                    <!-- product thumbnail  -->
+                                    <div class="product-thumbnail">
+                                        <div class="ribon-wrapper">
+                                            <div class="ribon"> - 10%</div>
+                                            <div class="favorite active">
+                                                <?xml version="1.0" encoding="UTF-8"?>
+                                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 12.67 12.12">
+                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                        <path class="cls-1"
+                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                    </g>
+                                                </svg></i>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="thumbnail-img">
+                                            <img class="w-lg-235 h-lg-330" src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
+                                                alt="">
+                                        </a>
+                                    </div>
+
+                                    <!-- product details  -->
+                                    <div class="product-details text-center">
+                                        <div class="product-price">
+                                            <span class="price-text text-body-2">Livro</span>
+                                            <span class="sale-price text-accent"> 19,71€</span>
+                                            <span class="regular-price">
+                                                <del>21,90€</del>
+                                            </span>
+                                        </div>
+                                        <div class="leya-btn mt-2 "><a href="#">
+                                                <span class="btn-icon">
                                                     <?xml version="1.0" encoding="UTF-8"?>
                                                     <svg id="Layer_2" data-name="Layer 2"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.77 18.31">
                                                         <g id="Layer_1-2" data-name="Layer 1">
-                                                            <path class="cls-1"
-                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
-                                                        </g>
-                                                    </svg></i>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="thumbnail-img">
-                                                <img src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
-                                                    alt="">
-                                            </a>
-                                        </div>
-
-                                        <!-- product details  -->
-                                        <div class="product-details">
-                                            <div class="product-price">
-                                                <span class="price-text text-body-2">Livro</span>
-                                                <span class="sale-price text-accent"> 19,71€</span>
-                                                <span class="regular-price">
-                                                    <del>21,90€</del>
-                                                </span>
-                                            </div>
-                                            <div class="leya-btn mt-3 "><a href="#">
-                                                    <span class="btn-icon">
-                                                        <?xml version="1.0" encoding="UTF-8"?>
-                                                        <svg id="Layer_2" data-name="Layer 2"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 18.77 18.31">
-                                                            <g id="Layer_1-2" data-name="Layer 1">
-                                                                <g>
-                                                                    <path class="cls-1"
-                                                                        d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                </g>
+                                                            <g>
+                                                                <path class="cls-1"
+                                                                    d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
+                                                                <path class="cls-1"
+                                                                    d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                                <path class="cls-1"
+                                                                    d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
                                                             </g>
-                                                        </svg>
-                                                    </span>ADICIONAR CARRINHO</a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Slide here  -->
-                        <div class="swiper-slide ">
-                            <div class="row gx-5 gy-3">
-                                <div class="col-md-8">
-                                    <div class="product-video">
-                                        <video controls>
-                                            <source src="movie.mp4" type="video/mp4">
-                                            <source src="movie.ogg" type="video/ogg">
-                                            Your browser does not support the video tag.
-                                        </video>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="product">
-                                        <div class="product-thumbnail">
-                                            <div class="ribon-wrapper">
-                                                <div class="ribon"> - 10%</div>
-                                                <div class="favorite active">
-                                                    <?xml version="1.0" encoding="UTF-8"?>
-                                                    <svg id="Layer_2" data-name="Layer 2"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
-                                                        <g id="Layer_1-2" data-name="Layer 1">
-                                                            <path class="cls-1"
-                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
                                                         </g>
-                                                    </svg></i>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="thumbnail-img">
-                                                <img src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
-                                                    alt="">
-                                            </a>
+                                                    </svg>
+                                                </span>ADICIONAR AO CARRINHO</a>
                                         </div>
-
-                                        <!-- product details  -->
-                                        <div class="product-details">
-                                            <div class="product-price">
-                                                <span class="price-text text-body-2">Livro</span>
-                                                <span class="sale-price text-accent"> 19,71€</span>
-                                                <span class="regular-price">
-                                                    <del>21,90€</del>
-                                                </span>
-                                            </div>
-                                            <div class="leya-btn mt-3 "><a href="#">
-                                                    <span class="btn-icon">
-                                                        <?xml version="1.0" encoding="UTF-8"?>
-                                                        <svg id="Layer_2" data-name="Layer 2"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 18.77 18.31">
-                                                            <g id="Layer_1-2" data-name="Layer 1">
-                                                                <g>
-                                                                    <path class="cls-1"
-                                                                        d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>ADICIONAR CARRINHO</a>
-                                            </div>
-                                        </div>
-
                                     </div>
+
+
                                 </div>
                             </div>
                         </div>
@@ -590,31 +536,31 @@
         </div>
     </section>
 
+    <!-- Product video overview 3 columns -->
     <section class="product-video-overview product-video-details">
         <div class="container">
-            <div class="row ">
-                <div class="col-lg-8 thumbnail-video-wrapper">
-                    <div class="product">
-                        <!-- product thumbnail  -->
-                        <div class="product-thumbnail d-md-block d-none">
-                            <div class="ribon-wrapper">
-                                <div class="ribon"> - 10%</div>
-                                <div class="favorite active">
-                                    <?xml version="1.0" encoding="UTF-8"?>
-                                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 12.67 12.12">
-                                        <g id="Layer_1-2" data-name="Layer 1">
-                                            <path class="cls-1"
-                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
-                                        </g>
-                                    </svg></i>
-                                </div>
+            <div class="row gx-4 d-flex">
+                <div class="col-lg-8 d-flex gap-3 flex-nowrap">
+                    <!-- product thumbnail  -->
+                    <div class="product-thumbnail d-md-block d-none">
+                        <div class="ribon-wrapper">
+                            <div class="ribon"> - 10%</div>
+                            <div class="favorite active">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 12.67 12.12">
+                                    <g id="Layer_1-2" data-name="Layer 1">
+                                        <path class="cls-1"
+                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                    </g>
+                                </svg></i>
                             </div>
-                            <a href="#" class="thumbnail-img">
-                                <img src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
-                            </a>
-                            <div class="ribon ribon-2 uppercase"> o mais vendido</div>
                         </div>
+                        <a href="#" class="thumbnail-img">
+                            <img class="w-235 h-330" src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
+                                alt="">
+                        </a>
+                        <div class="ribon ribon-2 uppercase"> o mais vendido</div>
                     </div>
                     <!-- product video  -->
                     <div class="product-video">
@@ -635,58 +581,59 @@
                             an unknown printer took a galley of type and scrambled it to make. </p>
 
                         <!-- Only for mobile version start -->
-                         <div class="product mt-4 d-md-none">
-                                        <div class="product-thumbnail">
-                                            <div class="ribon-wrapper">
-                                                <div class="ribon"> - 10%</div>
-                                                <div class="favorite active">
-                                                    <?xml version="1.0" encoding="UTF-8"?>
-                                                    <svg id="Layer_2" data-name="Layer 2"
-                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
-                                                        <g id="Layer_1-2" data-name="Layer 1">
-                                                            <path class="cls-1"
-                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
-                                                        </g>
-                                                    </svg></i>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="thumbnail-img">
-                                                <img src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
-                                                    alt="">
-                                            </a>
-                                        </div>
-
-                                        <!-- product details  -->
-                                        <div class="product-details">
-                                            <div class="product-price">
-                                                <span class="price-text text-body-2">Livro</span>
-                                                <span class="sale-price text-accent"> 19,71€</span>
-                                                <span class="regular-price">
-                                                    <del>21,90€</del>
-                                                </span>
-                                            </div>
-                                            <div class="leya-btn mt-3 "><a href="#">
-                                                    <span class="btn-icon">
-                                                        <?xml version="1.0" encoding="UTF-8"?>
-                                                        <svg id="Layer_2" data-name="Layer 2"
-                                                            xmlns="http://www.w3.org/2000/svg"
-                                                            viewBox="0 0 18.77 18.31">
-                                                            <g id="Layer_1-2" data-name="Layer 1">
-                                                                <g>
-                                                                    <path class="cls-1"
-                                                                        d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                    <path class="cls-1"
-                                                                        d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
-                                                                </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>ADICIONAR CARRINHO</a>
-                                            </div>
-                                        </div>
-
+                        <div
+                            class="col-md-5 col-lg-4 d-flex align-items-end align-items-md-center align-items-lg-start flex-row flex-md-column gap-3 gap-md-0 d-md-none mt-3">
+                            <!-- product thumbnail  -->
+                            <div class="product-thumbnail">
+                                <div class="ribon-wrapper">
+                                    <div class="ribon"> - 10%</div>
+                                    <div class="favorite active">
+                                        <?xml version="1.0" encoding="UTF-8"?>
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 12.67 12.12">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1"
+                                                    d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                            </g>
+                                        </svg></i>
                                     </div>
+                                </div>
+                                <a href="#" class="thumbnail-img">
+                                    <img src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                                </a>
+                            </div>
+
+                            <!-- product details  -->
+                            <div class="product-details text-center">
+                                <div class="product-price">
+                                    <span class="price-text text-body-2">Livro</span>
+                                    <span class="sale-price text-accent"> 19,71€</span>
+                                    <span class="regular-price">
+                                        <del>21,90€</del>
+                                    </span>
+                                </div>
+                                <div class="leya-btn mt-2 "><a href="#">
+                                        <span class="btn-icon">
+                                            <?xml version="1.0" encoding="UTF-8"?>
+                                            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 18.77 18.31">
+                                                <g id="Layer_1-2" data-name="Layer 1">
+                                                    <g>
+                                                        <path class="cls-1"
+                                                            d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
+                                                        <path class="cls-1"
+                                                            d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                        <path class="cls-1"
+                                                            d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </span>ADICIONAR AO CARRINHO</a>
+                                </div>
+                            </div>
+
+
+                        </div>
                         <!-- Only for mobile version end -->
 
                         <div class="product-price mt-5 d-none d-md-block">
@@ -697,7 +644,7 @@
                             </span>
                         </div>
 
-                        
+
                         <div class="leya-btn mt-3 d-none d-md-block"><a href="#">
                                 <span class="btn-icon">
                                     <?xml version="1.0" encoding="UTF-8"?>

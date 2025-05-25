@@ -6,7 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 // Default configuration for Swiper
 const defaultSwiperConfig = {
-  modules: [Navigation,Pagination, Autoplay],
+  modules: [Navigation, Pagination, Autoplay],
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -37,7 +37,6 @@ const initializeSwiper = (selector, customConfig = {}) => {
 
 // Initialize Swiper instances
 initializeSwiper(".banner-swiper", {
-  modules: [Navigation, Pagination, Autoplay],
   autoplay: { delay: 5000 },
   breakpoints: {
     0: { slidesPerView: 1 },

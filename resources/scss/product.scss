@@ -5,10 +5,6 @@
     background: $lightBlue-color;
   }
   .product-thumbnail {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     .thumbnail-img {
       img {
         width: 100%;
@@ -30,8 +26,14 @@
     }
     .product-price {
       span {
+        font-size: 12px;
         font-weight: 500;
       }
     }
   }
+}
+
+// Global product thumbnail
+.product-thumbnail {
+  position: relative;
 }
