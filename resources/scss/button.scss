@@ -19,7 +19,16 @@
   }
 }
 
-
+// View more button 
+.view-more {
+  a {
+    font-size: 12px;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-weight: 400;
+  }
+}
 
 .banner {
   img {
