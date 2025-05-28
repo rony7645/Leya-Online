@@ -1,0 +1,98 @@
+.search-bar {
+  border: 1px solid $body-color-2;
+  width: 100%;
+  display: flex;
+  form {
+    width: 100%;
+    display: flex;
+    .categories-dropdown {
+      .category-btn {
+        width: 100px;
+        border: none;
+        background-color: #dfe6eb;
+        font-size: 0.9rem;
+        color: #495057;
+        padding: 10px 10px;
+        border-radius: 0px;
+        text-align: left;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .categories-selected-text {
+          width: 90%;
+          overflow: hidden;
+        }
+        .arrow {
+          padding-left: 5px;
+          i {
+            font-size: 12px;
+          }
+        }
+        &:focus,
+        &:hover {
+          box-shadow: none;
+          border-color: #ced4da;
+          background-color: #e9ecef;
+        }
+        &:after {
+          display: none !important;
+        }
+      }
+      .dropdown-menu {
+        min-width: 180px;
+        border: 1px solid #ced4da;
+        border-radius: 0px;
+        padding: 0px;
+        margin-top: -1px;
+
+        .dropdown-item {
+          font-size: 0.9rem;
+          color: #495057;
+          padding: 6px 12px;
+          &:hover {
+            background-color: $secondary-color;
+            color: $light;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .input-group {
+      .form-control {
+        border: none;
+        outline: none;
+        border-radius: 0;
+        padding: 10px 10px;
+        font-size: 14px;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  button {
+    outline: none;
+    border: none;
+    color: $light;
+    font-size: 18px;
+    background: $secondary-color;
+    width: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  .categories-dropdown {
+    .category-btn {
+      font-size: 0.85rem;
+      padding: 5px 10px;
+    }
+
+    .dropdown-menu {
+      min-width: 150px;
+    }
+  }
+}

@@ -60,13 +60,55 @@
 
 header {
   .top-bar {
-    background: #BDCCD4;
+    background: #bdccd4;
   }
   .livr {
     width: 62px;
   }
   .leytura {
     width: 100px;
+  }
+  .site-logo {
+    img {
+      width: 240px;
+    }
+  }
+  .menu-wrapper {
+    .menu-list {
+      display: flex;
+      gap: 20px;
+      .menu-item {
+        position: relative;
+        &:not(:last-child)::after {
+          content: "|";
+          width: 1px;
+          height: 20px;
+          color: #0000001f;
+          margin-left: 20px;
+        }
+        a {
+          font-family: $font-secondary;
+          color: #000;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+  .cart-icon {
+    .count-indicator {
+      background: $accent-color;
+      width: 23px;
+      height: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 100px;
+      span {
+        font-size: 13px;
+        color: $light;
+      }
+    }
   }
 }
 
@@ -76,19 +118,17 @@ header {
   margin: 0;
   display: flex;
   gap: 20px;
+  li {
+    display: inline-flex;
+    align-items: center;
+    font-size: 13px;
+    text-transform: uppercase;
+  }
+
+  li:not(:last-child)::after {
+    content: "|";
+    color: #ccc;
+    margin-left: 20px;
+  }
 }
 
-.inline-list li {
-  display: inline-flex;
-  align-items: center;
-}
-
-.inline-list li:not(:last-child)::after {
-  content: "|";
-  color: #ccc;
-  margin-left: 10px;
-}
-
-.inline-list i {
-  margin-right: 5px;
-}

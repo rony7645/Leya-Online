@@ -14,12 +14,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 d-flex align-items-center justify-content-center py-2">
-                        <p class="m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <p class="m-0 fw-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container my-4">
             <div class="row">
                 <div class="col-6">
                     <div class="d-flex gap-4">
@@ -27,23 +27,91 @@
                         <img class="leytura" src="../img/leytura.png" alt="">
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-6 d-flex justify-content-end">
                     <ul class="inline-list">
                         <li><span class="icon-list-icon"></span> A MINHA CONTA <span class="arrow-icon">></span></li>
                         <li><i class="fas fa-user"></i> Profile</li>
                     </ul>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3"></div>
-                <div class="col-9"></div>
+            <div class="row mt-4">
+                <div class="col-4 col-md-3">
+                    <div class="site-logo"><a href="#"><img src="../img/logo.png" alt=""></a></div>
+                </div>
+                <div class="col-8 col-md-9 d-flex justify-content-end align-items-center gap-3">
+                    <div class="search-bar">
+                        <form action="">
+                            <div class="categories-dropdown">
+                                <button class="btn dropdown-toggle category-btn" type="button" id="categoryDropdown"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span class="categories-selected-text">TUDO</span>
+                                    <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                                    <li><span class="dropdown-item">Todos</span></li>
+                                    <li><span class="dropdown-item">Livros</span></li>
+                                    <li><span class="dropdown-item">Ficção</span></li>
+                                    <li><span class="dropdown-item">Não Ficção</span></li>
+                                    <li><span class="dropdown-item">Infantil & Juvenil</span></li>
+                                    <li><span class="dropdown-item">eBooks</span></li>
+                                    <li><span class="dropdown-item">Audiolivros</span></li>
+                                    <li><span class="dropdown-item">Apoio Escolar</span></li>
+                                    <li><span class="dropdown-item">Tecnologia</span></li>
+                                </ul>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Pesquisa">
+                            </div>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                    <div class="cart-icon">
+                        <div class="count-indicator"><span>10</span></div>
+                        <div class="icon"></div>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <div class="col-12"></div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <nav class="menu-wrapper">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="#">Livros</a></li>
+                            <li class="menu-item"><a href="#">Ficção</a></li>
+                            <li class="menu-item"><a href="#">Não Ficção</a></li>
+                            <li class="menu-item"><a href="#">Infantil&Juvenil</a></li>
+                            <li class="menu-item"><a href="#">eBooks</a></li>
+                            <li class="menu-item"><a href="#">Audiolivros</a></li>
+                            <li class="menu-item"><a href="#">Apoio Escolar</a></li>
+                            <li class="menu-item"><a href="#">Tecnologia</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
         </div>
 
     </header>
+
+    <!-- <section class="search-bar">
+        <div class="container mt-5">
+            
+        </div>
+
+    </section> -->
+
+    <!-- Header Ad  -->
+    <section class="header-add">
+        <img class="w-100" src="../img/31877_GlobalNav_50OffVSM_02_01_25.jpg" alt="">
+    </section>
+
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const btn = document.querySelector('.category-btn span');
+                btn.textContent = this.textContent;
+            });
+        });
+    </script>
 
     <script type="module" src="../../resources/js/layout.js"></script>
 </body>
