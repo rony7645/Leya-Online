@@ -96,3 +96,76 @@
     }
   }
 }
+
+// Search Result window 
+.search-wrapper {
+  margin-top: 5px;
+  position: absolute;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  background: #fff;
+  z-index: 999;
+  margin-right: 5px;
+  transition: all 0.5s;
+
+  .search-result {
+    h6 {
+      font-size: 13px;
+      font-weight: 400;
+      span {
+        font-weight: 700;
+      }
+    }
+    .search-item-wrapper {
+      margin-top: 18px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      .search-item {
+        a {
+          width: 125px;
+          text-align: center;
+          img {
+            height: 185px;
+            object-fit: contain;
+            object-position: bottom;
+          }
+          h5 {
+            margin-top: 10px;
+            font-size: 13px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .leya-btn {
+    a {
+      background: $secondary-color;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .search-wrapper {
+    .search-result {
+      .search-item-wrapper {
+        grid-template-columns: repeat(5, 1fr);
+      }
+    }
+  }
+}
+@media (min-width: 992px) {
+  .search-wrapper {
+    .search-result {
+      .search-item-wrapper {
+        grid-template-columns: repeat(8, 1fr);
+      }
+    }
+  }
+}
+.search-wrapper-active {
+  display: block !important;
+}
+
+
+

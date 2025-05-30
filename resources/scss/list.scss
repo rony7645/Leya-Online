@@ -1,0 +1,15 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  li {
+    line-height: 1;
+    a {
+      font-size: 14px;
+      color: $secondary-color;
+      &:hover {
+        color: $body-color;
+      }
+    }
+  }
+}

@@ -19,19 +19,13 @@
   }
 }
 
-// View more button 
-.view-more {
+// secondary more button
+.secondary-btn {
   a {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: underline;
     text-transform: uppercase;
     color: $secondary-color;
     font-weight: 400;
-  }
-}
-
-.banner {
-  img {
-    width: 100%;
   }
 }

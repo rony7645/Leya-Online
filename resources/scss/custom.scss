@@ -58,71 +58,12 @@
   }
 }
 
-header {
-  .top-bar {
-    background: #bdccd4;
-  }
-  .livr {
-    width: 62px;
-  }
-  .leytura {
-    width: 100px;
-  }
-  .site-logo {
-    img {
-      width: 240px;
-    }
-  }
-  .menu-wrapper {
-    .menu-list {
-      display: flex;
-      gap: 20px;
-      .menu-item {
-        position: relative;
-        &:not(:last-child)::after {
-          content: "|";
-          width: 1px;
-          height: 20px;
-          color: #0000001f;
-          margin-left: 20px;
-        }
-        a {
-          font-family: $font-secondary;
-          color: #000;
-          font-size: 19px;
-        }
-      }
-    }
-  }
-  .cart-icon {
-    position: relative;
-    .count-indicator {
-      background: $accent-color;
-      width: 20px;
-      height: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 100px;
-      position: absolute;
-      top: -8px;
-      left: 20px;
-      span {
-        font-size: 11px;
-        color: $light;
-      }
-    }
-    .icon{
-      width: 29px;
-      cursor: pointer;
-    }
-  }
-}
+// Inline list
 
 .inline-list {
   display: flex;
   gap: 20px;
-  li {
+  .inline-list-item {
     display: inline-flex;
     align-items: center;
     font-size: 13px;
@@ -141,8 +82,7 @@ header {
       }
     }
   }
-
-  li:not(:last-child)::after {
+  .inline-list-item:not(:last-child)::after {
     content: "|";
     color: #ccc;
     margin-left: 20px;
