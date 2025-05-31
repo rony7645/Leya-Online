@@ -27,6 +27,8 @@ header {
       gap: 20px;
       .menu-item {
         position: relative;
+        display: inline-block;
+        width: fit-content;
         &:not(:last-child)::after {
           content: "|";
           width: 1px;
@@ -34,7 +36,7 @@ header {
           color: #0000001f;
           margin-left: 20px;
         }
-        a {
+        .menu-link {
           position: relative;
           font-family: $font-secondary;
           color: #000;
@@ -54,9 +56,16 @@ header {
             }
           }
         }
+        &:hover {
+          .mega-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+          }
+        }
       }
       .active {
-        a {
+        .menu-link {
           &:after {
             width: 100%;
           }
