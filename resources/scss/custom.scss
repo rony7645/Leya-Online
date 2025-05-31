@@ -64,21 +64,33 @@
   display: flex;
   gap: 20px;
   .inline-list-item {
-    display: inline-flex;
-    align-items: center;
-    font-size: 13px;
-    text-transform: uppercase;
-    svg {
-      stroke: $secondary-color;
-      width: 13px;
+    position: relative;
+    line-height: 1;
+    &:hover {
+      .submenu-container {
+        margin-top: 5px;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+      }
     }
-    .icon-list-text {
-      margin-left: 10px;
-    }
-    .arrow-icon {
-      margin-left: 8px;
-      i {
-        font-size: 11px;
+    a {
+      display: inline-flex;
+      align-items: center;
+      font-size: 13px;
+      color: $secondary-color;
+      svg {
+        stroke: $secondary-color;
+        width: 13px;
+      }
+      .icon-list-text {
+        margin-left: 10px;
+      }
+      .arrow-icon {
+        margin-left: 8px;
+        i {
+          font-size: 11px;
+        }
       }
     }
   }

@@ -1,7 +1,8 @@
 .submenu-container {
-  width: 210px;
+  width: 200px;
   border: 1px solid $border-color;
   background: $light;
+  z-index: 99;
   .btn-group {
     display: flex;
     flex-direction: column;

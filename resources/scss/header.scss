@@ -13,6 +13,14 @@ header {
       width: 240px;
     }
   }
+  .submenu-container {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  // main menu
   .menu-wrapper {
     .menu-list {
       display: flex;
@@ -27,9 +35,31 @@ header {
           margin-left: 20px;
         }
         a {
+          position: relative;
           font-family: $font-secondary;
           color: #000;
           font-size: 19px;
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0%;
+            border-bottom: 2px solid $accent-color;
+            transition: width 0.4s ease;
+          }
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .active {
+        a {
+          &:after {
+            width: 100%;
+          }
         }
       }
     }

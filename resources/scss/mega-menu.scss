@@ -1,7 +1,13 @@
 .mega-menu {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap:20px;
+  gap: 20px;
+  background: #fff;
+  position: absolute;
+  width: 1200px;
+  padding: 20px;
+  border: 1px solid $border-color;
+  margin-top: 10px;
   .menu-box-wrapper {
     .menu-box {
       .menu-heading {
