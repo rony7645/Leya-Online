@@ -1,0 +1,25 @@
+.submenu-container {
+  width: 210px;
+  border: 1px solid $border-color;
+  background: $light;
+  .btn-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $border-color;
+    border-radius: 0;
+    padding: 12px 0;
+    .submenu-btn {
+      a {
+        color: $light;
+        background: $secondary-color;
+        padding: 5px 60px;
+        font-size: 14px;
+        width: 100%;
+      }
+    }
+  }
+  .list {
+    padding: 12px;
+  }
+}

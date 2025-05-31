@@ -10,6 +10,7 @@
 <body>
 
     <header>
+        <!-- Top bar area  -->
         <div class="top-bar">
             <div class="container">
                 <div class="row">
@@ -20,6 +21,7 @@
             </div>
         </div>
         <div class="container my-4">
+            <!-- Header top area  -->
             <div class="row">
                 <div class="col-6">
                     <div class="d-flex gap-4">
@@ -29,7 +31,7 @@
                 </div>
                 <div class="col-6 d-flex justify-content-end">
                     <ul class="inline-list">
-                        <li>
+                        <li class="inline-list-item">
                             <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 12.66 16.25">
                                 <g id="Layer_1-2" data-name="Layer 1">
@@ -41,8 +43,24 @@
                             </svg>
                             <span class="icon-list-text">A MINHA CONTA</span>
                             <span class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <div class="submenu-container">
+                                <div class="btn-group">
+                                    <div class="submenu-btn">
+                                        <a href="#">Entrar</a>
+                                    </div>
+                                    <div class="secondary-btn">
+                                        <a class="text-capitalize" href="#">Criar Conta</a>
+                                    </div>
+                                </div>
+                                <ul class="list">
+                                    <li><a href="#">Gerir Conta</a></li>
+                                    <li><a href="#">Histórico de Encomendas</a></li>
+                                    <li><a href="#">Biblioteca Digital</a></li>
+                                    <li><a href="#">Gerir Subscrições</a></li>
+                                </ul>
+                            </div>
                         </li>
-                        <li>
+                        <li class="inline-list-item">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.24 15.67">
                                 <path fill="none" stroke-miterlimit="10" stroke-width="1.5"
                                     d="M8.11,14.75c3.99-2.87,5.99-5.49,6.93-7.49,1.1-2.34.14-5.24-2.25-6.21-2.81-1.14-4.68,1.49-4.68,1.49,0,0-1.85-2.65-4.66-1.5C1.06,2.01.11,4.91,1.2,7.25c.94,2,2.92,4.63,6.91,7.5Z" />
@@ -52,7 +70,10 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Search bar wrapper  -->
             <div class="row mt-4">
+                <!-- site logo  -->
                 <div class="col-4 col-md-3">
                     <div class="site-logo"><a href="#"><img src="../img/logo.png" alt=""></a></div>
                 </div>
@@ -78,7 +99,7 @@
                                 </ul>
                             </div>
                             <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Pesquisa">
+                                <input id="header-search-input" type="text" class="form-control" placeholder="Pesquisa">
                             </div>
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
@@ -89,6 +110,91 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Search window wrapper  -->
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="search-wrapper collapse" id="search-wrapper">
+                        <div class="search-result">
+                            <h6>Resultados para a pesquisa “<span>Romance</span>”</h6>
+                            <div class="search-item-wrapper">
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789895813285_corrupt.jpg" alt="">
+                                        <h5>Corrupt</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                                        <h5>Despedidas Impo...</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg" alt="">
+                                        <h5>Caneta</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                                        <h5>Ainda Estou Aqui</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/Mockup-DeixarAfrica-Livro3D-01.png" alt="">
+                                        <h5>Deixar Africa</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789892364179_o_lamento_dos_rios.jpg" alt="">
+                                        <h5>O Lamento dos Rios</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                                        <h5>Despedidas Impo...</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                                        <h5>Ainda Estou Aqui</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-result mt-5">
+                            <h6>Resultados de autores para a pesquisa “<span>han</span>”</h6>
+                            <div class="search-item-wrapper">
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/hankangcglportraitalamystockphotofotobanco_1737711594.pt_2.jpg"
+                                            alt="">
+                                        <h5 class="text-uppercase fw-normal">HAN KANG</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/sem_img_prod_m.jpg" alt="">
+                                        <h5 class="text-uppercase fw-normal">Han eun-mi</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leya-btn mt-4 text-center"><a href="#">Ver todos os resultados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Header navigation menu -->
             <div class="row mt-4">
                 <div class="col-12">
                     <nav class="menu-wrapper">
