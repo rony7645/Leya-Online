@@ -72,6 +72,19 @@
           box-shadow: none;
         }
       }
+      .clear-icon {
+        position: absolute;
+        right: 15px; /* adjust as needed */
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        color: #999;
+        font-size: 1.1rem;
+        z-index: 10;
+        &:hover {
+          color: #333;
+        }
+      }
     }
   }
   button {
@@ -97,7 +110,7 @@
   }
 }
 
-// Search Result window 
+// Search Result window
 .search-wrapper {
   margin-top: 5px;
   position: absolute;
@@ -166,6 +179,3 @@
 .search-wrapper-active {
   display: block !important;
 }
-
-
-
