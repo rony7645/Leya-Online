@@ -9,6 +9,39 @@
 
 <body>
 
+
+    <section>
+        <form action="">
+            <div class="select-dropdown">
+                <button class="btn dropdown-toggle dropdown-btn" type="button" id="dropdownID" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <span class="selected-text">Dropdown Here</span>
+                    <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownID">
+                    <li><span class="dropdown-item">Todos</span></li>
+                    <li><span class="dropdown-item">Livros</span></li>
+                    <li><span class="dropdown-item">Ficção</span></li>
+                    <li><span class="dropdown-item">Não Ficção</span></li>
+                    <li><span class="dropdown-item">Infantil & Juvenil</span></li>
+                    <li><span class="dropdown-item">eBooks</span></li>
+                    <li><span class="dropdown-item">Audiolivros</span></li>
+                    <li><span class="dropdown-item">Apoio Escolar</span></li>
+                    <li><span class="dropdown-item">Tecnologia</span></li>
+                </ul>
+            </div>
+        </form>
+    </section>
+    <script>
+        document.querySelectorAll('.dropdown-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const btn = document.querySelector('.dropdown-btn span');
+                btn.textContent = this.textContent;
+            });
+        });
+    </script>
+
     <section>
         <div class="container">
             <div class="row">

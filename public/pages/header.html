@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="container my-4">
+        <div class="container my-4 d-none d-md-block">
             <!-- Header top area  -->
             <div class="row">
                 <div class="col-6">
@@ -354,14 +354,49 @@
             </div>
         </div>
 
-    </header>
-
-    <!-- <section class="search-bar">
-        <div class="container mt-5">
-            
+        <!-- Mobile header  -->
+        <div class="container mobile-navbar py-4">
+            <div class="row">
+                <div class="col-7">
+                    <div class="menu-toggle"></div>
+                    <div class="mobile-site-logo"></div>
+                </div>
+                <div class="col-5">
+                    <ul class="icon-wrapper d-flex gap-3 justify-content-end">
+                        <li class="user"><a href="#"><img src="../../resources/icon-font/icons/user.svg" alt=""></a></li>
+                        <li class="favorite-list"><a href="#"> <img src="../../resources/icon-font/icons/favorit.svg" alt=""></a></li>
+                        <li class="cart"><a href="#">
+                                <div class="cart-icon position-relative">
+                                    <div class="count-indicator"><span>10</span></div>
+                                    <div class="icon"><img src="../../resources/icon-font/icons/cart.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="search-bar">
+                        <form action="">
+                            <div class="input-group position-relative">
+                                <input id="header-search-input" type="text" class="form-control" placeholder="Pesquisa">
+                                <span id="clear-btn" class="clear-icon" style="display: none;">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </span>
+                            </div>
+                            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </section> -->
+
+        </div>
+
+    </header>
 
     <!-- Header Ad  -->
     <section class="header-add">

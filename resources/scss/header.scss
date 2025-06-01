@@ -96,4 +96,26 @@ header {
       cursor: pointer;
     }
   }
+
+  .mobile-navbar {
+    .icon-wrapper {
+      .user {
+        a {
+          img {
+            width: 20.5865px;
+          }
+        }
+      }
+      .favorite-list {
+        a {
+          img {
+            width: 29.5591px;
+          }
+        }
+      }
+      .cart {
+        margin-right: 10px;
+      }
+    }
+  }
 }
