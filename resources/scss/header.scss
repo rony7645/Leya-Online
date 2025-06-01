@@ -98,23 +98,57 @@ header {
   }
 
   .mobile-navbar {
+    .menu-toggle {
+      display: inline-block;
+      cursor: pointer;
+      svg {
+        width: 35.2948px;
+        fill: none;
+        stroke: #3c4b54;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    }
     .icon-wrapper {
       .user {
         a {
-          img {
+          svg {
             width: 20.5865px;
+            fill: none;
+            stroke: #3c4b54;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
           }
         }
       }
       .favorite-list {
         a {
-          img {
+          svg {
             width: 29.5591px;
+            fill: none;
+            stroke: #3c4b54;
+            stroke-miterlimit: 10;
+            stroke-width: 1.8px;
+          }
+        }
+      }
+      .favorited {
+        a {
+          svg {
+            path {
+              fill: $accent-color !important;
+              stroke: $accent-color !important;
+            }
           }
         }
       }
       .cart {
         margin-right: 10px;
+        svg {
+          width: 29.763px;
+          fill: $secondary-color;
+        }
       }
     }
   }
