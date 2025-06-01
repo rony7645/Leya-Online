@@ -63,11 +63,11 @@
   }
 }
 
-@media (max-width: 768px) {
-  .container-md {
-    max-width: 465px !important;
-  }
-}
+// @media (max-width: 768px) {
+//   .container-md {
+//     max-width: 465px !important;
+//   }
+// }
 
 @media (min-width: 992px) {
   w-lg-72 {
@@ -80,3 +80,4 @@
 .gap-30 {
   gap:30px;
 }
+

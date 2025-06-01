@@ -25,8 +25,8 @@
             <div class="row">
                 <div class="col-6">
                     <div class="d-flex gap-4">
-                        <img class="livr" src="../img/livr.png" alt="">
-                        <img class="leytura" src="../img/leytura.png" alt="">
+                        <a href="#"><img class="livr" src="../img/livr.png" alt=""></a>
+                        <a href="#"><img class="leytura" src="../img/leytura.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-6 d-flex justify-content-end">
@@ -104,12 +104,10 @@
                                     <li><span class="dropdown-item">Tecnologia</span></li>
                                 </ul>
                             </div>
-                            <!-- <div class="input-group">
-                                <input id="header-search-input" type="text" class="form-control" placeholder="Pesquisa">
-                            </div> -->
                             <div class="input-group position-relative">
-                                <input id="header-search-input" type="text" class="form-control" placeholder="Pesquisa">
-                                <span id="clear-btn" class="clear-icon" style="display: none;">
+                                <input id="header-search-input-desktop" type="text" class="form-control"
+                                    placeholder="Pesquisa">
+                                <span id="clear-btn-desktop" class="clear-icon" style="display: none;">
                                     <i class="fa-solid fa-xmark"></i>
                                 </span>
                             </div>
@@ -119,89 +117,6 @@
                     <div class="cart-icon position-relative">
                         <div class="count-indicator"><span>10</span></div>
                         <div class="icon"><img src="../../resources/icon-font/icons/cart.svg" alt=""></div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Search window wrapper  -->
-            <div class="row">
-                <div class="col-12 position-relative">
-                    <div class="search-wrapper collapse" id="search-wrapper">
-                        <div class="search-result">
-                            <h6>Resultados para a pesquisa “<span>Romance</span>”</h6>
-                            <div class="search-item-wrapper">
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789895813285_corrupt.jpg" alt="">
-                                        <h5>Corrupt</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
-                                        <h5>Despedidas Impo...</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg" alt="">
-                                        <h5>Caneta</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
-                                        <h5>Ainda Estou Aqui</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/Mockup-DeixarAfrica-Livro3D-01.png" alt="">
-                                        <h5>Deixar Africa</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789892364179_o_lamento_dos_rios.jpg" alt="">
-                                        <h5>O Lamento dos Rios</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
-                                        <h5>Despedidas Impo...</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
-                                        <h5>Ainda Estou Aqui</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="search-result mt-5">
-                            <h6>Resultados de autores para a pesquisa “<span>han</span>”</h6>
-                            <div class="search-item-wrapper">
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/hankangcglportraitalamystockphotofotobanco_1737711594.pt_2.jpg"
-                                            alt="">
-                                        <h5 class="text-uppercase fw-normal">HAN KANG</h5>
-                                    </a>
-                                </div>
-                                <div class="search-item">
-                                    <a href="#">
-                                        <img src="../img/sem_img_prod_m.jpg" alt="">
-                                        <h5 class="text-uppercase fw-normal">Han eun-mi</h5>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="leya-btn mt-4 text-center"><a href="#">Ver todos os resultados</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -355,9 +270,9 @@
         </div>
 
         <!-- Mobile header  -->
-        <div class="container mobile-navbar py-4">
+        <div class="container-md mobile-navbar py-4 d-md-none">
             <div class="row">
-                <div class="col-7">
+                <div class="col-7 d-flex gap-3">
                     <div class="menu-toggle">
                         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 38.29 20.16">
@@ -370,24 +285,61 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="mobile-site-logo"></div>
+                    <div class="mobile-site-logo d-flex gap-2 justify-content-start">
+                        <a href="#"><img src="../img/logo.png" alt=""></a>
+                        <div class="other-logo-arrow" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop"><i class="fa-solid fa-chevron-down"></i>
+                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="strue" data-bs-keyboard="true"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog ">
+                                <div class="modal-content">
+                                    <div class="modal-body py-5 px-4">
+                                        <ul class="logo-list">
+                                            <li>
+                                                <div class="circle active"><span></span></div>
+                                                <img src="../img/logo.png">
+
+                                            </li>
+                                            <li>
+                                                <div class="circle"><span></span></div>
+                                                <img style="width: 80px;" src="../img/livr.png">
+                                                <a href="#" class="link"><i
+                                                        class="fa-solid fa-up-right-from-square"></i></a>
+                                            </li>
+                                            <li>
+                                                <div class="circle"><span></span></div>
+                                                <img src="../img/leytura.png">
+                                                <a href="#" class="link"><i
+                                                        class="fa-solid fa-up-right-from-square"></i></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-5">
+                <div class="col-5 d-flex justify-content-end position-relative">
                     <ul class="icon-wrapper d-flex gap-3 justify-content-end">
-                        <li class="user">
-                            <a href="#">
-                                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 22.59 29.59">
-                                    <g id="Layer_1-2" data-name="Layer 1">
-                                        <g>
-                                            <circle class="cls-1" cx="11.29" cy="7.86" r="6.86" />
-                                            <path class="cls-1"
-                                                d="m21.59,29.59c0-5.68-4.61-10.29-10.29-10.29S1,23.91,1,29.59" />
-                                        </g>
+
+                        <!-- User icon  -->
+                        <li class="user" id="user-btn">
+                            <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 22.59 29.59">
+                                <g id="Layer_1-2" data-name="Layer 1">
+                                    <g>
+                                        <circle class="cls-1" cx="11.29" cy="7.86" r="6.86" />
+                                        <path class="cls-1"
+                                            d="m21.59,29.59c0-5.68-4.61-10.29-10.29-10.29S1,23.91,1,29.59" />
                                     </g>
-                                </svg>
-                            </a>
+                                </g>
+                            </svg>
                         </li>
+
+                        <!-- favorite icon  -->
                         <li class="favorite-list">
                             <a href="#">
                                 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
@@ -402,7 +354,10 @@
                                 </svg>
                             </a>
                         </li>
-                        <li class="cart"><a href="#">
+
+                        <!-- Cart icon  -->
+                        <li class="cart">
+                            <a href="#">
                                 <div class="cart-icon position-relative">
                                     <div class="count-indicator"><span>10</span></div>
                                     <div class="icon">
@@ -424,6 +379,24 @@
                             </a>
                         </li>
                     </ul>
+
+                    <!-- user submenu for mobile -->
+                    <div class="submenu-container mobile-submenu-container">
+                        <div class="btn-group">
+                            <div class="submenu-btn">
+                                <a href="#">Entrar</a>
+                            </div>
+                            <div class="secondary-btn">
+                                <a class="text-capitalize" href="#">Criar Conta</a>
+                            </div>
+                        </div>
+                        <ul class="list">
+                            <li><a href="#">Gerir Conta</a></li>
+                            <li><a href="#">Histórico de Encomendas</a></li>
+                            <li><a href="#">Biblioteca Digital</a></li>
+                            <li><a href="#">Gerir Subscrições</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="row mt-4">
@@ -431,8 +404,9 @@
                     <div class="search-bar">
                         <form action="">
                             <div class="input-group position-relative">
-                                <input id="header-search-input" type="text" class="form-control" placeholder="Pesquisa">
-                                <span id="clear-btn" class="clear-icon" style="display: none;">
+                                <input id="header-search-input-mobile" type="text" class="form-control"
+                                    placeholder="Pesquisa">
+                                <span id="clear-btn-mobile" class="clear-icon" style="display: none;">
                                     <i class="fa-solid fa-xmark"></i>
                                 </span>
                             </div>
@@ -444,6 +418,91 @@
         </div>
 
 
+        </div>
+
+        <!-- Search window wrapper  -->
+        <div class="container container-md-fluid collapse " id="search-wrapper">
+            <div class="row">
+                <div class="col-12 position-relative">
+                    <div class="search-wrapper">
+                        <div class="search-result">
+                            <h6>Resultados para a pesquisa “<span>Romance</span>”</h6>
+                            <div class="search-item-wrapper">
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789895813285_corrupt.jpg" alt="">
+                                        <h5>Corrupt</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                                        <h5>Despedidas Impo...</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg" alt="">
+                                        <h5>Caneta</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                                        <h5>Ainda Estou Aqui</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/Mockup-DeixarAfrica-Livro3D-01.png" alt="">
+                                        <h5>Deixar Africa</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789892364179_o_lamento_dos_rios.jpg" alt="">
+                                        <h5>O Lamento dos Rios</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                                        <h5>Despedidas Impo...</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                                        <h5>Ainda Estou Aqui</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="search-result mt-5">
+                            <h6>Resultados de autores para a pesquisa “<span>han</span>”</h6>
+                            <div class="search-item-wrapper">
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/hankangcglportraitalamystockphotofotobanco_1737711594.pt_2.jpg"
+                                            alt="">
+                                        <h5 class="text-uppercase fw-normal">HAN KANG</h5>
+                                    </a>
+                                </div>
+                                <div class="search-item">
+                                    <a href="#">
+                                        <img src="../img/sem_img_prod_m.jpg" alt="">
+                                        <h5 class="text-uppercase fw-normal">Han eun-mi</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="leya-btn mt-4 text-center"><a href="#">Ver todos os resultados</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </header>
