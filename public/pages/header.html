@@ -509,12 +509,60 @@
         <!-- Mobiel canvas  -->
         <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileOffcanvas"
             aria-labelledby="mobileOffcanvasLabel">
-            <div class="offcanvas-header">
+            <div class="offcanvas-header" style="background:#E9F2F5">
                 <img style="width: 150px;" id="mobileOffcanvasLabel" src="../img/logo.png">
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></div>
             </div>
-            <div class="offcanvas-body">
-                
+            <div class="offcanvas-body position-relative">
+                <div class="menu-container">
+                    <nav class="main-menu" id="main-menu">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" data-submenu="homeSubmenu">Livros
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Ficção</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Não Ficção</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Infantil&Juvenil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">eBooks</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Audiolivros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Apoio Escolar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tecnologia</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="submenu" id="homeSubmenu">
+                        <div class="sidebar-header">
+                            <div class="back-btn" data-back="main-menu">
+                                <i class="fa-solid fa-chevron-left"></i> Livros
+                            </div>
+                        </div>
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home Item 1 <i class="fa-solid fa-chevron-right"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home Item 2</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
             </div>
         </div>
 

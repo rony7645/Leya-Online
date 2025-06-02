@@ -1,0 +1,89 @@
+.btn-close {
+  cursor: pointer;
+}
+// Menu container
+.menu-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1050;
+
+  // Main menu and submenu shared styles
+  .main-menu,
+  .submenu {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: transform 0.3s ease;
+  }
+
+  // Main menu specific styles
+  .main-menu {
+    transform: translateX(0);
+
+    &.hide {
+      transform: translateX(-100%);
+    }
+  }
+
+  // Submenu specific styles
+  .submenu {
+    transform: translateX(100%);
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
+
+// Sidebar header
+.sidebar-header {
+  background: $secondary-color;
+  color: $light;
+}
+
+// Navigation links
+.nav-item {
+  .nav-link {
+    font-family: $font-secondary;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 9px 15px;
+    border-bottom: 1px solid #00000011;
+    i {
+      font-size: 16px;
+      color: $secondary-color;
+    }
+    &:hover {
+      color: $light;
+      background: $secondary-color;
+      i {
+        color: $light;
+      }
+    }
+  }
+}
+
+// Back button
+.back-btn {
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: $font-secondary;
+  letter-spacing: 1.1px;
+  border-bottom: 1px solid #ffffff1c;
+  i {
+    margin-right: 10px;
+    font-size: 15px;
+  }
+}

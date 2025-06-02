@@ -2,57 +2,62 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Leya Online</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Leya Online</title>
 </head>
 
 <body>
-<!-- Menu Toggle Button -->
-<button class="btn btn-primary d-md-none" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu">
-  ☰ Menu
-</button>
-
-<!-- Offcanvas Menu -->
-<div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Menu</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="menu-wrapper">
-      <ul class="menu level-1 active">
-        <li><a href="#">Home</a></li>
-        <li>
-          <a href="#" class="go-submenu" data-target="submenu-1">Services</a>
+  <div class="menu-container">
+    <nav class="main-menu" id="main-menu">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" data-submenu="homeSubmenu">Livros <i class="fa-solid fa-chevron-right"></i></a>
         </li>
-        <li><a href="#">About</a></li>
-      </ul>
-
-      <!-- Level 2 -->
-      <ul class="menu level-2" id="submenu-1">
-        <li><a href="#" class="go-back">← Back</a></li>
-        <li><a href="#">Web Design</a></li>
-        <li>
-          <a href="#" class="go-submenu" data-target="submenu-2">Development</a>
+        <li class="nav-item">
+          <a class="nav-link">Ficção</a>
         </li>
-        <li><a href="#">SEO</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Não Ficção</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Infantil&Juvenil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">eBooks</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Audiolivros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Apoio Escolar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Tecnologia</a>
+        </li>
       </ul>
+    </nav>
 
-      <!-- Level 3 -->
-      <ul class="menu level-3" id="submenu-2">
-        <li><a href="#" class="go-back">← Back</a></li>
-        <li><a href="#">Frontend</a></li>
-        <li><a href="#">Backend</a></li>
+    <nav class="submenu" id="homeSubmenu">
+      <div class="sidebar-header">
+        <div class="back-btn" data-back="main-menu">
+          <i class="fa-solid fa-chevron-left"></i> Livros
+        </div>
+      </div>
+      <ul class="nav flex-column p-3">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home Item 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home Item 2</a>
+        </li>
       </ul>
-    </div>
+    </nav>
+
   </div>
-</div>
 
 
-
-
-    <script type="module" src="../../resources/js/layout.js"></script>
+  <script type="module" src="../../resources/js/layout.js"></script>
 </body>
 
 </html>
