@@ -140,9 +140,12 @@ header {
         }
       }
     }
-    .menu-toggle {
+    .mobile-menu-toggle {
       display: inline-block;
       cursor: pointer;
+      outline: none;
+      border:none;
+      background: none;
       svg {
         width: 35.2948px;
         fill: none;

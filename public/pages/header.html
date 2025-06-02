@@ -273,7 +273,8 @@
         <div class="container-md mobile-navbar py-4 d-md-none">
             <div class="row">
                 <div class="col-7 d-flex gap-3">
-                    <div class="menu-toggle">
+                    <button class="mobile-menu-toggle" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
                         <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 38.29 20.16">
                             <g id="Layer_1-2" data-name="Layer 1">
@@ -284,7 +285,7 @@
                                 </g>
                             </g>
                         </svg>
-                    </div>
+                    </button>
                     <div class="mobile-site-logo d-flex gap-2 justify-content-start">
                         <a href="#"><img src="../img/logo.png" alt=""></a>
                         <div class="other-logo-arrow" type="button" data-bs-toggle="modal"
@@ -502,6 +503,18 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Mobiel canvas  -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileOffcanvas"
+            aria-labelledby="mobileOffcanvasLabel">
+            <div class="offcanvas-header">
+                <img style="width: 150px;" id="mobileOffcanvasLabel" src="../img/logo.png">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                
             </div>
         </div>
 

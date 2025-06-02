@@ -3,6 +3,7 @@ import "../scss/start.scss";
 
 import "./headerSearchBar.js";
 import "./swiper.config.js";
+import "./offcanvas.js";
 
 // Mobile Nav Js
 
