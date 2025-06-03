@@ -16,7 +16,7 @@
     .product-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
+      gap: 5px;
       margin-top: 20px;
       .product-ad {
         grid-column: span 2;
@@ -32,7 +32,7 @@
       }
     }
     .pagination {
-        margin-top: 40px;
+      margin-top: 40px;
       .page-link {
         color: #6c757d;
         border: none;
@@ -61,9 +61,6 @@
 
 @media (min-width: 768px) {
   .shop {
-    .filter-wrapper {
-      width: 30%;
-    }
     .product-wrapper {
       width: 70%;
       .product-grid {

@@ -15,9 +15,241 @@
     <section class="shop spacing-xl">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 d-flex">
+                <div class="col-lg-12 d-md-flex">
                     <!-- filter  -->
-                    <div class="filter-wrapper"></div>
+                    <div class="filter-wrapper">
+                        <!-- FAVORITOS DO CLIENTE -->
+                        <div class="accordion mb-4" id="filterFavoritos">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingFavoritos">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFavoritos" aria-expanded="true"
+                                        aria-controls="collapseFavoritos">
+                                        <span class="accordion-title">FAVORITOS DO CLIENTE</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseFavoritos" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingFavoritos" data-bs-parent="#filterFavoritos">
+                                    <div class="accordion-body">
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="maisVendidos" checked><label for="maisVendidos"
+                                                class="form-check-label">Mais vendidos</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="paraJovens"><label for="paraJovens" class="form-check-label">Para
+                                                adolescentes e jovens adultos</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="bestSellersInfantis"><label for="bestSellersInfantis"
+                                                class="form-check-label">Best-sellers infantis</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="nytMaisVendidos"><label for="nytMaisVendidos"
+                                                class="form-check-label">Os livros mais vendidos do NY Times®</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="novosLancamentos"><label for="novosLancamentos"
+                                                class="form-check-label">Novos lançamentos</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="emBreve"><label for="emBreve" class="form-check-label">Em
+                                                breve</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="livrosPorAssunto"><label for="livrosPorAssunto"
+                                                class="form-check-label">Livros por assunto</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- VALORES ESPECIAIS -->
+                        <div class="accordion mb-4" id="filterValores">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingValores">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseValores" aria-expanded="false"
+                                        aria-controls="collapseValores">
+                                        <span class="accordion-title">VALORES ESPECIAIS</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseValores" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingValores" data-bs-parent="#filterValores">
+                                    <div class="accordion-body">
+                                        <!-- Search Bar Section -->
+                                        <div class="search-container">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Pesquisa"
+                                                    aria-label="Search">
+                                                <span class="input-group-text">
+                                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="desconto50" checked><label for="desconto50"
+                                                class="form-check-label">50% de desconto em centenas de livros</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="livrosBolso25"><label for="livrosBolso25"
+                                                class="form-check-label">Livros de bolso até 25% de desconto</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="maisVendidos30"><label for="maisVendidos30"
+                                                class="form-check-label">Mais vendidos 30% de desconto</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="anexoLivro"><label for="anexoLivro" class="form-check-label">Anexo
+                                                de livro</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="colecionaveisBBN"><label for="colecionaveisBBN"
+                                                class="form-check-label">Edições colecionáveis BBN</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- COLEÇÕES ESPECIAIS -->
+                        <div class="accordion mb-4" id="filterColecoes">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingColecoes">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseColecoes" aria-expanded="false"
+                                        aria-controls="collapseColecoes">
+                                        <span class="accordion-title">COLEÇÕES ESPECIAIS</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseColecoes" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingColecoes" data-bs-parent="#filterColecoes">
+                                    <div class="accordion-body">
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="melhores2024" checked><label for="melhores2024"
+                                                class="form-check-label">Melhores livros de 2024</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="escolhasMensais"><label for="escolhasMensais"
+                                                class="form-check-label">As Nossas Escolhas Mensais</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="descubraMes"><label for="descubraMes"
+                                                class="form-check-label">Descubra a Escolha do Mês</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="clubeLivro"><label for="clubeLivro"
+                                                class="form-check-label">Seleções do Clube do Livro</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="favoritosLivreiro"><label for="favoritosLivreiro"
+                                                class="form-check-label">Favoritos do Livreiro</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="exclusivosBBN"><label for="exclusivosBBN"
+                                                class="form-check-label">Exclusivos BBN</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="livrosBolsoLoja" checked><label for="livrosBolsoLoja"
+                                                class="form-check-label">A loja de livros de bolso</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="conjuntosCaixa"><label for="conjuntosCaixa"
+                                                class="form-check-label">Conjuntos em caixa</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="autografados"><label for="autografados"
+                                                class="form-check-label">Livros Autografados</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- TEMAS -->
+                        <div class="accordion mb-4" id="filterTemas">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingTemas">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTemas" aria-expanded="false"
+                                        aria-controls="collapseTemas">
+                                        <span class="accordion-title">TEMAS</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTemas" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingTemas" data-bs-parent="#filterTemas">
+                                    <div class="accordion-body">
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="arteArquitetura" checked><label for="arteArquitetura"
+                                                class="form-check-label">Arte, Arquitetura e Fotografia</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="bibliasCristianismo"><label for="bibliasCristianismo"
+                                                class="form-check-label">Bíblias e Cristianismo</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="biografia"><label for="biografia"
+                                                class="form-check-label">Biografia</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="negocio"><label for="negocio"
+                                                class="form-check-label">Negócio</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="culinaria"><label for="culinaria" class="form-check-label">Livros de
+                                                culinária, comida e vinho</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="ficcao"><label for="ficcao" class="form-check-label">Ficção</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="bandaDesenhada" checked><label for="bandaDesenhada"
+                                                class="form-check-label">Banda Desenhada e Graphic Novels</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="dietaFitness"><label for="dietaFitness"
+                                                class="form-check-label">Dieta, Saúde e Fitness</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="historia"><label for="historia"
+                                                class="form-check-label">História</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="manga"><label for="manga" class="form-check-label">Mangá</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="suspense"><label for="suspense" class="form-check-label">Mistério e
+                                                suspense</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="religiao"><label for="religiao"
+                                                class="form-check-label">Religião</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="romance"><label for="romance"
+                                                class="form-check-label">Romance</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="ficcaoCientifica"><label for="ficcaoCientifica"
+                                                class="form-check-label">Ficção científica e fantasia</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="autoajuda"><label for="autoajuda" class="form-check-label">Autoajuda
+                                                e Relações</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="verTodos"><label for="verTodos" class="form-check-label">Ver todos
+                                                os assuntos</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PREÇOS -->
+                        <div class="accordion mb-4" id="filterPrecos">
+                            <div class="accordion-item border-0">
+                                <h2 class="accordion-header" id="headingPrecos">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsePrecos" aria-expanded="false"
+                                        aria-controls="collapsePrecos">
+                                        <span class="accordion-title">PREÇOS</span>
+                                    </button>
+                                </h2>
+                                <div id="collapsePrecos" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingPrecos" data-bs-parent="#filterPrecos">
+                                    <div class="accordion-body">
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="menos5" checked><label for="menos5" class="form-check-label">Menos
+                                                de $ 5</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="5a10"><label for="5a10" class="form-check-label">$ 5 - $10</label>
+                                        </div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="10a25"><label for="10a25" class="form-check-label">$ 10 -
+                                                $25</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="25a50"><label for="25a50" class="form-check-label">$ 25 -
+                                                $50</label></div>
+                                        <div class="form-check"><input type="checkbox" class="form-check-input"
+                                                id="mais50"><label for="mais50" class="form-check-label">Mais de $
+                                                50</label></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
 
                     <!-- product area  -->
                     <div class="product-wrapper">
@@ -29,13 +261,15 @@
                                 <!-- dropdown  -->
                                 <div class="shop-dropdown">
                                     <form action="" class="d-flex gap-3 justify-content-lg-end">
+
+                                        <!-- Dropdown 1 -->
                                         <div class="select-dropdown">
                                             <button class="btn dropdown-toggle dropdown-btn" type="button"
-                                                id="dropdownID" data-bs-toggle="dropdown" aria-expanded="false">
+                                                id="dropdownCategoria" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <span class="selected-text">Dropdown Here</span>
                                                 <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
                                             </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownID">
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownCategoria">
                                                 <li><span class="dropdown-item">Todos</span></li>
                                                 <li><span class="dropdown-item">Livros</span></li>
                                                 <li><span class="dropdown-item">Ficção</span></li>
@@ -47,13 +281,15 @@
                                                 <li><span class="dropdown-item">Tecnologia</span></li>
                                             </ul>
                                         </div>
+
+                                        <!-- Dropdown 2 -->
                                         <div class="select-dropdown">
                                             <button class="btn dropdown-toggle dropdown-btn" type="button"
-                                                id="dropdownID" data-bs-toggle="dropdown" aria-expanded="false">
+                                                id="dropdownTipo" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <span class="selected-text">Dropdown Here</span>
                                                 <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
                                             </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownID">
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownTipo">
                                                 <li><span class="dropdown-item">Todos</span></li>
                                                 <li><span class="dropdown-item">Livros</span></li>
                                                 <li><span class="dropdown-item">Ficção</span></li>
@@ -65,8 +301,10 @@
                                                 <li><span class="dropdown-item">Tecnologia</span></li>
                                             </ul>
                                         </div>
+
                                     </form>
                                 </div>
+
                             </div>
                             <div class="col-12">
                                 <div class="info-text">
@@ -402,7 +640,8 @@
                                                 </span>
                                             </div>
                                         </div>
-                                    </div><!-- Product  -->
+                                    </div>
+                                    <!-- Product  -->
                                     <div class="product">
                                         <div class="product-thumbnail thumbnail">
                                             <div class="ribon-wrapper">
@@ -438,6 +677,155 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Product  -->
+                                    <div class="product">
+                                        <div class="product-thumbnail thumbnail">
+                                            <div class="ribon-wrapper">
+                                                <div class="ribon"> - 10%</div>
+                                                <div class="favorite active">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="thumbnail-img"><img
+                                                    src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <!-- product details  -->
+                                        <div class="product-details">
+                                            <h4 class="product-title">
+                                                <a href="#">Corrupt</a>
+                                            </h4>
+                                            <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                            <div class="product-price">
+                                                <span class="price-text text-body-2">Livro</span>
+                                                <span class="sale-price text-accent"> 19,71€</span>
+                                                <span class="regular-price">
+                                                    <del>21,90€</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product  -->
+                                    <div class="product">
+                                        <div class="product-thumbnail thumbnail">
+                                            <div class="ribon-wrapper">
+                                                <div class="ribon"> - 10%</div>
+                                                <div class="favorite active">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="thumbnail-img"><img
+                                                    src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <!-- product details  -->
+                                        <div class="product-details">
+                                            <h4 class="product-title">
+                                                <a href="#">Corrupt</a>
+                                            </h4>
+                                            <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                            <div class="product-price">
+                                                <span class="price-text text-body-2">Livro</span>
+                                                <span class="sale-price text-accent"> 19,71€</span>
+                                                <span class="regular-price">
+                                                    <del>21,90€</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product  -->
+                                    <div class="product">
+                                        <div class="product-thumbnail thumbnail">
+                                            <div class="ribon-wrapper">
+                                                <div class="ribon"> - 10%</div>
+                                                <div class="favorite active">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="thumbnail-img"><img
+                                                    src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <!-- product details  -->
+                                        <div class="product-details">
+                                            <h4 class="product-title">
+                                                <a href="#">Corrupt</a>
+                                            </h4>
+                                            <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                            <div class="product-price">
+                                                <span class="price-text text-body-2">Livro</span>
+                                                <span class="sale-price text-accent"> 19,71€</span>
+                                                <span class="regular-price">
+                                                    <del>21,90€</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product  -->
+                                    <div class="product">
+                                        <div class="product-thumbnail thumbnail">
+                                            <div class="ribon-wrapper">
+                                                <div class="ribon"> - 10%</div>
+                                                <div class="favorite active">
+                                                    <?xml version="1.0" encoding="UTF-8"?>
+                                                    <svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="thumbnail-img"><img
+                                                    src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                    alt="">
+                                            </a>
+                                        </div>
+                                        <!-- product details  -->
+                                        <div class="product-details">
+                                            <h4 class="product-title">
+                                                <a href="#">Corrupt</a>
+                                            </h4>
+                                            <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                            <div class="product-price">
+                                                <span class="price-text text-body-2">Livro</span>
+                                                <span class="sale-price text-accent"> 19,71€</span>
+                                                <span class="regular-price">
+                                                    <del>21,90€</del>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                             <div class="col-12">
@@ -524,11 +912,14 @@
     </footer>
 
     <script>
-        document.querySelectorAll('.dropdown-item').forEach(item => {
-            item.addEventListener('click', function (e) {
-                e.preventDefault();
-                const btn = document.querySelector('.dropdown-btn span');
-                btn.textContent = this.textContent;
+        document.querySelectorAll('.select-dropdown').forEach(dropdown => {
+            const selectedText = dropdown.querySelector('.selected-text');
+            const items = dropdown.querySelectorAll('.dropdown-item');
+
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    selectedText.textContent = this.textContent;
+                });
             });
         });
     </script>

@@ -1,0 +1,135 @@
+.filter-wrapper {
+  .accordion-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $secondary-color;
+    margin-bottom: 10px;
+  }
+
+  .form-check-label {
+    font-size: 14px;
+    color: #314a54;
+  }
+
+  .form-check-input {
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    position: relative;
+
+    &:checked {
+      background-color: transparent;
+      border-color: #ced4da;
+
+      &::before {
+        content: "✓";
+        position: absolute;
+        top: -14px;
+        left: 0;
+        font-size: 26px;
+        color: #dc3545;
+        font-weight: 400;
+      }
+
+      &::after {
+        background-image: none;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .search-container {
+    margin-bottom: 10px;
+    padding: 0;
+    .input-group {
+      box-shadow: none;
+      position: relative;
+      border: 1px solid #ced4da;
+      border-radius: 0;
+
+      &:hover {
+        box-shadow: none;
+      }
+
+      .form-control {
+        border: none;
+        padding: 8px 10px;
+        font-size: 14px;
+        color: #314a54;
+        width: 100%;
+
+        &::placeholder {
+          color: #6c757d;
+        }
+
+        &:focus {
+          box-shadow: none;
+          transition: none;
+        }
+      }
+
+      .input-group-text {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        border: none;
+        padding: 8px 10px;
+        cursor: pointer;
+        background: none;
+        i {
+          font-size: 16px;
+          color: #495057;
+        }
+      }
+    }
+  }
+
+  .accordion-button {
+    padding: 0;
+    background-color: #fff;
+    font-size: 14px;
+    color: #314a54;
+    &:after {
+      transform: rotate(0deg) !important;
+    }
+    &:not(.collapsed) {
+      color: #314a54;
+      background-color: #fff;
+      box-shadow: none;
+    }
+
+    &:focus,
+    &:hover {
+      box-shadow: none;
+      background-color: #fff !important;
+      color: #314a54 !important;
+    }
+  }
+
+  .accordion-body {
+    padding: 0;
+  }
+
+  a.text-primary {
+    color: #314a54 !important;
+
+    &:hover {
+      color: #314a54 !important;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .shop {
+    .filter-wrapper {
+      width: 30%;
+      border-right: 1px solid $border-color;
+      padding-right: 30px;
+      margin-right: 30px;
+    }
+  }
+}
