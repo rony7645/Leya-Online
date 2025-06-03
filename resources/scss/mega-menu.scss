@@ -1,10 +1,10 @@
 .mega-menu {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   background: #fff;
   position: absolute;
-  width: 1180px;
+  width: 800px;
   padding: 20px;
   border: 1px solid $border-color;
   margin-top: 8px;
@@ -31,5 +31,11 @@
         width: 170px;
       }
     }
+  }
+}
+@media (min-width: 992px) {
+  .mega-menu {
+    width: 1180px;
+    grid-template-columns: repeat(5, 1fr);
   }
 }
