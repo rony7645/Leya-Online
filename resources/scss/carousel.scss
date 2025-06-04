@@ -24,15 +24,11 @@
   display: none;
 }
 
-.products-swiper,
-  .categories-swiper,
-  .slider-wrapper {
-    margin-bottom: 50px;
-  }
+.slider-wrapper {
+  margin-bottom: 50px;
+}
 // product carousel
 @media (min-width: 768px) {
-  .products-swiper,
-  .categories-swiper,
   .slider-wrapper {
     overflow: hidden;
     margin: 0px 30px;
@@ -42,7 +38,7 @@
     display: block;
   }
 }
-// pagination bullets 
+// pagination bullets
 .swiper-pagination {
   .swiper-pagination-bullet {
     width: 8px;
