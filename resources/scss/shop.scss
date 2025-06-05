@@ -22,10 +22,9 @@
         grid-column: span 2;
       }
       .product-thumbnail {
-        height: 280px;
         .thumbnail-img {
           img {
-            height: 280px;
+            // height: 260px;
             object-fit: cover;
           }
         }
@@ -65,10 +64,9 @@
       width: 70%;
       .product-grid {
         .product-thumbnail {
-          height: 303px;
           .thumbnail-img {
             img {
-              height: 303px;
+              // height: 303px;
             }
           }
         }
@@ -81,12 +79,11 @@
   .shop {
     .product-wrapper {
       .product-grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
         .product-thumbnail {
-          height: 245px;
           .thumbnail-img {
             img {
-              height: 245px;
+              // height: 245px;
             }
           }
         }

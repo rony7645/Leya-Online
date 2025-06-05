@@ -1,50 +1,63 @@
-// Footer
 footer {
   background: $secondary-color;
+
   .wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     column-gap: 5px;
-    row-gap: 30px;
+
     .footer-column {
       .footer-logo {
         width: 170px;
         margin-bottom: 10px;
+
         img {
           width: 100%;
         }
       }
+
       .social-icon {
         display: flex;
         flex-direction: row;
         gap: 10px;
+
         a {
           font-size: 22px;
           color: $light;
         }
       }
+
       .footer-heading {
         font-size: 18px;
         color: #a1bccc;
-        margin-bottom: 25px;
+        font-weight: 600;
       }
+
       .menu-list {
         gap: 10px;
+
         a {
           font-size: 14px;
           font-weight: 400;
           color: $light;
-          border-left: 2px solid $accent-color;
-          padding-left: 10px;
-          transition: all .4s;
+          border-left: none;
+          padding-left: 0;
+          transition: all 0.4s;
+
           &:hover {
-            color:#cccccc;
+            color: #cccccc;
             text-decoration: underline;
+          }
+
+          &:focus {
+            outline: 2px solid $accent-color;
+            outline-offset: 2px;
           }
         }
       }
     }
   }
+
   .copyright {
     p {
       font-size: 12px;
@@ -54,19 +67,85 @@ footer {
       line-height: 18px;
     }
   }
-}
-@media (min-width: 768px) {
-  footer {
-    .wrapper {
-      grid-template-columns: repeat(3, 1fr);
+
+  // Accordion style reset part
+  .accordion,
+  .accordion-item,
+  .accordion-collapse {
+    border: none;
+    background: none;
+  }
+
+  .accordion-header {
+    margin: 0;
+  }
+
+  .accordion-button {
+    background: none !important;
+    color: inherit;
+    padding: 0;
+    border: none !important;
+    box-shadow: none;
+    font-weight: 600;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+      border-color: transparent;
+    }
+
+    &::after {
+      display: block; // Mobile default chevron
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent !important;
+      box-shadow: none;
     }
   }
-}
 
-@media (min-width: 992px) {
-  footer {
+  .accordion-body {
+    padding: 0;
+  }
+
+  // Mobile Style
+  @media (max-width: 767.98px) {
+    .accordion-item {
+      border-bottom: 1px solid #a1bccc4f !important;
+      border-radius: 0 !important;
+      padding: 15px 0;
+    }
+    .footer-column:last-child .accordion-item {
+      border-bottom: none !important;
+    }
+  }
+
+  // Desktop Style
+  @media (min-width: 768px) {
     .wrapper {
       grid-template-columns: repeat(5, 1fr);
+
+      .menu-list {
+        a {
+          border-left: 2px solid $accent-color !important;
+          padding-left: 10px !important;
+          font-size: 14px; // মোবাইলের মতোই রাখা হয়েছে
+        }
+      }
+    }
+
+    .accordion-button {
+      pointer-events: none;
+
+      &::after {
+        display: none; // Hide chevron on desktop
+      }
+    }
+
+    .accordion-collapse {
+      display: block !important;
+      visibility: visible;
+      height: auto !important;
     }
   }
 }

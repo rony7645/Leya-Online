@@ -52,7 +52,8 @@ const configMap = {
     breakpoints: {
       0: { slidesPerView: 2.5 },
       768: { slidesPerView: 3.5 },
-      992: { slidesPerView: 6 },
+      992: { slidesPerView: 5 },
+      1200: { slidesPerView: 6 },
     },
   },
   "banner-swiper": {
