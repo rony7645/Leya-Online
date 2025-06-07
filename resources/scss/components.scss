@@ -22,7 +22,7 @@
 }
 @media (min-width: 768px) {
   .spacing-xl {
-    padding: 50px 0;
+    padding: 40px 0;
   }
   .w-235 {
     width: 235px !important;
@@ -34,7 +34,7 @@
 
 @media (min-width: 992px) {
   .spacing-xl {
-    padding: 80px 0;
+    padding: 60px 0;
   }
   .w-lg-235 {
     width: 235px !important;
@@ -58,9 +58,9 @@
   background: #BDCCD4;
 }
 .secondary-heading {
+  margin-bottom: 15px;
   h2 {
     font-family: $font-secondary;
-    font-style: italic;
     font-size: 30px;
   }
 }
