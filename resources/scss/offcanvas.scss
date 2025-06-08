@@ -45,7 +45,6 @@
       transition: height 350ms ease;
       border-radius: 0 !important;
       border: none !important;
-
       margin-left: 30px;
       a {
         padding-left: 1.5rem;
@@ -59,7 +58,11 @@
         }
       }
     }
-
+    .nav-link {
+      font-family: $font-primary;
+      font-weight: 500;
+      font-size: 16px;
+    }
     .canvas-dropdown-toggle {
       cursor: pointer;
       user-select: none;
@@ -108,7 +111,7 @@
     cursor: pointer;
     font-size: 20px;
     padding: 9px 15px;
-    border-bottom: 1px solid #00000011;
+    border-top: 1px solid #00000011;
     i {
       font-size: 16px;
       color: $secondary-color;
@@ -122,6 +125,11 @@
       .icon svg {
         fill: $light !important;
       }
+    }
+  }
+  &:last-child {
+    .nav-link {
+      border-bottom: 1px solid #00000011;
     }
   }
 }
