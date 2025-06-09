@@ -13,6 +13,7 @@
   transform: translateY(10px);
   position: absolute;
   width: 100%;
+  max-width: 1180px;
   transition: opacity 0.3s ease, transform 0.3s ease;
   .menu-box-wrapper {
     .menu-box {

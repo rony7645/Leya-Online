@@ -1,4 +1,19 @@
 .filter-wrapper {
+  #filterAccordion {
+    .parent-filter {
+      border: none !important;
+      .parent-filter-button {
+        border: 1px solid $border-color !important;
+      }
+      .parent-filter-button.collapsed {
+        border-bottom: 1px solid $border-color !important;
+      }
+      .parent-filter-body {
+        margin-top: 8px;
+        padding: 0 !important;
+      }
+    }
+  }
   .accordion-title {
     font-size: 14px;
     font-weight: 600;
@@ -94,7 +109,8 @@
     font-size: 14px;
     color: #314a54;
     &:after {
-      transform: rotate(0deg) !important;
+      background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2017.07'%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='10.83'%20y='7.1'%20width='21.27'%20height='2.87'%20transform='translate(.25%2017.68)%20rotate(-45)'/%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='-2.1'%20y='7.1'%20width='21.27'%20height='2.87'%20transform='translate(8.54%2020.61)%20rotate(-135)'/%3E%3C/svg%3E");
+      background-position: center 5px;
     }
     &:not(.collapsed) {
       color: #314a54;
@@ -130,6 +146,39 @@
       border-right: 1px solid $border-color;
       padding-right: 30px;
       margin-right: 30px;
+      .accordion-button {
+        &:after {
+          transform: rotate(0deg) !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .filter-wrapper {
+    .accordion-item {
+      border: 1px solid $border-color !important;
+      border-radius: 0px !important;
+      .accordion-button {
+        border-bottom: 1px solid $border-color !important;
+        padding: 12px !important;
+        background: $lightBlue-color !important;
+        border-radius: 0 !important;
+        &:hover {
+          background: $lightBlue-color !important;
+        }
+      }
+      .accordion-title {
+        margin-bottom: 0 !important;
+      }
+      .accordion-body {
+        padding: 15px !important;
+      }
+    }
+    .accordion-button.collapsed {
+      border-bottom: 1px solid transparent !important;
+      background: none !important;
     }
   }
 }
