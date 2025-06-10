@@ -180,5 +180,21 @@
       border-bottom: 1px solid transparent !important;
       background: none !important;
     }
+    .filter-actions {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+      .btn-clear {
+        border: 1px solid $secondary-color;
+        border-radius: 0;
+        background: $secondary-color;
+        color: $light;
+        padding: 10.6px 30px;
+        font-size: 15px;
+        font-weight: 600;
+        text-transform: uppercase;
+      }
+    }
   }
 }

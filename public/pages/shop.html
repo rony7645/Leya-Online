@@ -18,7 +18,7 @@
                 <div class="col-lg-12 d-md-flex">
                     <!-- filter  -->
                     <div class="filter-wrapper ">
-                        <div class="accordion" id="filterAccordion">
+                        <div class="accordion position-relative" id="filterAccordion">
                             <!-- Parent Filter Accordion -->
                             <div class="accordion-item parent-filter">
                                 <h2 class="accordion-header d-block d-md-none" id="headingMain">
@@ -34,14 +34,36 @@
                                     <div class="accordion-body parent-filter-body">
                                         <!-- filter action button  -->
                                         <div class="filter-actions d-block d-md-none">
-                                            <button class="btn btn-outline-secondary btn-sm btn-clear"
-                                                id="clearFilters">LIMPAR</button>
+                                            <button class="btn-clear" id="clearFilters">aplicar</button>
                                         </div>
 
                                         <!-- filtered items show here  -->
-                                        <div class="filter-tags d-block d-md-none" id="filterTags">
+                                        <div class="filter-tags d-block d-md-none d-flex flex-wrap gap-2 mb-3 mt-3"
+                                            id="filterTags">
                                             <!-- Selected tags will appear here -->
-                                            <span class="filter-tag">remove</span>
+                                            <div class="filter-tag">0 - 2 Years <span class="close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <rect x="-2.85" y="8.71" width="25.71" height="2.58"
+                                                            transform="translate(10 24.14) rotate(-135)"
+                                                            fill="currentColor" />
+                                                        <rect x="-2.85" y="8.71" width="25.71" height="2.58"
+                                                            transform="translate(-4.14 10) rotate(-45)"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                            <div class="filter-tag">6 - 8 Years <span class="close">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                                        <rect x="-2.85" y="8.71" width="25.71" height="2.58"
+                                                            transform="translate(10 24.14) rotate(-135)"
+                                                            fill="currentColor" />
+                                                        <rect x="-2.85" y="8.71" width="25.71" height="2.58"
+                                                            transform="translate(-4.14 10) rotate(-45)"
+                                                            fill="currentColor" />
+                                                    </svg>
+                                                </span>
+                                            </div>
+
                                         </div>
 
                                         <!-- filter options   -->

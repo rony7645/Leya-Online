@@ -101,4 +101,21 @@
   }
 }
 
+.filter-tag {
+  background: #a1bccc;
+  border-radius: 100px;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 15px;
+  .close {
+    cursor: pointer;
+    svg {
+      fill: #fff;
+      stroke-width: 0px;
+      width: 14px;
+      margin-left: 10px;
+    }
+  }
+}
+
 
