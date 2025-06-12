@@ -7,7 +7,7 @@
       p {
         font-size: 14px;
         text-transform: uppercase;
-        color: #000;
+        color: $secondary-color;
         text-align: center;
         margin: 0;
         font-weight: 500;
@@ -78,15 +78,11 @@
 @media (min-width: 992px) {
   .shop {
     .product-wrapper {
+      .shop-result-text{
+      margin-top: 5px;
+    }
       .product-grid {
         grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-        .product-thumbnail {
-          .thumbnail-img {
-            img {
-              // height: 245px;
-            }
-          }
-        }
       }
     }
   }

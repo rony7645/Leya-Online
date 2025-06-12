@@ -44,12 +44,12 @@
 .ribon-2 {
   position: absolute;
   bottom:13px;
-  background: $primary-color;
+  background: #318558;
   &::before {
-    border-color: #006837 #006837 transparent transparent !important;
+    border-color: #00542d #00542d transparent transparent !important;
   }
   &::after {
-    border-color: $primary-color transparent $primary-color $primary-color;
+    border-color: #318558 transparent #318558 #318558;
   }
 }
 
