@@ -6,7 +6,7 @@
   top:8px;
 }
 .ribon {
-  background: $accent-color;
+  background: $ribon-bg-red;
   font-size: 12px;
   font-weight: 500;
   text-transform: uppercase;
@@ -36,7 +36,7 @@
     height: inherit;
     border-width: 10px;
     border-style: solid;
-    border-color: $accent-color transparent $accent-color $accent-color;
+    border-color: $ribon-bg-red transparent $ribon-bg-red $ribon-bg-red;
     border-right: 5px solid transparent;
   }
 }
@@ -44,12 +44,12 @@
 .ribon-2 {
   position: absolute;
   bottom:13px;
-  background: #318558;
+  background: $ribon-bg-green;
   &::before {
     border-color: #00542d #00542d transparent transparent !important;
   }
   &::after {
-    border-color: #318558 transparent #318558 #318558;
+    border-color: $ribon-bg-green transparent $ribon-bg-green $ribon-bg-green;
   }
 }
 
