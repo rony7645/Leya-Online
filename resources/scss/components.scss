@@ -1,4 +1,3 @@
-
 .text-body {
   color: $body-color;
 }
@@ -12,7 +11,7 @@
 }
 
 .secondary-color {
-  color:$secondary-color;
+  color: $secondary-color;
 }
 
 .bg-img {
@@ -54,12 +53,11 @@
   }
 }
 
-
 .bg-light-blue {
   background: $lightBlue-color;
 }
 .bg-light-blue-500 {
-  background: #BDCCD4;
+  background: #bdccd4;
 }
 .secondary-heading {
   margin-bottom: 15px;
@@ -73,11 +71,15 @@
   w-lg-72 {
     width: 72%;
   }
-  w-lg-28{
+  w-lg-28 {
     width: 28%;
   }
 }
 .gap-30 {
-  gap:30px;
+  gap: 30px;
 }
-
+.product-price {
+  .regular-price {
+    color: #000 !important;
+  }
+}
