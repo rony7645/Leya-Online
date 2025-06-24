@@ -1,0 +1,22 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  margin-top: 20px;
+  .product-ad {
+    grid-column: span 2;
+  }
+  .product-thumbnail {
+    .thumbnail-img {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+}
