@@ -99,7 +99,15 @@ const configMap = {
       992: { slidesPerView: 2 },
     },
   },
-  
+  variants: {
+    spaceBetween: 10,
+    autoplay: false,
+    breakpoints: {
+      0: { slidesPerView: 2 },
+      768: { slidesPerView: 2 },
+      992: { slidesPerView: 3 },
+    },
+  },
 };
 
 // Initialize Swiper for all sliders
@@ -132,3 +140,5 @@ document.querySelectorAll(".slider-wrapper").forEach((sliderWrapper) => {
     },
   });
 });
+
+

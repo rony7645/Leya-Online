@@ -1,0 +1,114 @@
+:root {
+  /* Colors */
+  --primary-color: #41a25d;
+  --secondary-color: #3c4b54;
+  --body-color: #4e626e;
+  --body-color-2: #7694a6;
+  --heading: #4e626e;
+  --accent-color: #e20614;
+  --lightBlue-color: #e9f2f5;
+  --light: #fff;
+  --border-color: #ced4da;
+  --ribon-bg-red: #be1521;
+  --ribon-bg-green: #078649;
+
+  /* Typography fonts */
+  --font-primary: "Inter", sans-serif;
+  --font-secondary: "Times", serif;
+
+  /* Container max widths */
+  --container-max-width-sm: 540px;
+  --container-max-width-md: 720px;
+  --container-max-width-lg: 960px;
+  --container-max-width-xl: 1200px;
+  --container-max-width-xxl: 1200px;
+}
+
+/* HERO-WRAPPER */
+
+.hero-wrapper .container {
+  position: relative;
+}
+
+.hero-wrapper .vertical-slider {
+  width: 80px;
+}
+
+// verticale slider arrow
+.hero-wrapper .vertical-slider .arrow-down,
+.hero-wrapper .vertical-slider .arrow-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: $body-color-2;
+}
+
+.main-img-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+// slider video
+.main-img-wrapper video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ced4da;
+  opacity: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: $light;
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #ced4da;
+  border-radius: 50%;
+  padding: 12px;
+  pointer-events: none;
+  z-index: 2;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.video-wrapper:hover .play-icon {
+  opacity: 1;
+  transition: 0.2s ease;
+}
+
+.play-icon {
+  opacity: 0.8;
+  transition: 0.2s ease;
+}
+
+.main-img-wrapper .fade-out {
+  opacity: 0;
+  transform: scale(1.02);
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .hero-wrapper .vertical-slider {
+    max-width: 300px;
+    height: 460px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+

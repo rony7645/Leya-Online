@@ -118,4 +118,273 @@
   }
 }
 
+.product-popup {
+  .product-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+  }
+  .product-details-wrapper {
+    .title {
+      font-size: 19px;
+    }
+    .category {
+      font-size: 16px;
+      font-weight: 400;
+      color: #7694a6;
+    }
+    .description {
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+}
+.popup-share {
+  svg {
+    width: 20px;
+    fill: #3c4b54;
+    stroke-width: 0px;
+  }
+}
 
+.priceSlider {
+  .active-card {
+    background: #a1bccc !important;
+    &:hover {
+      border-color: #a1bccc !important;
+    }
+    span {
+      color: #fff !important;
+    }
+  }
+  .btn-card {
+    border: 1px solid #a1bccc;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid #3c4b54;
+    }
+    span {
+      display: block;
+      font-size: 14px;
+      color: #3c4b54;
+    }
+  }
+}
+
+.action-wrapper {
+  .info-text {
+    font-size: 14px;
+  }
+  .btn-outline a {
+    background: none !important;
+    color: #3c4b54;
+    border: 1px solid #3c4b54;
+    font-weight: 400;
+    transition: background 0.5s ease;
+    &:hover {
+      background: #3c4b54 !important;
+      color: #fff;
+    }
+  }
+}
+
+.border-line {
+  border-bottom: 1px solid #98becf;
+}
+.img-up-20 {
+  margin-top: -115px;
+}
+@media (max-width: 767.98px) {
+  .synopsis-border {
+    border-bottom: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .img-up-20 {
+    margin-top: 0px;
+  }
+}
+
+.mobile-border {
+  @media (max-width: 991px) {
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+//
+
+.leya-btn a span svg path {
+  fill: $light;
+}
+
+.product-popup {
+  width: 750px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .product-popup {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.speech-bubble {
+  border: 0.61px solid #3c4b54;
+  width: 190px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+// ====================
+// Variables
+// ====================
+:root {
+  --primary-color: #41a25d;
+  --secondary-color: #3c4b54;
+  --body-color-2: #7694a6;
+  --heading: #4e626e;
+  --accent-color: #e20614;
+  --light: #fff;
+}
+
+// Pricing Slider
+.pricing-slider {
+  width: 440px;
+  padding: 0 30px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .arrow-left,
+  .arrow-right {
+    font-size: 20px;
+    color: var(--body-color-2);
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .arrow-left {
+    left: 0;
+  }
+  .arrow-right {
+    right: 0;
+  }
+
+  .swiper-slide {
+    height: auto !important;
+  }
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+// Toggle Book Details
+.toggle-book-details {
+  > div {
+    display: none;
+  }
+
+  > .show {
+    display: block;
+  }
+  .custom-svg {
+    svg {
+      width: 30px;
+      .cls-1 {
+        fill: #c1272d;
+      }
+
+      .cls-1,
+      .cls-2,
+      .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ee3124;
+      }
+    }
+  }
+}
+
+// Radio Checker
+.radio-checker {
+  padding-left: 20px;
+  a {
+    font-weight: 600;
+    color: var(--heading);
+  }
+}
+
+.custom-radio {
+  display: flex;
+  align-items: center;
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  label {
+    position: relative;
+    cursor: pointer;
+    font-size: 14px;
+    color: var(--heading);
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -25px;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      border: 2px solid var(--body-color-2);
+      border-radius: 50%;
+      background: #fff;
+      transition: 0.3s ease;
+    }
+  }
+
+  input[type="radio"]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: -21px;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .pricing-slider {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-slider {
+    .arrow-left,
+    .arrow-right {
+      display: none;
+    }
+  }
+  .btn-full {
+    a {
+      width: 100%;
+    }
+  }
+}

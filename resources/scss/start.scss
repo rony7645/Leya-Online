@@ -1,5 +1,6 @@
 @import "./variables";
 @import "bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
 @import "@fortawesome/fontawesome-free/css/fontawesome.css";
 @import "@fortawesome/fontawesome-free/css/brands.css";
 @import "@fortawesome/fontawesome-free/css/solid.css";
@@ -39,4 +40,6 @@
 @import "../scss/shop.scss";
 @import "../scss/shop-filter.scss";
 @import "../scss/product-grid.scss";
+@import "../scss/product-gallery.scss";
+@import "../scss/single-product.scss";
 @import "../scss/footer.scss";
