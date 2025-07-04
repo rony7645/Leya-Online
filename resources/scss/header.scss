@@ -87,6 +87,9 @@ header {
     .icon {
       width: 29px;
       cursor: pointer;
+      svg {
+        fill: $secondary-color;
+      }
     }
   }
 
