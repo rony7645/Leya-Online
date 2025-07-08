@@ -239,8 +239,33 @@
   width: 190px;
   padding: 5px 15px;
   position: relative;
+  margin-bottom: 23px;
 }
-
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: -18px;
+  left: 30px;
+  border-top: 14px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #000;
+  border-right: 0;
+  transform: rotate(-45deg);
+}
+.speech-bubble::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  bottom: -16px;
+  left: 29px;
+  border-top: 14px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #fff;
+  border-right: 0;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
 // ====================
 // Variables
 // ====================
