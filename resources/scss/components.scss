@@ -7,11 +7,11 @@
 }
 
 .text-accent {
-  color: $accent-color;
+  color: $accent-color !important;
 }
 
 .secondary-color {
-  color: $secondary-color;
+  color: $secondary-color !important;
 }
 
 .bg-img {
@@ -84,5 +84,62 @@
 .product-price {
   .regular-price {
     color: #000 !important;
+  }
+}
+
+// cart page & shop page side bar
+.cart-summery {
+  border: 1px solid #cfe0eb;
+  padding: 20px;
+  .name,
+  .price {
+    font-size: 14px;
+    color: #3c4b54;
+  }
+  .price {
+    color: #000;
+  }
+}
+.leya-btn a {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  background-color: #8f9ea8;
+  transition: background 0.5s ease;
+  &:hover {
+    background-color: #8595a0;
+  }
+}
+.title {
+  font-size: 18px;
+  color: #3c4b54;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.qupon-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+  input {
+    border: 1px solid #d7e8f3;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 0px;
+  }
+  input[type="submit"] {
+    width: 40%;
+    background: #3c4b54;
+    color: #fff;
+    border: 1px solid #3c4b54;
+  }
+}
+.subtitle-box {
+  background: #e9f2f5;
+  padding: 15px;
+  h6 {
+    color: #3c4b54;
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 500;
   }
 }
