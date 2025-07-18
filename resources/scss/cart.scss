@@ -1,4 +1,16 @@
 .cart {
+  .warning {
+    border: 1px solid $accent-color;
+    padding: 8px;
+    p {
+      margin-bottom: 0px;
+      text-align: center;
+      color: $accent-color;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 21px;
+    }
+  }
   .cart-product-wrapper {
     .cart-product,
     .offer-box {
@@ -94,6 +106,9 @@
       background: #dfe6eb;
     }
   }
+  .product-check-box {
+    margin-top: 120px;
+  }
 }
 
 // Responsive for tab
@@ -123,8 +138,4 @@
   .offer-box {
     padding: 0 !important;
   }
-}
-
-.product-check-box{
-  margin-top: 120px;
 }

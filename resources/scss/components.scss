@@ -100,21 +100,21 @@
     color: #000;
   }
 }
-.leya-btn a {
+.leya-btn-100 a {
   width: 100%;
   text-transform: uppercase;
   font-weight: 500;
-  background-color: #8f9ea8;
+  background-color: #8f9ea8 !important;
   transition: background 0.5s ease;
   &:hover {
     background-color: #8595a0;
   }
 }
 .title {
-  font-size: 18px;
+  font-size: 17px;
   color: #3c4b54;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 .qupon-wrapper {
   display: flex;
@@ -141,5 +141,32 @@
     font-size: 16px;
     margin-bottom: 0;
     font-weight: 500;
+  }
+}
+
+.custom-check-input {
+  appearance: none;
+  width: 1em;
+  height: 1em;
+  border: 1px solid #ced4da;
+  border-radius: 0;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 5px;
+
+  &:checked::before {
+    content: "✓";
+    position: absolute;
+    top: -14px;
+    left: 0;
+    font-size: 26px;
+    color: #dc3545;
+    font-weight: 400;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
   }
 }

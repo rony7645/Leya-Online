@@ -17,13 +17,27 @@
     <section class="cart spacing-xl">
         <div class="container">
             <div class="row g-4 gx-lg-5">
-                <div class="col-md-7 col-lg-9">
+                <div class="col-12">
+                    <div class="warning mb-2">
+                        <p>Os artigos de Subscrição não podem ser encomendados em simultâneo com outros artigos.<br> Por
+                            favor, encomende as suas Subscrições separadamente dos restantes artigos.</p>
+                    </div>
+                </div>
+                <div class="col-12">
                     <!-- Main title  -->
                     <h5 class="title">carrinho de compras</h5>
-                    
-                    <div class="d-flex w-100 gap-3 align-items-start">
-                        <input type="checkbox" class="product-check-box" checked>
-                        <div class="cart-product-wrapper">
+                </div>
+                <div class="col-md-7 col-lg-9">
+                    <!-- all selector checkbox  -->
+                    <div class="cart-product-check d-flex gap-3">
+                        <input type="checkbox" class="all-selector custom-check-input" id="maisVendidos" checked>
+                        <label for="maisVendidos" class="">Selecionar todos os itens</label>
+                    </div>
+
+                    <!-- product check box  -->
+                    <div class="d-flex w-100 gap-3 align-items-start mt-4">
+                        <input type="checkbox" class="product-check-box custom-check-input" checked>
+                        <div class="cart-product-wrapper w-100">
                             <div class="subtitle-box mb-2">
                                 <h6>Artigos Físicos</h6>
                             </div>
@@ -110,8 +124,10 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- product check box  -->
                     <div class="d-flex w-100 gap-3">
-                        <input type="checkbox" class="product-check-box" id="maisVendidos" checked>
+                        <input type="checkbox" class="product-check-box custom-check-input" id="maisVendidos" checked>
                         <div class="cart-product-wrapper mt-4 mt-lg-5 w-100">
                             <div class="subtitle-box mb-2">
                                 <h6>Artigos Físicos</h6>
@@ -161,116 +177,17 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="cart-product-wrapper mt-4 mt-lg-5">
-                        <div class="subtitle-box mb-2">
-                            <h6>Artigos Físicos</h6>
-                        </div>
-                        <!-- product box  -->
-                        <div class="cart-product">
-                            <!-- product image  -->
-                            <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
-
-                            <!-- product details  -->
-                            <div class="d-lg-flex justify-content-between align-items-md-center w-100">
-
-                                <div class="d-flex gap-3 align-items-center">
-                                    <div class="cart-product-details">
-                                        <h4 class="title">Despedidas Impossíveis</h4>
-                                        <h5 class="cart-product-cat">HAN KANG</h5>
-                                        <h6 class="cart-product-author">Livro</h6>
-                                    </div>
-                                </div>
-                                <div
-                                    class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2 gap-lg-5">
-
-                                    <!-- product pricing  -->
-                                    <div class="product-price">
-                                        <span class="sale-price">19,71€</span>
-                                        <span class="regular-price"><del>21,90€</del></span>
-                                    </div>
-
-                                    <!-- product quantitiy  -->
-                                    <div class="product-qty">
-                                        <button class="quantity-button">-</button>
-                                        <input type="text" class="quantity-input" value="2" readonly>
-                                        <button class="quantity-button">+</button>
-                                    </div>
-
-                                    <!-- discount price  -->
-                                    <div class="discount-price d-flex flex-column align-items-lg-center">
-                                        <span class="price">39,42€</span>
-                                        <span class="discount-text">X% Desconto</span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="trash-product"><i class="bi bi-trash"></i></div>
-                        </div>
-                    </div>
-
-                    <div class="cart-product-wrapper mt-4 mt-lg-5">
-                        <div class="subtitle-box mb-2">
-                            <h6>Artigos Físicos</h6>
-                        </div>
-                        <!-- product box  -->
-                        <div class="cart-product">
-                            <!-- product image  -->
-                            <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
-
-                            <!-- product details  -->
-                            <div class="d-lg-flex justify-content-between align-items-md-center w-100">
-
-                                <div class="d-flex gap-3 align-items-center">
-                                    <div class="cart-product-details">
-                                        <h4 class="title">Despedidas Impossíveis</h4>
-                                        <h5 class="cart-product-cat">HAN KANG</h5>
-                                        <h6 class="cart-product-author">Livro</h6>
-                                    </div>
-                                </div>
-                                <div
-                                    class="d-flex flex-column flex-lg-row justify-content-between align-items-lg-center gap-2 gap-lg-5">
-
-                                    <!-- product pricing  -->
-                                    <div class="product-price">
-                                        <span class="sale-price">19,71€</span>
-                                        <span class="regular-price"><del>21,90€</del></span>
-                                    </div>
-
-                                    <!-- product quantitiy  -->
-                                    <div class="product-qty">
-                                        <button class="quantity-button">-</button>
-                                        <input type="text" class="quantity-input" value="2" readonly>
-                                        <button class="quantity-button">+</button>
-                                    </div>
-
-                                    <!-- discount price  -->
-                                    <div class="discount-price d-flex flex-column align-items-lg-center">
-                                        <span class="price">39,42€</span>
-                                        <span class="discount-text">X% Desconto</span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="trash-product"><i class="bi bi-trash"></i></div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="col-md-5 col-lg-3">
-                    <h5 class="title">vale de desconto</h5>
 
-                    <div class="qupon-wrapper">
+                <!-- Right side here  -->
+                <div class="col-md-5 col-lg-3">
+
+                    <h5 class="title mt-3">vale de desconto</h5>
+
+                    <!-- Search box  -->
+                    <div class="qupon-wrapper mt-3">
                         <input type="text">
                         <input type="submit" value="Aplicar">
-                    </div>
-
-                    <div class="search-box">
-                        <form action="#">
-
-                        </form>
                     </div>
 
                     <!-- summery box  -->
@@ -298,7 +215,7 @@
                         </div>
                     </div>
 
-                    <div class="leya-btn mt-3"><a href="#">
+                    <div class="leya-btn leya-btn-100 btn-gray mt-3"><a href="#">
                             <span class="btn-icon">
                                 <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 18.77 18.31">

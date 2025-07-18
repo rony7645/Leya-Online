@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const accordionPanels = document.querySelectorAll(".accordion-collapse");
+  const accordionPanels = document.querySelectorAll(".shop-filter-collapse");
 
   function isMobile() {
     return window.innerWidth <= 767;

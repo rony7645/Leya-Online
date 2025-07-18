@@ -413,3 +413,99 @@
     }
   }
 }
+
+// Thank You Page CSS
+
+.thank-you-wrapper {
+  .main-wrapper {
+    .icon {
+      display: flex;
+      background: #6aa161;
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      font-size: 25px;
+    }
+    .details {
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+      h5 {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      p {
+        color: $secondary-color;
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .leya-btn a {
+        background: $secondary-color;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// Location Popup CSS
+
+.location-card {
+  .card-heading h5 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  .card-body {
+    .store-location,
+    .opening-hour {
+      h6 {
+        font-size: 16px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        color: #3c4b54;
+      }
+      .opening-table {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        margin-top: 15px;
+        .table-row {
+          display: flex;
+          justify-content: space-between;
+          span.day,
+          span.hour {
+            font-size: 16px;
+            color: #3c4b54;
+          }
+          span.day {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}
+#locationPopup {
+  .modal-header{
+    border-bottom: none !important;
+  }
+  .modal-content{
+    border-radius: 0;
+    border:none;
+  }
+  .modal-body{
+    padding:30px;
+  }
+  .btn-close{
+    position: absolute;
+    top:15px;
+    right:15px;
+  }
+}

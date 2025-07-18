@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leya Online</title>
+
+</head>
+
+<body>
+    <!-- import header  -->
+    <div id="header"></div>
+    <script src="../layout/header.js"></script>
+
+    <!-- main content  -->
+    <section class="checkout spacing-xl">
+        <div class="container">
+            <div class="row g-4 gx-lg-5">
+                <!-- Main title  -->
+                <div class="col-12">
+
+                </div>
+                <div class="col-md-7 col-lg-9">
+                    <!-- Item Modada  -->
+                    <div class="checkout-items-card">
+                        <h5 class="title mb-3">Modada De Enterga</h5>
+                        <div class="accordion accordion-default-none w-100" id="accordionExample">
+                            <!-- Item  -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="one" name="delivery">
+                                        <button class="accordion-button radio-label collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            Entrega ao Domicílio
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item  -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="one" name="delivery">
+                                        <button class="accordion-button radio-label collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            Entrega ao Domicílio
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item opções de entrega  -->
+                    <div class="checkout-items-card">
+                        <h5 class="title mb-3">opções de entrega</h5>
+                        <h6 class="text-uppercase">Artigos Físicos</h6>
+                        <div class="selector-items d-flex flex-column gap-1 my-4">
+                            <!-- item  -->
+                            <div class="selector-item radio-wrapper">
+                                <input type="radio" id="one" name="one">
+                                <div class="select-box d-flex justify-content-between w-100 radio-label">
+                                    <h6>
+                                        <strong>Ponto de Recolha: </strong>
+                                        Entrega prevista até:
+                                        <span class="fw-bold">2.ª feira, 21 de abril</span>
+                                    </h6>
+                                    <h6 class="fw-bold text-accent">Gratuito</h6>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="selector-item radio-wrapper">
+                                <input type="radio" id="one" name="one">
+                                <div class="select-box d-flex justify-content-between w-100 radio-label">
+                                    <h6>
+                                        <strong>CTT Expresso 19:</strong>
+                                        Entrega prevista até:
+                                        <span>2.ª feira, 21 de abril</span>
+                                    </h6>
+                                    <h6 class="fw-bold">3,60€</h6>
+                                </div>
+                            </div>
+                            <!-- item  -->
+                            <div class="selector-item radio-wrapper">
+                                <input type="radio" id="one" name="one">
+                                <div class="select-box d-flex justify-content-between w-100 radio-label">
+                                    <h6>
+                                        <strong>CTT Expresso 48</strong>
+                                        Entrega prevista até:
+                                        <span>2.ª feira, 21 de abril</span>
+                                    </h6>
+                                    <h6 class="fw-bold "> 3,31€</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <h6 class="text-uppercase">Artigos Físicos</h6>
+                        <div class="mt-3">
+                            <p><span class="fw-bold">Envio imediato para o seu e-mail</span><br>
+                                (pré-vendas serão enviadas na data de lançamento)</p>
+                        </div>
+                    </div>
+
+                    <!-- Item dados de faturação  -->
+                    <div class="checkout-items-card">
+                        <h5 class="title mb-3">dados de faturação</h5>
+                        <div class="leya-btn mt-3"><a href="#">Adicione Dados de Faturação</a>
+                        </div>
+                    </div>
+
+                    <!-- Item meios de pagamento  -->
+                    <div class="checkout-items-card">
+                        <h5 class="title mb-3">meios de pagamento</h5>
+                        <div class="accordion accordion-default-none w-100" id="paymentSelector">
+
+                            <!-- Item 1 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="reivant_radio_visa" name="reivant_delivery">
+                                        <button
+                                            class="accordion-button radio-label collapsed d-flex justify-content-between p-2"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#reivant_payment_visa" aria-expanded="false"
+                                            aria-controls="reivant_payment_visa">
+                                            Visa/Mastercard
+                                            <img src="../img/visa.png" alt="">
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="reivant_payment_visa" class="accordion-collapse collapse"
+                                    data-bs-parent="#paymentSelector">
+                                    <div class="accordion-body">
+                                        <p><span class="fw-bold">Cartão de Crédito/Débito</span><br>
+                                            Após a finalizar a compra irá surgir um ecrã para inserir os dados da sua
+                                            conta.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="reivant_radio_mb" name="reivant_delivery">
+                                        <button
+                                            class="accordion-button radio-label collapsed d-flex justify-content-between p-2"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#reivant_payment_mb"
+                                            aria-expanded="false" aria-controls="reivant_payment_mb">
+                                            Multibanco
+                                            <img src="../img/mb.png" alt="">
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="reivant_payment_mb" class="accordion-collapse collapse"
+                                    data-bs-parent="#paymentSelector">
+                                    <div class="accordion-body">
+                                        <p><span class="fw-bold">Multibanco Instructions</span><br>
+                                            Após a finalizar a compra irá surgir um ecrã com instruções de pagamento.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="reivant_radio_wallet" name="reivant_delivery">
+                                        <button
+                                            class="accordion-button radio-label collapsed d-flex justify-content-between p-2"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#reivant_payment_wallet" aria-expanded="false"
+                                            aria-controls="reivant_payment_wallet">
+                                            MEO Wallet
+                                            <img src="../img/w.png" alt="">
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="reivant_payment_wallet" class="accordion-collapse collapse"
+                                    data-bs-parent="#paymentSelector">
+                                    <div class="accordion-body">
+                                        <p><span class="fw-bold">Pagamento com MEO Wallet</span><br>
+                                            Use a sua conta MEO Wallet para concluir a compra com segurança.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Item 4 -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header radio-wrapper">
+                                    <div class="d-flex gap-3">
+                                        <input type="radio" id="reivant_radio_mbway" name="reivant_delivery">
+                                        <button
+                                            class="accordion-button radio-label collapsed d-flex justify-content-between p-2"
+                                            type="button" data-bs-toggle="collapse"
+                                            data-bs-target="#reivant_payment_mbway" aria-expanded="false"
+                                            aria-controls="reivant_payment_mbway">
+                                            MB Way
+                                            <img src="../img/mbw.png" alt="">
+                                        </button>
+                                    </div>
+                                </h2>
+                                <div id="reivant_payment_mbway" class="accordion-collapse collapse"
+                                    data-bs-parent="#paymentSelector">
+                                    <div class="accordion-body">
+                                        <p><span class="fw-bold">MB Way Pagamento</span><br>
+                                            Confirme a transação no seu telemóvel usando a app MB Way.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Item meios de pagamento  -->
+                    <div class="checkout-items-card">
+                        <h5 class="title mb-3">encomenda</h5>
+                        <div class="product-card-wrapper w-100">
+                            <div class="subtitle-box">
+                                <h6>Artigos Físicos</h6>
+                                <p>A sua entrega poderá ter envios parciais, sem custos adicionais.</p>
+                            </div>
+
+                            <!-- product box  -->
+                            <div class="product-card">
+                                <!-- product image  -->
+                                <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
+
+                                <!-- product details  -->
+                                <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+
+                                    <div class="d-flex gap-3 align-items-center">
+                                        <div class="product-card-details">
+                                            <h4 class="title">Despedidas Impossíveis</h4>
+                                            <h5 class="cart-product-cat">HAN KANG</h5>
+                                            <div class="product-price">
+                                                <span class="cart-product-author">Livro</span>
+                                                <span class="sale-price">19,71€</span>
+                                                <span class="regular-price"><del>21,90€</del></span>
+                                                <span class="discount-text">X%</span>
+                                            </div>
+                                            <p><span>Entrega prevista até: </span>
+                                                2.ª feira, 21 de abril </p>
+
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex justify-content-lg-between align-items-lg-center gap-3 gap-lg-5">
+
+                                        <!-- product quantitiy  -->
+                                        <div class="product-qty"><span>2</span></div>
+
+                                        <!-- discount price  -->
+                                        <div class="discount-price">
+                                            <span class="price fw-bold">39,42€</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <!-- Offer box  -->
+                            <div class="offer-box mt-4">
+
+                                <div class="offer-title text-center">
+                                    <h6>OFERTA</h6>
+                                </div>
+
+                                <div class="product-left-block px-4 py-3 d-flex gap-3 align-items-center">
+                                    <div>
+                                        <div class="product-img"><img
+                                                src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg"></div>
+                                    </div>
+                                    <div class="cart-product-details">
+                                        <h4 class="title">Caneta</h4>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Right side here  -->
+                <div class="col-md-5 col-lg-3">
+                    <!-- summery box  -->
+                    <div class="cart-summery d-flex flex-column gap-1">
+                        <!-- box title  -->
+                        <h5 class="title mb-4">resumo da compra</h5>
+                        <!-- summery product list  -->
+                        <div class="d-flex justify-content-between">
+                            <span class="name">3 Artigos</span>
+                            <span class="price">34,83€</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="name text-accent">Vale de desconto</span>
+                            <span class="price text-accent">-5,00€</span>
+                        </div>
+                        <hr class="mt-4">
+                        <!-- sub total  -->
+                        <div class="d-flex subtotal justify-content-between">
+                            <span class="name fw-bold">Valor Total (inclui IVA)</span>
+                            <span class="price fw-bold">29,83€</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="name text-accent fw-bold">Poupança</span>
+                            <span class="price text-accent fw-bold">5,00€</span>
+                        </div>
+                    </div>
+
+                    <div class="leya-btn leya-btn-100 checkout-btn mt-3"><a href="#">finalizar compra</a></div>
+                    <div class="info-text">
+                        <p>Ao finalizar compra concorda com as nossas Condições de Venda.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Import footer here  -->
+    <div id="footer"></div>
+    <script type="module" src="../layout/footer.js"></script>
+    <!-- footer end  -->
+
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const radioWrappers = document.querySelectorAll(".radio-wrapper");
+
+        function updateCheckedClasses() {
+            radioWrappers.forEach((wrapper) => {
+                const radio = wrapper.querySelector('input[type="radio"]');
+                const label = wrapper.querySelector('.radio-label');
+
+                if (radio && label) {
+                    if (radio.checked) {
+                        label.classList.add("radio-label-checked");
+                    } else {
+                        label.classList.remove("radio-label-checked");
+                    }
+                }
+            });
+        }
+
+        // Initial load — check which radio is pre-selected
+        updateCheckedClasses();
+
+        // Add event listeners to update on click
+        radioWrappers.forEach((wrapper) => {
+            const radio = wrapper.querySelector('input[type="radio"]');
+            const label = wrapper.querySelector('.radio-label');
+
+            if (label && radio) {
+                label.addEventListener("click", function () {
+                    radio.checked = true;
+                    updateCheckedClasses();
+                });
+            }
+        });
+    });
+</script>
+
+
+
+    <script type="module" src="../../resources/js/layout.js"></script>
+</body>
+
+</html>
