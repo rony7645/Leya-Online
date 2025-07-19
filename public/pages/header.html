@@ -116,7 +116,8 @@
                             <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </form>
                     </div>
-                    <div class="cart-icon position-relative">
+                    <div class="cart-icon position-relative" data-bs-toggle="offcanvas"
+                        data-bs-target="#sideCartOffcanvas" aria-controls="offcanvasRight">
                         <div class="count-indicator"><span>10</span></div>
                         <div class="icon"><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 29.76 29.03">
@@ -381,26 +382,25 @@
 
                         <!-- Cart icon  -->
                         <li class="cart">
-                            <a href="#">
-                                <div class="cart-icon position-relative">
-                                    <div class="count-indicator"><span>10</span></div>
-                                    <div class="icon">
-                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 29.76 29.03">
-                                            <g id="Layer_1-2" data-name="Layer 1">
-                                                <g>
-                                                    <path class="cls-1"
-                                                        d="m29.76,3.82H6.03l-1.02-2.8L.37,0l-.37,1.65,3.75.83,7.32,20.43h13.96v-1.68h-12.77l-1.55-4.36h15.51l3.54-13.05ZM10.09,15.18l-3.45-9.66h20.91l-2.62,9.66h-14.84Z" />
-                                                    <path class="cls-1"
-                                                        d="m14.07,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
-                                                    <path class="cls-1"
-                                                        d="m24.01,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
-                                                </g>
+                            <div class="cart-icon position-relative" data-bs-toggle="offcanvas"
+                                data-bs-target="#sideCartOffcanvas" aria-controls="offcanvasRight">
+                                <div class="count-indicator"><span>10</span></div>
+                                <div class="icon">
+                                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 29.76 29.03">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <path class="cls-1"
+                                                    d="m29.76,3.82H6.03l-1.02-2.8L.37,0l-.37,1.65,3.75.83,7.32,20.43h13.96v-1.68h-12.77l-1.55-4.36h15.51l3.54-13.05ZM10.09,15.18l-3.45-9.66h20.91l-2.62,9.66h-14.84Z" />
+                                                <path class="cls-1"
+                                                    d="m14.07,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
+                                                <path class="cls-1"
+                                                    d="m24.01,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
                                             </g>
-                                        </svg>
-                                    </div>
+                                        </g>
+                                    </svg>
                                 </div>
-                            </a>
+                            </div>
                         </li>
                     </ul>
 
@@ -730,6 +730,218 @@
                         <!-- new menu here -->
                     </nav>
 
+                </div>
+            </div>
+        </div>
+
+        <!-- Side cart Modal Popup  -->
+        <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="sideCartOffcanvas"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header d-flex justify-content-between">
+                <h5 id="sideCartOffcanvasLabel">O seu carrinho</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="side-cart">
+                    <!-- side cart accordion  -->
+                    <div class="accordion accordion-default-none d-flex flex-column gap-3" id="sideCart">
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="d-flex gap-3">
+                                    <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#livr" aria-expanded="true" aria-controls="livr">
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <img src="../img/logo.png" alt="">
+                                            <span>1 Artigo</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="livr" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- product  box  -->
+                                    <div class="side-cart-product-wrapper">
+                                        <div class="side-cart-product">
+                                            <!-- product image  -->
+                                            <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg"
+                                                    alt=""></div>
+                                            <!-- product details  -->
+                                            <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <div class="cart-product-details">
+                                                        <h4 class="title">Despedidas Impossíveis</h4>
+                                                        <h5 class="cart-product-cat">HAN KANG</h5>
+                                                        <!-- product pricing  -->
+                                                        <div class="product-price">
+                                                            <span class="cart-product-author">Livro</span>
+                                                            <span class="sale-price">19,71€</span>
+                                                            <span class="regular-price"><del>21,90€</del></span>
+                                                        </div>
+                                                        <!-- product quantitiy  -->
+                                                        <div class="product-qty">
+                                                            <button class="quantity-button">-</button>
+                                                            <input type="text" class="quantity-input" value="2"
+                                                                readonly>
+                                                            <button class="quantity-button">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="trash-product"><i class="bi bi-trash"></i></div>
+                                        </div>
+
+                                        <!-- Offer box  -->
+                                        <div class="offer-box mt-3">
+                                            <div class="offer-title text-center">
+                                                <h6>OFERTA</h6>
+                                            </div>
+                                            <div class="px-4 d-flex gap-3 align-items-center">
+                                                <div>
+                                                    <div class="product-img"><img
+                                                            src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg">
+                                                    </div>
+                                                </div>
+                                                <div class="cart-product-details">
+                                                    <h4 class="title">Caneta</h4>
+                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                                        industry.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="d-flex gap-3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#artigoTwo" aria-expanded="true" aria-controls="artigoTwo">
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <img src="../img/livr.png" alt="">
+                                            <span>1 Artigo</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="artigoTwo" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- product  box  -->
+                                    <div class="side-cart-product-wrapper">
+                                        <div class="side-cart-product">
+                                            <!-- product image  -->
+                                            <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg"
+                                                    alt=""></div>
+                                            <!-- product details  -->
+                                            <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <div class="cart-product-details">
+                                                        <h4 class="title">Despedidas Impossíveis</h4>
+                                                        <h5 class="cart-product-cat">HAN KANG</h5>
+                                                        <!-- product pricing  -->
+                                                        <div class="product-price">
+                                                            <span class="cart-product-author">Livro</span>
+                                                            <span class="sale-price">19,71€</span>
+                                                            <span class="regular-price"><del>21,90€</del></span>
+                                                        </div>
+                                                        <!-- product quantitiy  -->
+                                                        <div class="product-qty">
+                                                            <button class="quantity-button">-</button>
+                                                            <input type="text" class="quantity-input" value="2"
+                                                                readonly>
+                                                            <button class="quantity-button">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="trash-product"><i class="bi bi-trash"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Item 1 -->
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="d-flex gap-3">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#artigoThree" aria-expanded="true" aria-controls="artigoThree">
+                                        <div class="w-100 d-flex justify-content-between align-items-center">
+                                            <img src="../img/livr.png" alt="">
+                                            <span>1 Artigo</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                            <div id="artigoThree" class="accordion-collapse collapse show">
+                                <div class="accordion-body">
+                                    <!-- product  box  -->
+                                    <div class="side-cart-product-wrapper">
+                                        <div class="side-cart-product">
+                                            <!-- product image  -->
+                                            <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg"
+                                                    alt=""></div>
+                                            <!-- product details  -->
+                                            <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                                                <div class="d-flex gap-3 align-items-center">
+                                                    <div class="cart-product-details">
+                                                        <h4 class="title">Despedidas Impossíveis</h4>
+                                                        <h5 class="cart-product-cat">HAN KANG</h5>
+                                                        <!-- product pricing  -->
+                                                        <div class="product-price">
+                                                            <span class="cart-product-author">Livro</span>
+                                                            <span class="sale-price">19,71€</span>
+                                                            <span class="regular-price"><del>21,90€</del></span>
+                                                        </div>
+                                                        <!-- product quantitiy  -->
+                                                        <div class="product-qty">
+                                                            <button class="quantity-button">-</button>
+                                                            <input type="text" class="quantity-input" value="2"
+                                                                readonly>
+                                                            <button class="quantity-button">+</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="trash-product"><i class="bi bi-trash"></i></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Side cart summery  -->
+                    <div class="side-cart-summery">
+                        <div class="d-flex justify-content-between">
+                            <span class="text">Subtotal (4 Artigos)</span>
+                            <span class="price">47,34€</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <span class="text text-accent">Poupança</span>
+                            <span class="price text-accent">20€</span>
+                        </div>
+                        <div class="leya-btn mt-3"><a href="http://192.168.1.2:5173/public/pages/checkout.html"><span class="btn-icon">
+                                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 18.77 18.31">
+                                        <g id="Layer_1-2" data-name="Layer 1">
+                                            <g>
+                                                <path class="cls-1"
+                                                    d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
+                                                <path class="cls-1"
+                                                    d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                                <path class="cls-1"
+                                                    d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </span>comprar</a></div>
+                    </div>
                 </div>
             </div>
         </div>

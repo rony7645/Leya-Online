@@ -142,14 +142,14 @@
     }
   }
   .checkout-btn a {
-    background: $accent-color;
+    background: $accent-color !important;
   }
   .info-text {
     p {
       font-size: 13px;
       line-height: 18px;
       font-weight: 400;
-      color: #7694A6;
+      color: #7694a6;
       margin-top: 15px;
     }
   }
@@ -181,5 +181,99 @@
   }
   .offer-box {
     padding: 0 !important;
+  }
+}
+
+.location-wrapper {
+  .location-card {
+    max-width: 400px;
+    display: flex;
+    align-items: start;
+    column-gap: 10px;
+    padding: 10px;
+    .location-header {
+      font-weight: 600;
+      font-size: 15px;
+      color: #3c4b54;
+      margin-bottom: 10px;
+    }
+    input[type="radio"] {
+      margin-top: 4px;
+    }
+    .edit-icon {
+      cursor: pointer;
+      font-size: 16px;
+      color: #888;
+    }
+    .sub-info {
+      font-size: 14px;
+      color: #4a5a6a;
+      line-height: 1.5;
+    }
+  }
+  label {
+    font-size: 14px;
+    color: #3c4b54;
+    font-weight: 400;
+  }
+  .location-window {
+    background-color: #fff;
+    padding: 25px;
+    margin-top: 30px;
+    .heading {
+      font-size: 15px;
+      color: #3c4b54;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .location-card-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      .location-card {
+        border: 1px solid transparent;
+        transition: border .5s ease;
+        &:hover {
+          border: 1px solid #7694a6;
+        }
+      }
+      .active-card {
+        border: 1px solid #7694a6;
+        padding: 10px;
+      }
+    }
+  }
+}
+.shop-wrapper{
+  .location-card{
+    width: 100% !important;
+  }
+}
+.btn-group {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 15px auto;
+  .leya-btn a {
+    background: #3c4b54 !important;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 12px 50px;
+    background: #3c4b54 !important;
+    border: 1px solid #3c4b54;
+    transition: all 0.5s;
+    &:hover {
+      background: none !important;
+      color: #3c4b54;
+    }
+  }
+  .btn-outline a {
+    background: none !important;
+    color: #3c4b54;
+
+    &:hover {
+      background: #3c4b54 !important;
+      color: #fff !important;
+    }
   }
 }
