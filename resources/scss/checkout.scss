@@ -186,7 +186,7 @@
 
 .location-wrapper {
   .location-card {
-    max-width: 400px;
+    width: 400px;
     display: flex;
     align-items: start;
     column-gap: 10px;
@@ -232,21 +232,40 @@
       gap: 15px;
       .location-card {
         border: 1px solid transparent;
-        transition: border .5s ease;
+        transition: border 0.5s ease;
         &:hover {
           border: 1px solid #7694a6;
         }
       }
       .active-card {
         border: 1px solid #7694a6;
-        padding: 10px;
+        padding: 5px;
       }
     }
   }
 }
-.shop-wrapper{
-  .location-card{
+.shop-wrapper {
+  .location-window{
+    margin-top: 10px;
+  }
+  .location-card {
     width: 100% !important;
+    align-items: center;
+    .location-header{
+      margin-bottom: 5px;
+    }
+    .link {
+      width: 40%;
+      text-align: right;
+      margin-right: 20px;
+      a {
+        font-size: 13px;
+        font-weight: 500;
+        color: #3c4b54;
+        text-decoration: underline;
+        display: block;
+      }
+    }
   }
 }
 .btn-group {
