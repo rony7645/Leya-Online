@@ -524,8 +524,10 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
+            // Select all radio wrapper elements
             const radioWrappers = document.querySelectorAll(".radio-wrapper");
 
+            // Function to update the checked class based on radio selection
             function updateCheckedClasses() {
                 radioWrappers.forEach((wrapper) => {
                     const radio = wrapper.querySelector('input[type="radio"]');
@@ -533,31 +535,39 @@
 
                     if (radio && label) {
                         if (radio.checked) {
-                            label.classList.add("radio-label-checked");
+                            label.classList.add("radio-label-checked"); // Add class if radio is selected
                         } else {
-                            label.classList.remove("radio-label-checked");
+                            label.classList.remove("radio-label-checked"); // Remove class if not selected
                         }
                     }
                 });
             }
 
-            // Initial load — check which radio is pre-selected
+            // Run once on page load to reflect pre-selected radio buttons
             updateCheckedClasses();
 
-            // Add event listeners to update on click
+            // Attach event listeners for each radio wrapper
             radioWrappers.forEach((wrapper) => {
                 const radio = wrapper.querySelector('input[type="radio"]');
                 const label = wrapper.querySelector('.radio-label');
 
-                if (label && radio) {
+                if (radio && label) {
+                    // When the label is clicked, check the radio and update classes
                     label.addEventListener("click", function () {
                         radio.checked = true;
+                        updateCheckedClasses();
+                    });
+
+                    // When the radio itself is changed (clicked), update classes
+                    radio.addEventListener("change", function () {
                         updateCheckedClasses();
                     });
                 }
             });
         });
     </script>
+
+
 
 
 
