@@ -208,94 +208,190 @@
 
                             <!-- Tab Panel  -->
                             <div class="tab-content" id="v-pills-tabContent">
-  <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
-    aria-labelledby="v-pills-personal-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Dados Pessoais</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
 
-  <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
-    aria-labelledby="v-pills-addresses-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Moradas</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                                <!-- Dados Pessoais -->
+                                <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
+                                    aria-labelledby="v-pills-personal-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Dados Pessoais</h5>
+                                    <div class="content-body">
+                                        <div class="form-box">
+                        <h4 class="mb-4">Entre ou Crie uma Conta</h4>
 
-  <div class="tab-pane fade" id="v-pills-orders" role="tabpanel"
-    aria-labelledby="v-pills-orders-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Histórico de Encomendas</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                        <form>
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="emailLogin" placeholder="E-mail"
+                                    value="dmonsanto@leya.com">
+                                <label for="emailLogin">E-mail</label>
+                            </div>
 
-  <div class="tab-pane fade" id="v-pills-library" role="tabpanel"
-    aria-labelledby="v-pills-library-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Biblioteca Digital</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                            <!-- Password -->
+                            <div class="form-floating mb-3 password-wrapper wrapper-two ">
+                                <input type="password" class="form-control password-input no-input-border"
+                                    id="new-password" placeholder="Nova Palavra-passe">
+                                <label for="new-password">Nova Palavra-passe</label>
+                                <i class="bi bi-eye-slash toggle-password" data-target="new-password"></i>
+                            </div>
 
-  <div class="tab-pane fade" id="v-pills-subscriptions" role="tabpanel"
-    aria-labelledby="v-pills-subscriptions-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Subscrições</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                            <!-- Lembrar + Forgot Password -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-check" type="checkbox" id="rememberCheck">
+                                    <label class="form-check-label custom-check-label" for="rememberCheck">Lembrar a
+                                        palavra-passe</label>
+                                </div>
 
-  <div class="tab-pane fade" id="v-pills-events" role="tabpanel"
-    aria-labelledby="v-pills-events-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Os Meus Eventos</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                                <a href="#" class="forgot-link">Esqueceu-se da palavra-passe?</a>
 
-  <div class="tab-pane fade" id="v-pills-favorites" role="tabpanel"
-    aria-labelledby="v-pills-favorites-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Favoritos</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
+                            </div>
 
-  <div class="tab-pane fade" id="v-pills-emails" role="tabpanel"
-    aria-labelledby="v-pills-emails-tab" tabindex="0">
-    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
-      ← voltar
-    </button>
-    <h5 class="content-wrapper-heading">Preferências de E-mails</h5>
-    <div class="content-body">
-      ...
-    </div>
-  </div>
-</div>
+                            <!-- Terms Text -->
+                            <div class="text-center mt-3">
+                                <small class="text-note">
+                                    Ao Criar Conta está a concordar com os nossos <a href="#">Termos e Condições</a> e
+                                    com a nossa <a href="#">Política
+                                        de Privacidade</a>.
+                                </small>
+                            </div>
+
+                            <!-- Entrar / Criar Conta -->
+                            <div class="d-flex flex-column align-items-center gap-2 mt-4 mb-2">
+                                <button class="btn btn-custom-dark fixed-btn" type="submit">Entrar</button>
+                                <button class="btn btn-custom-outline fixed-btn" type="button">Criar uma Conta</button>
+                            </div>
+
+
+                            <!-- Social Login -->
+                            <div class="text-center">
+                                <p class="quick-title ">Ou Entre de forma rápida</p>
+                                <div class="social-icons justify-content-center mb-4">
+                                    <!-- Apple -->
+                                    <div class="icon-circle apple-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                                            alt="Apple">
+                                    </div>
+                                    <!-- Facebook -->
+                                    <div class="icon-circle">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"
+                                            width="40">
+                                    </div>
+                                    <!-- Google -->
+                                    <div class="icon-circle google-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                                            alt="Google">
+                                    </div>
+                                </div>
+
+                                <!-- Available Logos -->
+                                <p class="available-text">Esta Conta está disponível em:</p>
+                                <div class="custom-logo-wrapper mx-auto">
+                                    <div class="store-logo">
+                                        <img src="../img/logo.png" alt="Lyvros" style="width: 55px;">
+                                        <div class="mt-2">LYVROS</div>
+                                    </div>
+                                    <div class="store-logo">
+                                        <img src="../img/livr.png" alt="Buchholz" style="width: 55px;">
+                                        <div class="mt-2">LIVRARIA BUCHHOLZ</div>
+                                    </div>
+                                    <div class="store-logo">
+                                        <img src="../img/leytura.png" alt="Clube de Leitura" style="width: 65px;">
+                                        <div class="mt-2">CLUBE DE LEYTURA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
+                                    aria-labelledby="v-pills-addresses-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Moradas</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-orders" role="tabpanel"
+                                    aria-labelledby="v-pills-orders-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Histórico de Encomendas</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-library" role="tabpanel"
+                                    aria-labelledby="v-pills-library-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Biblioteca Digital</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-subscriptions" role="tabpanel"
+                                    aria-labelledby="v-pills-subscriptions-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Subscrições</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-events" role="tabpanel"
+                                    aria-labelledby="v-pills-events-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Os Meus Eventos</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-favorites" role="tabpanel"
+                                    aria-labelledby="v-pills-favorites-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Favoritos</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-emails" role="tabpanel"
+                                    aria-labelledby="v-pills-emails-tab" tabindex="0">
+                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
+                                        data-bs-target="#v-pills-personal">
+                                        ← voltar
+                                    </button>
+                                    <h5 class="content-wrapper-heading">Preferências de E-mails</h5>
+                                    <div class="content-body">
+                                        ...
+                                    </div>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
