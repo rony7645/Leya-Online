@@ -1,109 +1,18 @@
-/* Modal Design Here */
-
-.productDetailsModal .modal-lg {
-  max-width: 860px;
-}
-
-.productDetailsModal .vertical-slider {
-  display: none;
-}
-
-.productDetailsModal .main-img-wrapper {
-  height: 400px;
-  width: 100%;
-}
-
-.productDetailsModal .pricing .book span {
-  display: none;
-}
-
-.productDetailsModal .left-part {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.productDetailsModal .grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
-}
-
-.productDetailsModal .grid-wrapper .img {
-  height: 100px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.productDetailsModal .grid-wrapper .img img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-
-.productDetailsModal .pricing-slider {
-  width: 100%;
-}
-
-.productDetailsModal .btn-card {
-  padding: 7px 12px;
-}
-
-.productDetailsModal .header {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.productDetailsModal .upload-icon {
-  position: relative;
-  top: -6px;
-}
-
-.btn-tsp {
-  background-color: transparent;
-  border: 1px solid var(--secondary-color);
-  color: var(--secondary-color);
-}
-
-@media screen and (max-width: 768px) {
-  .productDetailsModal .hero-wrapper .product-wrap {
-    display: block;
-    max-width: 300px;
-    margin: 0 auto;
+// My Account Page Popup and all form popup style here
+.modal-heder-none {
+  .modal-header {
+    border-bottom: none !important;
   }
-
-  .productDetailsModal .grid-wrapper {
-    max-width: 300px;
-    margin: 0 auto;
+  .modal-content {
+    border-radius: 0;
+    border: none;
   }
-
-  .productDetailsModal .grid-wrapper .img {
-    height: 100px;
-    width: 100%;
-    overflow: hidden;
+  .modal-body {
+    padding: 30px;
   }
-}
-
-@media screen and (max-width: 480px) {
-  .productDetailsModal .hero-wrapper .vertical-slider {
-    display: none;
-  }
-
-  .productDetailsModal .hero-wrapper .product-wrap {
-    display: block !important;
-    max-width: 260px;
-    margin: 0 auto;
-    height: 360px;
-  }
-
-  .productDetailsModal .modal-body {
-    padding: 0;
-  }
-
-  .productDetailsModal .header {
-    padding: 10px;
-    padding-right: 15px;
+  .btn-close {
+    position: absolute ;
+    top: 15px ;
+    right: 15px ;
   }
 }

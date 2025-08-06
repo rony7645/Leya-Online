@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leya Online</title>
+</head>
+
+<body>
+    <!-- import header  -->
+    <div id="header"></div>
+    <script src="../layout/header.js"></script>
+
+    <!-- My account tabs  -->
+
+    <section class="spacing-xl my-account">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="account-wrapper">
+                        <div class="d-flex align-items-start gap-5">
+                            <!-- Tab Navigation  -->
+                            <div class="nav flex-column nav-pills me-3 account-tablist" id="v-pills-tab" role="tablist"
+                                aria-orientation="vertical">
+                                <div class="tab-heading">a minha conta</div>
+
+                                <div class="nav-link active" id="v-pills-personal-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-personal" type="button" role="tab"
+                                    aria-controls="v-pills-personal" aria-selected="true">
+                                    <span class="tab-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.91 15.88">
+                                            <g>
+                                                <circle class="cls-1" cx="5.95" cy="4.09" r="3.72" />
+                                                <path class="cls-1"
+                                                    d="M11.53,15.88c0-3.08-2.5-5.58-5.58-5.58S.38,12.79.38,15.88" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Dados Pessoais</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-addresses-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-addresses" type="button" role="tab"
+                                    aria-controls="v-pills-addresses" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.72 15.67">
+                                            <path class="cls-1"
+                                                d="M15.27,7.66L8.04.45c-.1-.1-.26-.1-.35,0L.45,7.66c-.1.1-.09.25,0,.35.05.05.11.08.18.08h1.75v6.97c0,.07.03.13.07.18.05.05.11.07.18.07h3.49c.14,0,.25-.11.25-.25v-4.97h2.99v4.97c0,.14.11.25.25.25h3.49c.14,0,.25-.11.25-.25v-6.97h1.76c.07,0,.13-.02.17-.08.09-.11.1-.26,0-.35Z" />
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Moradas</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-orders-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-orders" type="button" role="tab"
+                                    aria-controls="v-pills-orders" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 14.54 16.46">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <polygon class="cls-2"
+                                                        points="5.63 .07 5.62 6.28 7.36 5.13 8.92 6.28 8.93 .07 5.63 .07" />
+                                                    <polygon class="cls-2"
+                                                        points="4.78 11.24 2.59 11.24 2.59 13.94 4.78 13.95 4.78 11.24" />
+                                                    <rect class="cls-1" x=".43" y=".43" width="13.69" height="15.6" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Histórico de Encomendas</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-library-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-library" type="button" role="tab"
+                                    aria-controls="v-pills-library" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 14.77 18.88">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <path class="cls-2"
+                                                        d="M13.28,18.88H1.49c-.83,0-1.49-.65-1.49-1.45V1.45C0,.65.66,0,1.49,0h11.79c.82,0,1.49.65,1.49,1.45v15.98c0,.8-.67,1.45-1.49,1.45ZM1.49.59c-.5,0-.9.38-.9.86v15.98c0,.47.4.85.9.85h11.79c.5,0,.9-.38.9-.85V1.45c0-.47-.4-.86-.9-.86H1.49Z" />
+                                                    <g>
+                                                        <rect class="cls-1" x="2.02" y="2.28" width="10.74"
+                                                            height="14.27" />
+                                                        <path class="cls-1"
+                                                            d="M12.81,16.59H1.97V2.23h10.83v14.36ZM2.05,16.51h10.67V2.31H2.05v14.19Z" />
+                                                    </g>
+                                                    <g>
+                                                        <path class="cls-2"
+                                                            d="M7.51,17.16h-.24c-.06,0-.1.04-.1.1v.2c0,.05.04.1.1.1h.24c.06,0,.1-.04.1-.1v-.2c0-.05-.05-.1-.1-.1Z" />
+                                                        <path class="cls-2"
+                                                            d="M7.39,16.85c-.28,0-.51.22-.51.5s.23.51.51.51.51-.23.51-.51-.23-.5-.51-.5Z" />
+                                                    </g>
+                                                    <g>
+                                                        <path class="cls-2"
+                                                            d="M10.68,11.84v-5.71l-.22.02c-.87.07-1.73.28-2.54.62l-.38.16v5.69l.28-.12c.84-.35,1.72-.56,2.63-.64l.23-.02Z" />
+                                                        <path class="cls-2"
+                                                            d="M11.39,6.97h-.43v5c0,.07-.06.14-.13.14l-.37.03c-.11,0-.21.02-.32.03-.03,0-.07,0-.1.01-.07,0-.14.02-.21.03-.04,0-.08.01-.12.02-.06.01-.13.02-.19.03-.04,0-.09.02-.13.03-.06.01-.12.03-.18.04-.04.01-.09.02-.13.03-.06.01-.12.03-.17.05-.04.01-.09.03-.13.04-.06.02-.11.03-.17.05-.04.01-.09.03-.13.04-.06.02-.11.04-.17.06-.04.02-.09.03-.13.05-.02,0-.04.02-.06.02h3.27v-5.71Z" />
+                                                        <path class="cls-2"
+                                                            d="M4.32,6.15l-.22-.02v5.71l.25.02c.9.08,1.79.29,2.63.64l.26.11v-5.69l-.38-.16c-.81-.34-1.67-.55-2.54-.62h0Z" />
+                                                        <path class="cls-2"
+                                                            d="M3.39,6.97v5.71h3.28s-.04-.01-.05-.02c-.04-.02-.08-.03-.12-.05-.06-.02-.12-.04-.17-.06-.04-.01-.08-.03-.13-.04-.06-.02-.12-.04-.17-.05-.04-.01-.09-.03-.13-.04-.06-.02-.12-.03-.18-.05-.04-.01-.09-.02-.13-.03-.06-.01-.12-.03-.18-.04-.04,0-.09-.02-.13-.03-.06-.01-.12-.02-.19-.03-.04,0-.08-.01-.12-.02-.07-.01-.14-.02-.21-.03-.04,0-.07-.01-.1-.01-.1-.01-.21-.02-.31-.03l-.38-.03c-.07,0-.13-.07-.13-.14v-5h-.43Z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Biblioteca Digital</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-subscriptions-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-subscriptions" type="button" role="tab"
+                                    aria-controls="v-pills-subscriptions" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 18.15 16.54">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <polygon class="cls-1"
+                                                        points="5.83 0 13.78 0 13.78 2.68 12.77 3.77 12.77 2.68 12.77 1.22 6.15 1.22 6.15 6.51 1.02 6.51 1.02 15.25 12.77 15.25 12.77 8.92 13.78 7.72 13.78 8.92 13.78 16.54 0 16.54 0 6.27 5.83 0" />
+                                                    <g>
+                                                        <polygon class="cls-1"
+                                                            points="6.32 12.76 8.14 11.8 7.24 10.9 6.32 12.76" />
+                                                        <path class="cls-1"
+                                                            d="M17.15,2.81l.62-.61.14.13.24-.24-1.21-1.19-.23.23.14.14-.62.61-.32-.32L7.7,9.81l-.45.79,1.2,1.21.81-.46L17.48,3.14l-.33-.33ZM11.31,8.65l-.9-.91,4.56-4.57.92.92-4.58,4.56ZM16.1,3.87l-.92-.91.39-.38c.09-.1.23-.1.33,0l.59.59c.08.09.08.23,0,.32l-.39.39Z" />
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Subscrições</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-events-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-events" type="button" role="tab"
+                                    aria-controls="v-pills-events" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 15.08 16.14">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <path class="cls-1"
+                                                        d="M12.34,1.71v1.24h-2.06v-1.24h-5.55v1.24h-2.05v-1.24H0v14.44h9.37l5.71-5.32V1.71h-2.75ZM13.96,10.54h-4.81v4.66H1.18V4.49h12.78v6.05Z" />
+                                                    <path class="cls-1"
+                                                        d="M4.43.71c0-.4-.32-.71-.73-.71-.39,0-.72.31-.72.71v1.96h1.44V.71Z" />
+                                                    <path class="cls-1"
+                                                        d="M12.02.71c0-.4-.33-.71-.72-.71s-.72.31-.72.71v1.96h1.44V.71Z" />
+                                                    <rect class="cls-1" x="2.66" y="6.18" width="2.1" height="1.84" />
+                                                    <rect class="cls-1" x="5.42" y="6.18" width="2.1" height="1.84" />
+                                                    <rect class="cls-1" x="8.17" y="6.18" width="2.1" height="1.84" />
+                                                    <rect class="cls-1" x="10.94" y="6.18" width="2.09" height="1.84" />
+                                                    <rect class="cls-1" x="2.66" y="9.43" width="2.1" height="1.83" />
+                                                    <rect class="cls-1" x="5.42" y="9.43" width="2.1" height="1.83" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Os Meus Eventos</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-favorites-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-favorites" type="button" role="tab"
+                                    aria-controls="v-pills-favorites" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20.75 20.75">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <path class="cls-1"
+                                                        d="M10.37,16.14c2.8-2.02,4.21-3.86,4.87-5.27.77-1.64.1-3.68-1.58-4.36-1.98-.8-3.29,1.05-3.29,1.05,0,0-1.3-1.86-3.28-1.05-1.68.68-2.35,2.72-1.58,4.36.66,1.41,2.05,3.25,4.86,5.27h0Z" />
+                                                    <circle class="cls-1" cx="10.38" cy="10.38" r="10" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Favoritos</span>
+                                </div>
+
+                                <div class="nav-link" id="v-pills-emails-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-emails" type="button" role="tab"
+                                    aria-controls="v-pills-emails" aria-selected="false">
+                                    <span class="tab-icon">
+                                        <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 16.42 16.44">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <g>
+                                                    <path class="cls-1"
+                                                        d="M1.22,16.19l6.61-5.68h.74l6.66,5.68H1.22ZM16.17,15.55l-5.16-4.47,5.16-4.47v8.93ZM7.84.25h.81l7.22,5.15-5.75,4.92-1.24-.95h-1.31l-1.26.95L.56,5.42,7.84.25ZM.25,6.62l5.21,4.47L.25,15.55V6.62Z" />
+                                                    <polygon class="cls-1"
+                                                        points="7.57 9.37 8.88 9.37 10.12 10.32 15.87 5.4 8.65 .25 7.84 .25 .56 5.42 6.31 10.32 7.57 9.37" />
+                                                    <polygon class="cls-1"
+                                                        points="16.17 15.55 16.17 6.62 11.02 11.08 16.17 15.55" />
+                                                    <polygon class="cls-1"
+                                                        points="7.84 10.51 1.22 16.19 15.23 16.19 8.57 10.51 7.84 10.51" />
+                                                    <polygon class="cls-1"
+                                                        points=".25 6.62 .25 15.55 5.46 11.08 .25 6.62" />
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <span class="tab-text">Preferências de E-mails</span>
+                                </div>
+                            </div>
+
+
+                            <!-- Tab Panel  -->
+                            <div class="tab-content" id="v-pills-tabContent">
+  <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
+    aria-labelledby="v-pills-personal-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Dados Pessoais</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
+    aria-labelledby="v-pills-addresses-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Moradas</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-orders" role="tabpanel"
+    aria-labelledby="v-pills-orders-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Histórico de Encomendas</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-library" role="tabpanel"
+    aria-labelledby="v-pills-library-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Biblioteca Digital</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-subscriptions" role="tabpanel"
+    aria-labelledby="v-pills-subscriptions-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Subscrições</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-events" role="tabpanel"
+    aria-labelledby="v-pills-events-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Os Meus Eventos</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-favorites" role="tabpanel"
+    aria-labelledby="v-pills-favorites-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Favoritos</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+
+  <div class="tab-pane fade" id="v-pills-emails" role="tabpanel"
+    aria-labelledby="v-pills-emails-tab" tabindex="0">
+    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill" data-bs-target="#v-pills-personal">
+      ← voltar
+    </button>
+    <h5 class="content-wrapper-heading">Preferências de E-mails</h5>
+    <div class="content-body">
+      ...
+    </div>
+  </div>
+</div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="container">
+            <div class="row wrapper">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="../img/footer-logo.png" alt="">
+                    </div>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">LYVROS</h3>
+                    <div class="menu-list d-flex flex-column">
+                        <a href="#">Quem Somos</a>
+                        <a href="#">Subscreva a nossa newsletter</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Apoio ao Cliente</h3>
+                    <div class="menu-list d-flex flex-column">
+                        <a href="#">Perguntas Frequente</a>
+                        <a href="#">Expedição e Entrega</a>
+                        <a href="#">Segurança</a>
+                        <a href="#">Politica de Privacidade</a>
+                        <a href="#">Fale Connosco</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Links Úteis</h3>
+                    <div class="menu-list d-flex flex-column">
+                        <a href="#">Quem Somos</a>
+                        <a href="#">Condições de venda</a>
+                        <a href="#">Livro de reclamações online</a>
+                        <a href="#">Política de Cookies</a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h3 class="footer-heading">Contactos</h3>
+                    <div class="menu-list d-flex flex-column">
+                        <a href="#">Rua Cidade de Córdova, 2 2610 - 038 - Alfragide Portugal</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-11 copyright mt-5">
+                    <p>© 2025 LYVROS. Todos os direitos reservados. Não é permitida a extração de texto e de dados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../../resources/js/layout.js"></script>
+</body>
+
+</html>

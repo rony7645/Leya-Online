@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leya Online</title>
+</head>
+
+<body>
+    <!-- import header  -->
+    <div id="header"></div>
+    <script src="../layout/header.js"></script>
+
+    <!-- Entre ou Crie uma Conta Modal-->
+    <div class="modal fade modal-heder-none" id="login" aria-hidden="true" aria-labelledby="loginPopupLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-box">
+                        <h4 class="mb-4">Entre ou Crie uma Conta</h4>
+
+                        <form>
+                            <!-- Email -->
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="emailLogin" placeholder="E-mail"
+                                    value="dmonsanto@leya.com">
+                                <label for="emailLogin">E-mail</label>
+                            </div>
+
+                            <!-- Password -->
+                            <div class="form-floating mb-3 password-wrapper wrapper-two ">
+                                <input type="password" class="form-control password-input no-input-border"
+                                    id="new-password" placeholder="Nova Palavra-passe">
+                                <label for="new-password">Nova Palavra-passe</label>
+                                <i class="bi bi-eye-slash toggle-password" data-target="new-password"></i>
+                            </div>
+
+                            <!-- Lembrar + Forgot Password -->
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <div class="form-check">
+                                    <input class="form-check-input custom-check" type="checkbox" id="rememberCheck">
+                                    <label class="form-check-label custom-check-label" for="rememberCheck">Lembrar a
+                                        palavra-passe</label>
+                                </div>
+
+                                <a href="#" class="forgot-link">Esqueceu-se da palavra-passe?</a>
+
+                            </div>
+
+                            <!-- Terms Text -->
+                            <div class="text-center mt-3">
+                                <small class="text-note">
+                                    Ao Criar Conta está a concordar com os nossos <a href="#">Termos e Condições</a> e
+                                    com a nossa <a href="#">Política
+                                        de Privacidade</a>.
+                                </small>
+                            </div>
+
+                            <!-- Entrar / Criar Conta -->
+                            <div class="d-flex flex-column align-items-center gap-2 mt-4 mb-2">
+                                <button class="btn btn-custom-dark fixed-btn" type="submit">Entrar</button>
+                                <button class="btn btn-custom-outline fixed-btn" type="button">Criar uma Conta</button>
+                            </div>
+
+
+                            <!-- Social Login -->
+                            <div class="text-center">
+                                <p class="quick-title ">Ou Entre de forma rápida</p>
+                                <div class="social-icons justify-content-center mb-4">
+                                    <!-- Apple -->
+                                    <div class="icon-circle apple-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
+                                            alt="Apple">
+                                    </div>
+                                    <!-- Facebook -->
+                                    <div class="icon-circle">
+                                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"
+                                            width="40">
+                                    </div>
+                                    <!-- Google -->
+                                    <div class="icon-circle google-icon">
+                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+                                            alt="Google">
+                                    </div>
+                                </div>
+
+                                <!-- Available Logos -->
+                                <p class="available-text">Esta Conta está disponível em:</p>
+                                <div class="custom-logo-wrapper mx-auto">
+                                    <div class="store-logo">
+                                        <img src="../img/logo.png" alt="Lyvros" style="width: 55px;">
+                                        <div class="mt-2">LYVROS</div>
+                                    </div>
+                                    <div class="store-logo">
+                                        <img src="../img/livr.png" alt="Buchholz" style="width: 55px;">
+                                        <div class="mt-2">LIVRARIA BUCHHOLZ</div>
+                                    </div>
+                                    <div class="store-logo">
+                                        <img src="../img/leytura.png" alt="Clube de Leitura" style="width: 65px;">
+                                        <div class="mt-2">CLUBE DE LEYTURA</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alteração de E-mail Modal-->
+    <div class="modal fade modal-heder-none" id="loginModal" aria-hidden="true" aria-labelledby="loginModalPopupLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-box">
+                        <h4 class="mb-2">Alteração de E-mail</h4>
+                        <p class="fnt-size">Ao alterar o seu e-mail de registo poderá perder algumas
+                            informações do seu histórico e deixar de ter acesso aos seus perfis.</p>
+                        <form>
+
+
+                            <!-- Custom E-mail Field -->
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control bg-white" id="email" placeholder="E-mail">
+                                <label for="email">E-mail</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control bg-white" id="confirmEmail"
+                                    placeholder="Confirme o E-mail">
+                                <label for="confirmEmail">Confirme o E-mail</label>
+                            </div>
+
+
+                            <div class="d-flex justify-content-center gap-2 mt-4">
+                                <button class="btn btn-custom-dark">Criar Conta</button>
+                                <button class="btn btn-custom-outline">Cancelar</button>
+                            </div>
+
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alteração de Palavra-passe Modal-->
+    <div class="modal fade modal-heder-none" id="alteracao" aria-hidden="true" aria-labelledby="alteracaoPopupLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-box container mt-5">
+                        <h4 class="mb-4">Alteração de Palavra-passe</h4>
+                        <form>
+
+                            <div class="form-floating mb-3 password-wrapper wrapper-two">
+                                <input type="password" class="form-control password-input no-input-border"
+                                    id="new-password" placeholder="Nova Palavra-passe">
+                                <label for="new-password">Nova Palavra-passe</label>
+                                <i class="bi bi-eye-slash toggle-password" data-target="new-password"></i>
+                            </div>
+
+                            <div class="form-floating mb-3 password-wrapper wrapper-two">
+                                <input type="password" class="form-control password-input no-input-border"
+                                    id="confirm-password" placeholder="Confirme a nova Palavra-passe">
+                                <label for="confirm-password">Confirme a nova Palavra-passe</label>
+                                <i class="bi bi-eye-slash toggle-password" data-target="confirm-password"></i>
+                            </div>
+
+
+
+                            <div class="d-flex justify-content-center gap-2 mt-4">
+                                <button type="submit" class="btn btn-custom-dark">Criar Conta</button>
+                                <button type="button" class="btn btn-custom-outline">Cancelar</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicionar Perfil Modal-->
+    <div class="modal fade modal-heder-none" id="adicionar" aria-hidden="true" aria-labelledby="adicionarPopupLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-box">
+                        <h4 class="mb-3">Adicionar Perfil</h4>
+                        <form>
+                            <div class="custom-input-group mb-3">
+                                <input type="text" placeholder="Código" value="xxxxxxxxx">
+                                <button>Gravar</button>
+                            </div>
+
+                            <!-- Success Message -->
+                            <div class="success-message">
+                                Perfil <strong>Professor</strong> criado com sucesso.
+                            </div>
+
+                            <div class="my-1">ou</div>
+
+                            <!-- Error Message -->
+                            <div class="error-message">
+                                Código inválido. Se tiver dúvidas contacte
+                                <a href="mailto:info.online@leya.com">info.online@leya.com</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Adicione uma nova morada Modal-->
+    <div class="modal fade modal-heder-none" id="adicione" aria-hidden="true" aria-labelledby="adicionePopupLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body position-relative">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="form-box">
+                        <h4 class="mb-3">Adicione uma nova morada</h4>
+                        <form>
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="firstName" value="Diana"
+                                    placeholder="Primeiro Nome">
+                                <label for="firstName">Primeiro Nome</label>
+                            </div>
+
+                            <div class="form-floating mb-2">
+                                <input type="text" class="form-control" id="lastName" value="Monsanto"
+                                    placeholder="Apelidos">
+                                <label for="lastName">Apelidos</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="empresa" placeholder="Empresa (Opcional)">
+                                <label for="empresa">Empresa (Opcional)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="morada1" placeholder="Morada">
+                                <label for="morada1">Morada</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="morada2" placeholder="Morada (continuação)">
+                                <label for="morada2">Morada (continuação)</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="codigoPostal" placeholder="Código Postal">
+                                <label for="codigoPostal">Código Postal</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="localidade" placeholder="Localidade">
+                                <label for="localidade">Localidade</label>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="pais" placeholder="País">
+                                <label for="pais">País</label>
+                            </div>
+
+
+                            <!-- Phone with country code -->
+                            <div class="input-group mb-2">
+                                <span class="input-group-text p-0">
+                                    <select class="form-select border-0 ps-2 pe-2" style="width: 150px;">
+                                        <option selected>PT (+351)</option>
+                                    </select>
+                                </span>
+                                <div class="form-floating flex-grow-1">
+                                    <input type="tel" class="form-control" id="phone" value="91000000"
+                                        placeholder="Telemóvel">
+                                    <label for="phone">Telemóvel</label>
+                                </div>
+                            </div>
+
+                            <!-- NIF field -->
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="nif" placeholder="NIF (Opcional)">
+                                <label for="nif">NIF (Opcional)</label>
+                            </div>
+
+                            <div class="d-flex justify-content-center gap-2 mt-4">
+                                <button class="btn btn-custom-dark" type="submit">Criar Conta</button>
+                                <button class="btn btn-custom-outline" type="button">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal triger  -->
+    <a data-bs-toggle="modal" href="#login" role="button">Location Popup</a>
+    <a data-bs-toggle="modal" href="#loginModal" role="button">Location Popup</a>
+    <a data-bs-toggle="modal" href="#alteracao" role="button">Location Popup</a>
+    <a data-bs-toggle="modal" href="#adicionar" role="button">Location Popup</a>
+    <a data-bs-toggle="modal" href="#adicione" role="button">Location Popup</a>
+
+    <!-- Import footer here  -->
+    <div id="footer"></div>
+    <script type="module" src="../layout/footer.js"></script>
+    <!-- footer end  -->
+
+    <script>
+        document.querySelectorAll('.select-dropdown').forEach(dropdown => {
+            const selectedText = dropdown.querySelector('.selected-text');
+            const items = dropdown.querySelectorAll('.dropdown-item');
+
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    selectedText.textContent = this.textContent;
+                });
+            });
+        });
+    </script>
+
+    <script type="module" src="../../resources/js/layout.js"></script>
+</body>
+
+</html>
