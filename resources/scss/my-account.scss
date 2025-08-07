@@ -49,9 +49,54 @@
   }
 }
 
-
-
-
+.leya-card {
+  position: relative;
+  padding: 25px;
+  transition: background 0.5s ease;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  @media (min-width: 996px) {
+    width: 540px;
+  }
+  &:hover {
+    background: #e9f2f5;
+  }
+  .card-heading {
+    color: #3c4b54;
+    font-weight: 600;
+    font-size: 16px;
+  }
+  p,
+  a {
+    margin-bottom: 5px;
+    color: #7694a6;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19px;
+  }
+  .edit-icon,
+  .delete-icon {
+    width: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 25px;
+    svg {
+      fill: #4e626e !important;
+      stroke-width: 0px;
+    }
+  }
+  .edit-icon {
+    top: 20px !important;
+  }
+  .delete-icon {
+    bottom: 20px !important;
+    color: #4e626e;
+  }
+}
+.leya-card-active {
+  background: #e9f2f5;
+}
 
 //  css
 .form-floating {
@@ -360,8 +405,6 @@ input:focus {
   color: #3c4b54;
   font-size: 13px;
 }
-
-
 
 .quick-title {
   font-size: 14px;

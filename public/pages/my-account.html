@@ -207,7 +207,7 @@
 
 
                             <!-- Tab Panel  -->
-                            <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-content w-100" id="v-pills-tabContent">
 
                                 <!-- Dados Pessoais -->
                                 <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
@@ -218,105 +218,63 @@
                                     </button>
                                     <h5 class="content-wrapper-heading">Dados Pessoais</h5>
                                     <div class="content-body">
-                                        <div class="form-box">
-                        <h4 class="mb-4">Entre ou Crie uma Conta</h4>
 
-                        <form>
-                            <!-- Email -->
-                            <div class="form-floating mb-3">
-                                <input type="email" class="form-control" id="emailLogin" placeholder="E-mail"
-                                    value="dmonsanto@leya.com">
-                                <label for="emailLogin">E-mail</label>
-                            </div>
-
-                            <!-- Password -->
-                            <div class="form-floating mb-3 password-wrapper wrapper-two ">
-                                <input type="password" class="form-control password-input no-input-border"
-                                    id="new-password" placeholder="Nova Palavra-passe">
-                                <label for="new-password">Nova Palavra-passe</label>
-                                <i class="bi bi-eye-slash toggle-password" data-target="new-password"></i>
-                            </div>
-
-                            <!-- Lembrar + Forgot Password -->
-                            <div class="d-flex justify-content-between align-items-center mb-3">
-                                <div class="form-check">
-                                    <input class="form-check-input custom-check" type="checkbox" id="rememberCheck">
-                                    <label class="form-check-label custom-check-label" for="rememberCheck">Lembrar a
-                                        palavra-passe</label>
-                                </div>
-
-                                <a href="#" class="forgot-link">Esqueceu-se da palavra-passe?</a>
-
-                            </div>
-
-                            <!-- Terms Text -->
-                            <div class="text-center mt-3">
-                                <small class="text-note">
-                                    Ao Criar Conta está a concordar com os nossos <a href="#">Termos e Condições</a> e
-                                    com a nossa <a href="#">Política
-                                        de Privacidade</a>.
-                                </small>
-                            </div>
-
-                            <!-- Entrar / Criar Conta -->
-                            <div class="d-flex flex-column align-items-center gap-2 mt-4 mb-2">
-                                <button class="btn btn-custom-dark fixed-btn" type="submit">Entrar</button>
-                                <button class="btn btn-custom-outline fixed-btn" type="button">Criar uma Conta</button>
-                            </div>
-
-
-                            <!-- Social Login -->
-                            <div class="text-center">
-                                <p class="quick-title ">Ou Entre de forma rápida</p>
-                                <div class="social-icons justify-content-center mb-4">
-                                    <!-- Apple -->
-                                    <div class="icon-circle apple-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apple/apple-original.svg"
-                                            alt="Apple">
-                                    </div>
-                                    <!-- Facebook -->
-                                    <div class="icon-circle">
-                                        <img src="https://cdn-icons-png.flaticon.com/512/145/145802.png" alt="Facebook"
-                                            width="40">
-                                    </div>
-                                    <!-- Google -->
-                                    <div class="icon-circle google-icon">
-                                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-                                            alt="Google">
-                                    </div>
-                                </div>
-
-                                <!-- Available Logos -->
-                                <p class="available-text">Esta Conta está disponível em:</p>
-                                <div class="custom-logo-wrapper mx-auto">
-                                    <div class="store-logo">
-                                        <img src="../img/logo.png" alt="Lyvros" style="width: 55px;">
-                                        <div class="mt-2">LYVROS</div>
-                                    </div>
-                                    <div class="store-logo">
-                                        <img src="../img/livr.png" alt="Buchholz" style="width: 55px;">
-                                        <div class="mt-2">LIVRARIA BUCHHOLZ</div>
-                                    </div>
-                                    <div class="store-logo">
-                                        <img src="../img/leytura.png" alt="Clube de Leitura" style="width: 65px;">
-                                        <div class="mt-2">CLUBE DE LEYTURA</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-addresses" role="tabpanel"
                                     aria-labelledby="v-pills-addresses-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Moradas</h5>
                                     <div class="content-body">
-                                        ...
+                                        <div class="wrapper mt-4">
+                                            <div class="leya-card leya-card-active">
+                                                <h6 class="card-heading">Diana Monsanto</h6>
+                                                <p>LeYa</p>
+                                                <p>Rua XXXXXXXX, XXXXXXXX <br>0000-000 Lisboa <br>Portugal</p>
+                                                <a href="tel:+3519XXXXXXXX">(+351) 9XXXXXXXX</a>
+
+                                                <div class="edit-icon"><svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 13.42">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m12.96,3.19c.67-.67.61-1.83-.14-2.58C12.45.24,11.98.03,11.5,0c-.49-.03-.93.14-1.26.46L.97,9.73s-.02.03-.02.04h0S.01,13.02.01,13.02c-.03.1,0,.22.09.3s.2.12.3.09l3.25-.94h0s.03-.01.04-.02L12.96,3.19Zm-4.05-1.06l1.12,1.12-7.72,7.72c-.1-.27-.27-.51-.49-.74-.06-.06-.12-.11-.19-.17-.15-.12-.29-.21-.39-.27l7.67-7.67ZM2.15,11.19s.02.04.03.06.03.03.06.03c.36.1.68.32.96.65.12.15.21.29.26.38l-2.29.66c-.05-.1-.14-.26-.29-.41s-.31-.24-.41-.29l.66-2.29c.24.14.84.53,1.03,1.22Zm1.21.62c-.26-.31-.57-.55-.9-.68l7.72-7.72,1.12,1.12-7.67,7.67c-.06-.1-.14-.24-.27-.39Zm8.08-7.43l-2.4-2.4.61-.61,2.4,2.4-.61.61Zm.06-4.15c.43.02.84.21,1.16.53.66.66.72,1.68.13,2.27l-.6.6-2.4-2.4.6-.6c.29-.29.68-.43,1.11-.41ZM.32,13.2s-.07-.01-.08-.02-.03-.04-.02-.08l.18-.64c.08.04.21.11.33.23s.19.24.23.33l-.64.18Z" />
+                                                        </g>
+                                                    </svg></div>
+                                                <div class="delete-icon"><i class="bi bi-trash3"></i></div>
+                                            </div>
+
+                                            <div class="leya-card">
+                                                <h6 class="card-heading">Diana Monsanto</h6>
+                                                <p>LeYa</p>
+                                                <p>Rua XXXXXXXX, XXXXXXXX <br>0000-000 Lisboa <br>Portugal</p>
+                                                <a href="tel:+3519XXXXXXXX">(+351) 9XXXXXXXX</a>
+
+                                                <div class="edit-icon"><svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 13.42">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m12.96,3.19c.67-.67.61-1.83-.14-2.58C12.45.24,11.98.03,11.5,0c-.49-.03-.93.14-1.26.46L.97,9.73s-.02.03-.02.04h0S.01,13.02.01,13.02c-.03.1,0,.22.09.3s.2.12.3.09l3.25-.94h0s.03-.01.04-.02L12.96,3.19Zm-4.05-1.06l1.12,1.12-7.72,7.72c-.1-.27-.27-.51-.49-.74-.06-.06-.12-.11-.19-.17-.15-.12-.29-.21-.39-.27l7.67-7.67ZM2.15,11.19s.02.04.03.06.03.03.06.03c.36.1.68.32.96.65.12.15.21.29.26.38l-2.29.66c-.05-.1-.14-.26-.29-.41s-.31-.24-.41-.29l.66-2.29c.24.14.84.53,1.03,1.22Zm1.21.62c-.26-.31-.57-.55-.9-.68l7.72-7.72,1.12,1.12-7.67,7.67c-.06-.1-.14-.24-.27-.39Zm8.08-7.43l-2.4-2.4.61-.61,2.4,2.4-.61.61Zm.06-4.15c.43.02.84.21,1.16.53.66.66.72,1.68.13,2.27l-.6.6-2.4-2.4.6-.6c.29-.29.68-.43,1.11-.41ZM.32,13.2s-.07-.01-.08-.02-.03-.04-.02-.08l.18-.64c.08.04.21.11.33.23s.19.24.23.33l-.64.18Z" />
+                                                        </g>
+                                                    </svg></div>
+                                                <div class="delete-icon"><i class="bi bi-trash3"></i></div>
+                                            </div>
+
+                                            <div class="leya-card">
+                                                <h6 class="card-heading">Diana Monsanto</h6>
+                                                <p>LeYa</p>
+                                                <p>Rua XXXXXXXX, XXXXXXXX <br>0000-000 Lisboa <br>Portugal</p>
+                                                <a href="tel:+3519XXXXXXXX">(+351) 9XXXXXXXX</a>
+
+                                                <div class="edit-icon"><svg id="Layer_2" data-name="Layer 2"
+                                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.42 13.42">
+                                                        <g id="Layer_1-2" data-name="Layer 1">
+                                                            <path class="cls-1"
+                                                                d="m12.96,3.19c.67-.67.61-1.83-.14-2.58C12.45.24,11.98.03,11.5,0c-.49-.03-.93.14-1.26.46L.97,9.73s-.02.03-.02.04h0S.01,13.02.01,13.02c-.03.1,0,.22.09.3s.2.12.3.09l3.25-.94h0s.03-.01.04-.02L12.96,3.19Zm-4.05-1.06l1.12,1.12-7.72,7.72c-.1-.27-.27-.51-.49-.74-.06-.06-.12-.11-.19-.17-.15-.12-.29-.21-.39-.27l7.67-7.67ZM2.15,11.19s.02.04.03.06.03.03.06.03c.36.1.68.32.96.65.12.15.21.29.26.38l-2.29.66c-.05-.1-.14-.26-.29-.41s-.31-.24-.41-.29l.66-2.29c.24.14.84.53,1.03,1.22Zm1.21.62c-.26-.31-.57-.55-.9-.68l7.72-7.72,1.12,1.12-7.67,7.67c-.06-.1-.14-.24-.27-.39Zm8.08-7.43l-2.4-2.4.61-.61,2.4,2.4-.61.61Zm.06-4.15c.43.02.84.21,1.16.53.66.66.72,1.68.13,2.27l-.6.6-2.4-2.4.6-.6c.29-.29.68-.43,1.11-.41ZM.32,13.2s-.07-.01-.08-.02-.03-.04-.02-.08l.18-.64c.08.04.21.11.33.23s.19.24.23.33l-.64.18Z" />
+                                                        </g>
+                                                    </svg></div>
+                                                <div class="delete-icon"><i class="bi bi-trash3"></i></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
