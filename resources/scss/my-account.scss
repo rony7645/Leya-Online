@@ -49,6 +49,22 @@
   }
 }
 
+// tab content body width 
+@media (min-width:996px) {
+  #v-pills-personal{
+    width: 450px;
+  }
+  #v-pills-addresses{
+    width: 540px;
+  }
+  #v-pills-orders{
+    width: 740px;
+  }
+  #v-pills-emails{
+    width: 850px;
+  }
+}
+
 .wrapper {
   .form-group {
     position: relative;

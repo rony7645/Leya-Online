@@ -216,22 +216,23 @@
                                     <div class="content-body mt-4">
                                         <div class="wrapper">
                                             <form action="" class="d-flex flex-column gap-2">
+
                                                 <div class="form-group">
-                                                    <input type="text" id="fName" class="form-control" placeholder=" "
-                                                        value="">
-                                                    <label for="fName">Primeiro Nome</label>
+                                                    <input type="text" id="fname" class="form-control"
+                                                        placeholder=" " value="">
+                                                    <label for="fname">Primeiro Nome</label>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="text" id="fName" class="form-control" placeholder=" "
-                                                        value="">
-                                                    <label for="fName">Apelidos</label>
+                                                    <input type="text" id="lname" class="form-control"
+                                                        placeholder=" " value="">
+                                                    <label for="lname">Apelidos</label>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="text" id="fName" class="form-control" placeholder=" "
+                                                    <input type="email" id="email" class="form-control" placeholder=" "
                                                         value="">
-                                                    <label for="fName">E-mail</label>
+                                                    <label for="email">E-mail</label>
                                                 </div>
 
                                                 <div class="form-group">
@@ -242,23 +243,22 @@
                                                 </div>
 
                                                 <div class="phone-wrapper">
-                                                    <select class="country-select">
+                                                    <select class="country-select" id="countryCode">
                                                         <option>PT (+351)</option>
                                                         <option>US (+1)</option>
                                                         <option>UK (+44)</option>
                                                         <option>BD (+880)</option>
                                                     </select>
                                                     <div class="form-group phone-input-wrapper">
-                                                        <input type="text" id="fName" class="form-control"
+                                                        <input type="text" id="phone" class="form-control"
                                                             placeholder=" " value="">
-                                                        <label for="fName">Telemóvel</label>
+                                                        <label for="phone">Telemóvel</label>
                                                     </div>
                                                 </div>
 
                                                 <div class="form-group">
-                                                    <input type="text" id="password" class="form-control"
-                                                        placeholder=" ">
-                                                    <label for="password">NIF (Opcional)</label>
+                                                    <input type="text" id="nif" class="form-control" placeholder=" ">
+                                                    <label for="nif">NIF (Opcional)</label>
                                                 </div>
 
                                                 <div class="form-html mt-4">
@@ -266,26 +266,35 @@
                                                     <p>Selecione o perfil que pretende manter ativo</p>
 
                                                     <div class="radio-group">
-                                                        <input type="radio" name="one" id="one">
-                                                        <label for="one">LeYa <a href="#">(ver condições)</a></label>
+                                                        <input type="radio" name="profile" id="profileLeya"
+                                                            value="LeYa">
+                                                        <label for="profileLeya">LeYa <a href="#">(ver
+                                                                condições)</a></label>
                                                     </div>
                                                     <div class="radio-group">
-                                                        <input type="radio" name="one" id="one">
-                                                        <label for="one">Professor <a href="#">(ver condições)</a></label>
+                                                        <input type="radio" name="profile" id="profileProfessor"
+                                                            value="Professor">
+                                                        <label for="profileProfessor">Professor <a href="#">(ver
+                                                                condições)</a></label>
                                                     </div>
                                                     <div class="radio-group">
-                                                        <input type="radio" name="one" id="one">
-                                                        <label for="one">Millennium BCP <a href="#">(ver condições)</a></label>
+                                                        <input type="radio" name="profile" id="profileMillennium"
+                                                            value="Millennium BCP">
+                                                        <label for="profileMillennium">Millennium BCP <a href="#">(ver
+                                                                condições)</a></label>
                                                     </div>
                                                     <div class="radio-group">
-                                                        <input type="radio" name="one" id="one">
-                                                        <label for="one">ACP <a href="#">(ver condições)</a></label>
+                                                        <input type="radio" name="profile" id="profileACP" value="ACP">
+                                                        <label for="profileACP">ACP <a href="#">(ver
+                                                                condições)</a></label>
                                                     </div>
 
                                                     <div class="form-btn"><a href="#">Adicionar Perfil</a></div>
                                                 </div>
+
                                                 <input type="submit" value="Gravar" class="submit-btn">
                                             </form>
+
                                         </div>
 
 
@@ -350,12 +359,8 @@
 
                                 <div class="tab-pane fade" id="v-pills-orders" role="tabpanel"
                                     aria-labelledby="v-pills-orders-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Histórico de Encomendas</h5>
-                                    <div class="content-body">
+                                    <div class="content-body mt-4">
                                         <div class="wrapper d-flex flex-column gap-3">
                                             <div class="history-product-card">
                                                 <div class="product-card-body">
@@ -671,10 +676,6 @@
 
                                 <div class="tab-pane fade" id="v-pills-subscriptions" role="tabpanel"
                                     aria-labelledby="v-pills-subscriptions-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Subscrições</h5>
                                     <div class="content-body">
                                         ...
@@ -692,10 +693,6 @@
 
                                 <div class="tab-pane fade" id="v-pills-favorites" role="tabpanel"
                                     aria-labelledby="v-pills-favorites-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Favoritos</h5>
                                     <div class="content-body">
                                         <div class="wrapper">
