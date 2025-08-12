@@ -19,10 +19,10 @@
             <div class="row">
                 <div class="col-12">
                     <div class="account-wrapper">
-                        <div class="d-flex align-items-start gap-5">
+                        <div class="d-md-flex align-items-start gap-3 gap-lg-5 ">
                             <!-- Tab Navigation  -->
-                            <div class="nav flex-column nav-pills me-3 account-tablist" id="v-pills-tab" role="tablist"
-                                aria-orientation="vertical">
+                            <div class="nav flex-column nav-pills me-md-3 account-tablist" id="v-pills-tab"
+                                role="tablist" aria-orientation="vertical">
                                 <div class="tab-heading">a minha conta</div>
 
                                 <div class="nav-link active" id="v-pills-personal-tab" data-bs-toggle="pill"
@@ -212,12 +212,82 @@
                                 <!-- Dados Pessoais -->
                                 <div class="tab-pane fade show active" id="v-pills-personal" role="tabpanel"
                                     aria-labelledby="v-pills-personal-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Dados Pessoais</h5>
-                                    <div class="content-body">
+                                    <div class="content-body mt-4">
+                                        <div class="wrapper">
+                                            <form action="" class="d-flex flex-column gap-2">
+                                                <div class="form-group">
+                                                    <input type="text" id="fName" class="form-control" placeholder=" "
+                                                        value="">
+                                                    <label for="fName">Primeiro Nome</label>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="text" id="fName" class="form-control" placeholder=" "
+                                                        value="">
+                                                    <label for="fName">Apelidos</label>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="text" id="fName" class="form-control" placeholder=" "
+                                                        value="">
+                                                    <label for="fName">E-mail</label>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="password" id="password" class="form-control"
+                                                        placeholder=" ">
+                                                    <label for="password">Palavra-passe</label>
+                                                    <i class="bi bi-eye-slash toggle-password" id="togglePassword"></i>
+                                                </div>
+
+                                                <div class="phone-wrapper">
+                                                    <select class="country-select">
+                                                        <option>PT (+351)</option>
+                                                        <option>US (+1)</option>
+                                                        <option>UK (+44)</option>
+                                                        <option>BD (+880)</option>
+                                                    </select>
+                                                    <div class="form-group phone-input-wrapper">
+                                                        <input type="text" id="fName" class="form-control"
+                                                            placeholder=" " value="">
+                                                        <label for="fName">Telemóvel</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <input type="text" id="password" class="form-control"
+                                                        placeholder=" ">
+                                                    <label for="password">NIF (Opcional)</label>
+                                                </div>
+
+                                                <div class="form-html mt-4">
+                                                    <h6>PERFIL</h6>
+                                                    <p>Selecione o perfil que pretende manter ativo</p>
+
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="one" id="one">
+                                                        <label for="one">LeYa <a href="#">(ver condições)</a></label>
+                                                    </div>
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="one" id="one">
+                                                        <label for="one">Professor <a href="#">(ver condições)</a></label>
+                                                    </div>
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="one" id="one">
+                                                        <label for="one">Millennium BCP <a href="#">(ver condições)</a></label>
+                                                    </div>
+                                                    <div class="radio-group">
+                                                        <input type="radio" name="one" id="one">
+                                                        <label for="one">ACP <a href="#">(ver condições)</a></label>
+                                                    </div>
+
+                                                    <div class="form-btn"><a href="#">Adicionar Perfil</a></div>
+                                                </div>
+                                                <input type="submit" value="Gravar" class="submit-btn">
+                                            </form>
+                                        </div>
+
 
                                     </div>
                                 </div>
@@ -286,19 +356,316 @@
                                     </button>
                                     <h5 class="content-wrapper-heading">Histórico de Encomendas</h5>
                                     <div class="content-body">
-                                        ...
+                                        <div class="wrapper d-flex flex-column gap-3">
+                                            <div class="history-product-card">
+                                                <div class="product-card-body">
+
+                                                    <!-- Product thumbnails  -->
+                                                    <div class="product-thumbnail-wrapper">
+                                                        <h5 class="product-card-heading text-accent">Cancelado</h5>
+                                                        <div class="product-card-thumbnails d-flex gap-2">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-lg-flex justify-content-between gap-5 align-items-center">
+                                                        <!-- Product Details  -->
+                                                        <div class="product-card-details">
+                                                            <div class="date mb-3">
+                                                                <span class="fw-bold">Data da encomenda:</span>
+                                                                <span>15/02/2025</span>
+                                                            </div>
+
+                                                            <div class="order-history">
+                                                                <span class="fw-bold">Nº da encomenda:</span>
+                                                                <span>#12345</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Product Button  -->
+                                                        <div class="leya-btn product-card-btn"><a href="#">Detalhes da
+                                                                encomenda</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-product-card">
+                                                <div class="product-card-body">
+
+                                                    <!-- Product thumbnails  -->
+                                                    <div class="product-thumbnail-wrapper">
+                                                        <h5 class="product-card-heading text-accent">Devolvido</h5>
+                                                        <div class="product-card-thumbnails d-flex gap-2">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-lg-flex justify-content-between gap-5 align-items-center">
+                                                        <!-- Product Details  -->
+                                                        <div class="product-card-details">
+                                                            <div class="date mb-3">
+                                                                <span class="fw-bold">Data da encomenda:</span>
+                                                                <span>15/02/2025</span>
+                                                            </div>
+
+                                                            <div class="order-history">
+                                                                <span class="fw-bold">Nº da encomenda:</span>
+                                                                <span>#12345</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Product Button  -->
+                                                        <div class="leya-btn product-card-btn"><a href="#">Detalhes da
+                                                                encomenda</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-product-card">
+                                                <div class="product-card-body">
+
+                                                    <!-- Product thumbnails  -->
+                                                    <div class="product-thumbnail-wrapper">
+                                                        <h5 class="product-card-heading text-green">Enviado</h5>
+                                                        <div class="product-card-thumbnails d-flex gap-2">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-lg-flex justify-content-between gap-5 align-items-center">
+                                                        <!-- Product Details  -->
+                                                        <div class="product-card-details">
+                                                            <div class="date mb-3">
+                                                                <span class="fw-bold">Data da encomenda:</span>
+                                                                <span>15/02/2025</span>
+                                                            </div>
+
+                                                            <div class="order-history">
+                                                                <span class="fw-bold">Nº da encomenda:</span>
+                                                                <span>#12345</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Product Button  -->
+                                                        <div class="leya-btn product-card-btn"><a href="#">Detalhes da
+                                                                encomenda</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="history-product-card">
+                                                <div class="product-card-body">
+
+                                                    <!-- Product thumbnails  -->
+                                                    <div class="product-thumbnail-wrapper">
+                                                        <h5 class="product-card-heading text-yellow">Enviado
+                                                            parcialmente</h5>
+                                                        <div class="product-card-thumbnails d-flex gap-2">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                            <img src="../img/250_9789895813285_corrupt.jpg"
+                                                                class="product-card-thumbnail">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        class="d-lg-flex justify-content-between gap-5 align-items-center">
+                                                        <!-- Product Details  -->
+                                                        <div class="product-card-details">
+                                                            <div class="date mb-3">
+                                                                <span class="fw-bold">Data da encomenda:</span>
+                                                                <span>15/02/2025</span>
+                                                            </div>
+
+                                                            <div class="order-history">
+                                                                <span class="fw-bold">Nº da encomenda:</span>
+                                                                <span>#12345</span>
+                                                            </div>
+                                                        </div>
+
+                                                        <!-- Product Button  -->
+                                                        <div class="leya-btn product-card-btn"><a href="#">Detalhes da
+                                                                encomenda</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="order-wrapper">
+                                            <div class="order-list">
+                                                <div class="list">
+                                                    <h5 class="list-heading">Número da Encomenda: <span>#12345</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="list">
+                                                    <h5 class="list-heading">Data da Compra: <span>15/02/2025</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="list">
+                                                    <h5 class="list-heading">Estado da Encomenda: <span>xxxxxx</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="list">
+                                                    <h5 class="list-heading">Método de Pagamento:
+                                                        <span>Multibanco</span>
+                                                    </h5>
+                                                </div>
+                                                <div class="list">
+                                                    <h5 class="list-heading">Total Pago: <span>35,90€</span></h5>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <div class="list">
+                                                        <h5 class="list-heading">Produtos Físicos</h5>
+                                                        <!-- product box  -->
+                                                        <div class="product-card">
+                                                            <!-- product image  -->
+                                                            <div class="product-img"><img
+                                                                    src="../img/250_9789722083959_despedidas_impossiveis.jpg"
+                                                                    alt="">
+                                                            </div>
+
+                                                            <!-- product details  -->
+                                                            <div
+                                                                class="d-lg-flex justify-content-between align-items-md-center w-100">
+
+                                                                <div class="d-flex gap-3 align-items-center">
+                                                                    <div class="product-card-details">
+                                                                        <h4 class="title m-0">Despedidas Impossíveis
+                                                                        </h4>
+                                                                        <h5 class="cart-product-cat">HAN KANG</h5>
+                                                                        <div class="product-price">
+                                                                            <span
+                                                                                class="cart-product-author">Livro</span>
+                                                                            <span class="sale-price">19,71€</span>
+                                                                            <span
+                                                                                class="regular-price"><del>21,90€</del></span>
+                                                                            <span class="discount-text">X%</span>
+                                                                        </div>
+                                                                        <p class="m-0">Enviado</p>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex justify-content-lg-between align-items-lg-center gap-3 gap-lg-5">
+
+                                                                    <!-- product quantitiy  -->
+                                                                    <div class="product-qty"><span>2</span></div>
+
+                                                                    <!-- discount price  -->
+                                                                    <div class="discount-price">
+                                                                        <span class="price fw-bold">39,42€</span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list">
+                                                        <h5 class="list-heading">Produtos Digitais</h5>
+                                                        <!-- product box  -->
+                                                        <div class="product-card">
+                                                            <!-- product image  -->
+                                                            <div class="product-img"><img
+                                                                    src="../img/250_9789892364179_o_lamento_dos_rios.jpg"
+                                                                    alt="">
+                                                            </div>
+
+                                                            <!-- product details  -->
+                                                            <div
+                                                                class="d-lg-flex justify-content-between align-items-md-center w-100">
+
+                                                                <div class="d-flex gap-3 align-items-center">
+                                                                    <div class="product-card-details">
+                                                                        <h4 class="title m-0">Despedidas Impossíveis
+                                                                        </h4>
+                                                                        <h5 class="cart-product-cat">HAN KANG</h5>
+                                                                        <div class="product-price">
+                                                                            <span
+                                                                                class="cart-product-author">Livro</span>
+                                                                            <span class="sale-price">19,71€</span>
+                                                                            <span
+                                                                                class="regular-price"><del>21,90€</del></span>
+                                                                            <span class="discount-text">X%</span>
+                                                                        </div>
+                                                                        <p class="m-0">Enviado</p>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div
+                                                                    class="d-flex justify-content-lg-between align-items-lg-center gap-3 gap-lg-5">
+
+                                                                    <!-- product quantitiy  -->
+                                                                    <div class="product-qty"><span>2</span></div>
+
+                                                                    <!-- discount price  -->
+                                                                    <div class="discount-price">
+                                                                        <span class="price fw-bold">39,42€</span>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="list mb-3">
+                                                        <h5 class="list-heading">Descarregar Faturas</h5>
+                                                        <div class="faturas bg-light p-3 d-flex flex-column gap-2 mt-2">
+                                                            <div
+                                                                class="faturas-list d-flex justify-content-between align-items-center">
+                                                                <h5 class="faturas-heading">Fatura n.º XXXXXXXX</h5>
+                                                                <div class="leya-btn product-card-btn"><a
+                                                                        href="#">Descarregar fatura</a></div>
+                                                            </div>
+                                                            <div
+                                                                class="faturas-list d-flex justify-content-between align-items-center">
+                                                                <h5 class="faturas-heading">Fatura n.º XXXXXXXX</h5>
+                                                                <div class="leya-btn product-card-btn"><a
+                                                                        href="#">Descarregar fatura</a></div>
+                                                            </div>
+                                                            <div
+                                                                class="faturas-list d-flex justify-content-between align-items-center">
+                                                                <h5 class="faturas-heading">Fatura n.º XXXXXXXX</h5>
+                                                                <div class="leya-btn product-card-btn"><a
+                                                                        href="#">Descarregar fatura</a></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <h5 class="content-wrapper-heading">Envio e Rastreamento</h5>
+                                                    <div class="d-flex flex-column gap-2">
+                                                        <div class="list">
+                                                            <h5 class="list-heading">Morada de Entrega:<span>Envio e
+                                                                    Rastreamento</span></h5>
+                                                        </div>
+                                                        <div class="list">
+                                                            <h5 class="list-heading">Transportadora:<span>Envio e
+                                                                    Rastreamento</span></h5>
+                                                        </div>
+                                                        <div class="list">
+                                                            <h5 class="list-heading">Código de
+                                                                Rastreamento:<span>XXXXX</span></h5>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-library" role="tabpanel"
                                     aria-labelledby="v-pills-library-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Biblioteca Digital</h5>
                                     <div class="content-body">
-                                        ...
+                                        <h6 class="fw-bold mt-3">Envio e RastreamentoNão tem nenhum registo de eventos
+                                            inscritos</h6>
                                     </div>
                                 </div>
 
@@ -316,13 +683,10 @@
 
                                 <div class="tab-pane fade" id="v-pills-events" role="tabpanel"
                                     aria-labelledby="v-pills-events-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Os Meus Eventos</h5>
                                     <div class="content-body">
-                                        ...
+                                        <h6 class="fw-bold mt-3">Envio e RastreamentoNão tem nenhum registo de eventos
+                                            inscritos</h6>
                                     </div>
                                 </div>
 
@@ -334,19 +698,404 @@
                                     </button>
                                     <h5 class="content-wrapper-heading">Favoritos</h5>
                                     <div class="content-body">
-                                        ...
+                                        <div class="wrapper">
+                                            <div class="product-grid">
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789892364179_o_lamento_dos_rios.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789895813285_corrupt.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Product  -->
+                                                <div class="product">
+                                                    <div class="product-thumbnail thumbnail">
+                                                        <div class="ribon-wrapper">
+                                                            <div class="ribon"> - 10%</div>
+                                                            <div class="favorite active">
+                                                                <svg id="Layer_2" data-name="Layer 2"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                    viewBox="0 0 12.67 12.12">
+                                                                    <g id="Layer_1-2" data-name="Layer 1">
+                                                                        <path class="cls-1"
+                                                                            d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                                                                    </g>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#" class="thumbnail-img"><img
+                                                                src="../../public/img/250_9789722084413_ainda_estou_aqui.jpg"
+                                                                alt="">
+                                                        </a>
+                                                    </div>
+                                                    <!-- product details  -->
+                                                    <div class="product-details">
+                                                        <h4 class="product-title">
+                                                            <a href="#">Corrupt</a>
+                                                        </h4>
+                                                        <h5 class="product-category text-body-2">PENELOPE DOUGLAS</h5>
+                                                        <div class="product-price">
+                                                            <span class="price-text text-body-2">Livro</span>
+                                                            <span class="sale-price text-accent"> 19,71€</span>
+                                                            <span class="regular-price">
+                                                                <del>21,90€</del>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
                                 <div class="tab-pane fade" id="v-pills-emails" role="tabpanel"
                                     aria-labelledby="v-pills-emails-tab" tabindex="0">
-                                    <button class="btn btn-light d-md-none mb-3" data-bs-toggle="pill"
-                                        data-bs-target="#v-pills-personal">
-                                        ← voltar
-                                    </button>
                                     <h5 class="content-wrapper-heading">Preferências de E-mails</h5>
-                                    <div class="content-body">
-                                        ...
+                                    <div class="content-body mt-4">
+                                        <div class="wrapper">
+                                            <div class="email-card">
+                                                <h5 class="mb-3">Gerir as Preferências de E-mail MarketingEnvio e
+                                                    Rastreamento</h5>
+                                                <p>
+                                                    Receba as nossas informações de novidades, destaques, recomendações,
+                                                    eventos e campanhas por e-mail.
+                                                    Para irmos ao encontro dos seus interesses, por favor, selecione
+                                                    abaixo os e-mails que pretende receber.Envio e Rastreamento
+                                                </p>
+                                            </div>
+
+                                            <div class="divider dotted my-4"></div>
+
+                                            <div class="email-card">
+                                                <div class="email-logo"><img src="../img/logo.png" alt="Logo LYVROS">
+                                                </div>
+                                                <div class="input-form">
+                                                    <div class="d-flex gap-2 align-items-start">
+                                                        <input type="radio" name="example1" id="example1_yes">
+                                                        <label for="example1_yes">
+                                                            Desejo receber comunicações sobre os livros, autores e
+                                                            produtos da loja LYVROS.Envio e Rastreamento
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-group mt-3">
+                                                        <div class="d-flex gap-2 align-items-start">
+                                                            <input type="radio" name="example1" id="example1_no">
+                                                            <label for="example1_no">
+                                                                Não pretendo receber newsletters com informações da loja
+                                                                LYVROS.Envio e Rastreamento<br>
+                                                                <span>Continuará a receber e-mails sobre o seu registo,
+                                                                    as suas encomendas e informações de envio.Envio e
+                                                                    Rastreamento</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divider dotted my-4"></div>
+
+                                            <div class="email-card">
+                                                <div class="email-logo"><img src="../img/livr.png"
+                                                        alt="Logo Livraria Buchholz"></div>
+                                                <div class="input-form">
+                                                    <div class="d-flex gap-2 align-items-start">
+                                                        <input type="radio" name="example2" id="example2_yes">
+                                                        <label for="example2_yes">
+                                                            Desejo receber comunicações sobre eventos, produtos,
+                                                            recomendações e informações da Livraria Buchholz. Envio e
+                                                            Rastreamento
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-group mt-3">
+                                                        <div class="d-flex gap-2 align-items-start">
+                                                            <input type="radio" name="example2" id="example2_no">
+                                                            <label for="example2_no">
+                                                                Não pretendo receber newsletters com informações da loja
+                                                                LYVROS.Envio e Rastreamento<br>
+                                                                <span>Continuará a receber e-mails sobre o seu registo,
+                                                                    as suas encomendas e informações de envio.Envio e
+                                                                    Rastreamento</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="divider dotted my-4"></div>
+
+                                            <div class="email-card">
+                                                <div class="email-logo"><img src="../img/leytura.png"
+                                                        alt="Logo Leytura"></div>
+                                                <div class="input-form">
+                                                    <div class="d-flex gap-2 align-items-start">
+                                                        <input type="radio" name="example3" id="example3_yes">
+                                                        <label for="example3_yes">
+                                                            Desejo receber comunicações sobre os livros, autores e
+                                                            produtos da loja LYVROS.Envio e Rastreamento
+                                                        </label>
+                                                    </div>
+                                                    <div class="input-group mt-3">
+                                                        <div class="d-flex gap-2 align-items-start">
+                                                            <input type="radio" name="example3" id="example3_no">
+                                                            <label for="example3_no">
+                                                                Não pretendo receber newsletters com informações da loja
+                                                                LYVROS.Envio e Rastreamento<br>
+                                                                <span>Continuará a receber e-mails sobre o seu registo,
+                                                                    as suas encomendas e informações de envio.Envio e
+                                                                    Rastreamento</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -415,6 +1164,17 @@
         </div>
     </footer>
 
+    <script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            this.classList.toggle("bi-eye");
+            this.classList.toggle("bi-eye-slash");
+        });
+    </script>
     <script type="module" src="../../resources/js/layout.js"></script>
 </body>
 
