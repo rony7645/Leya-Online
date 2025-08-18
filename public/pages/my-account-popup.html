@@ -13,7 +13,8 @@
     <script src="../layout/header.js"></script>
 
     <!-- Entre ou Crie uma Conta Modal-->
-    <div class="modal fade modal-heder-none" id="login" aria-hidden="true" aria-labelledby="loginPopupLabel" tabindex="-1">
+    <div class="modal fade modal-heder-none" id="login" aria-hidden="true" aria-labelledby="loginPopupLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-relative">
@@ -55,7 +56,7 @@
                                     Ao Criar Conta está a concordar com os nossos <a href="#">Termos e Condições</a> e
                                     com a nossa <a href="#">Política
                                         de Privacidade</a>.
-                                <p/>
+                                    <p />
                             </div>
 
                             <!-- Entrar / Criar Conta -->
@@ -111,29 +112,31 @@
     </div>
 
     <!-- Alteração de E-mail Modal-->
-    <div class="modal fade modal-heder-none" id="loginModal" aria-hidden="true" aria-labelledby="loginModalPopupLabel" tabindex="-1">
+    <div class="modal fade modal-heder-none" id="loginModal" aria-hidden="true" aria-labelledby="loginModalPopupLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-relative">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="form-box">
-                        <h4 class="mb-2">Alteração de E-mail</h4>
-                        <p class="fnt-size">Ao alterar o seu e-mail de registo poderá perder algumas
-                            informações do seu histórico e deixar de ter acesso aos seus perfis.</p>
+                        <h4 class="mb-2 tittle-size">Alteração de E-mail</h4>
+                        <p class="fnt-size">Ao alterar o seu e-mail de registo poderá perder algumas informações do seu
+                            histórico e deixar de ter acesso aos seus perfis.</p>
                         <form>
 
 
                             <!-- Custom E-mail Field -->
-                        <div class="form-floating mb-2">
-                            <input type="email" class="form-control bgcolor custom-input-height" id="email" placeholder="E-mail">
-                            <label for="email">E-mail</label>
-                        </div>
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control bgcolor custom-input-height" id="email"
+                                    placeholder="E-mail">
+                                <label for="email">Novo E-mail</label>
+                            </div>
 
-                        <div class="form-floating mb-2">
-                            <input type="email" class="form-control bgcolor custom-input-height" id="confirmEmail"
-                                placeholder="Confirme o E-mail">
-                            <label for="confirmEmail">Confirme o E-mail</label>
-                        </div>
+                            <div class="form-floating mb-2">
+                                <input type="email" class="form-control bgcolor custom-input-height" id="confirmEmail"
+                                    placeholder="Confirme o E-mail">
+                                <label for="confirmEmail">Confirme o novo E-mail</label>
+                            </div>
 
 
 
@@ -152,7 +155,8 @@
     </div>
 
     <!-- Alteração de Palavra-passe Modal-->
-    <div class="modal fade modal-heder-none" id="alteracao" aria-hidden="true" aria-labelledby="alteracaoPopupLabel" tabindex="-1">
+    <div class="modal fade modal-heder-none" id="alteracao" aria-hidden="true" aria-labelledby="alteracaoPopupLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-relative">
@@ -190,25 +194,29 @@
     </div>
 
     <!-- Adicionar Perfil Modal-->
-    <div class="modal fade modal-heder-none" id="adicionar" aria-hidden="true" aria-labelledby="adicionarPopupLabel" tabindex="-1">
+    <div class="modal fade modal-heder-none" id="adicionar" aria-hidden="true" aria-labelledby="adicionarPopupLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-relative">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="form-box">
-                        <h4 class="mb-3">Adicionar Perfil</h4>
+                        <h4 class="mb-3 tittle-size">Adicionar Perfil</h4>
                         <form>
                             <div class="custom-input-group mb-3">
+                                <label class="lleft" for="confirm-password">Código</label>
                                 <input type="text" placeholder="Código" value="xxxxxxxxx">
+
                                 <button>Gravar</button>
                             </div>
 
+
                             <!-- Success Message -->
                             <div class="success-message">
-                                Perfil <strong>Professor</strong> criado com sucesso.
+                                Perfil <strong>Professor</strong> <span style="color: red;"> criado com sucesso.</span>
                             </div>
 
-                            <div class="my-1">ou</div>
+                            <div class="my-1 ctlg">ou</div>
 
                             <!-- Error Message -->
                             <div class="error-message">
@@ -223,13 +231,14 @@
     </div>
 
     <!-- Adicione uma nova morada Modal-->
-    <div class="modal fade modal-heder-none" id="adicione" aria-hidden="true" aria-labelledby="adicionePopupLabel" tabindex="-1">
+    <div class="modal fade modal-heder-none" id="adicione" aria-hidden="true" aria-labelledby="adicionePopupLabel"
+        tabindex="-1">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body position-relative">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="form-box">
-                        <h4 class="mb-3">Adicione uma nova morada</h4>
+                        <h4 class="mb-3 tittle-size">Adicione uma nova morada</h4>
                         <form>
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bgcolor" id="firstName" value="Diana"
@@ -244,9 +253,10 @@
                             </div>
 
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bgcolor" id="empresa" placeholder="Empresa (Opcional)">
-                                <label for="empresa">Empresa (Opcional)</label>
+                                <input type="text" class="form-control bgcolor" id="empresa" placeholder="Empresa">
+                                <label for="empresa">Empresa <span class="optional-text">(Opcional)</span></label>
                             </div>
+
 
                             <div class="form-floating mb-2">
                                 <input type="text" class="form-control bgcolor" id="morada1" placeholder="Morada">
@@ -254,17 +264,20 @@
                             </div>
 
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bgcolor" id="morada2" placeholder="Morada (continuação)">
-                                <label for="morada2">Morada (continuação)</label>
+                                <input type="text" class="form-control bgcolor" id="morada2" placeholder="Morada">
+                                <label for="morada2">Morada <span class="optional-text">(continuação)</span></label>
                             </div>
 
+
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bgcolor" id="codigoPostal" placeholder="Código Postal">
+                                <input type="text" class="form-control bgcolor" id="codigoPostal"
+                                    placeholder="Código Postal">
                                 <label for="codigoPostal">Código Postal</label>
                             </div>
 
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bgcolor" id="localidade" placeholder="Localidade">
+                                <input type="text" class="form-control bgcolor" id="localidade"
+                                    placeholder="Localidade">
                                 <label for="localidade">Localidade</label>
                             </div>
 
@@ -290,9 +303,10 @@
 
                             <!-- NIF field -->
                             <div class="form-floating mb-2">
-                                <input type="text" class="form-control bgcolor" id="nif" placeholder="NIF (Opcional)">
-                                <label for="nif">NIF (Opcional)</label>
+                                <input type="text" class="form-control bgcolor" id="nif" placeholder="NIF">
+                                <label for="nif">NIF <span class="optional-text">(Opcional)</span></label>
                             </div>
+
 
                             <div class="d-flex justify-content-center gap-2 mt-4">
                                 <button class="btn btn-custom-dark" type="submit">Criar Conta</button>
