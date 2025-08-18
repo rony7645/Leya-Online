@@ -1,18 +1,15 @@
-
 .form-floating {
-
-
   > .form-control {
     background-color: #fffcc9 !important;
     border: 1px solid #6995a7;
-    border-radius: 0;
+    border-radius: 0 !important;
     color: #000;
     font-size: 13px;
     padding-top: 21px !important;
   }
 
   > label {
-    color: #8f9ea8;
+    color: #42606e;
     font-size: 14px;
   }
 }
@@ -36,7 +33,7 @@
     &:nth-child(2)::before,
     &:nth-child(3)::before,
     &:nth-child(5)::before {
-      content: "\2713";
+      content: '\2713';
       color: #44a25d;
     }
 
@@ -49,7 +46,7 @@
 
     &:nth-child(1)::before,
     &:nth-child(4)::before {
-      content: "\f00d";
+      content: '\f00d';
       color: #a0aab4;
     }
   }
@@ -119,7 +116,7 @@
 }
 
 .available-text {
-  color: #6995a7;
+  color: #304852;
   font-size: 13px;
   margin-top: 30px;
 }
@@ -140,7 +137,7 @@
 .form-control.password-input {
   background-color: transparent !important;
   border: 1px solid #6995a7;
-  border-radius: 0;
+  border-radius: 0 !important;
   padding-right: 40px;
   color: #000;
   font-size: 17px;
@@ -225,7 +222,7 @@
   border: none;
   font-weight: 600;
   width: 429px;
-  border-radius: 0;
+  border-radius: 0 !important;
   padding: 10px;
 }
 
@@ -236,7 +233,7 @@
   font-weight: 600;
   width: 429px;
   border: 1px solid #3c4b54;
-  border-radius: 0;
+  border-radius: 0 !important;
   padding: 10px;
 }
 
@@ -278,12 +275,12 @@ input:focus {
 }
 
 .text-note {
-  color: #7694a6;
+  color: #6895a7;
   font-size: 13px;
-  line-height: 16px;
+  line-height: 18px;
 
   a {
-    color: #6995a7;
+    color: #6895a7;
     text-decoration: underline;
   }
 }
@@ -312,11 +309,9 @@ input:focus {
   font-size: 14px;
 }
 
-
-
 .quick-title {
   font-size: 14px;
-  color: #7694a6;
+  color: #304852;
   font-weight: 500;
   margin-top: 5px;
   text-align: center;
@@ -343,7 +338,7 @@ input:focus {
 .fnt-size {
   font-size: 13px;
   line-height: 20px;
-  color: #314a54;
+  color: #3d555e;
 }
 
 .no-input-border {
@@ -366,8 +361,6 @@ input:focus {
   background-color: #e6f2f5 !important;
 }
 
-
-
 .input-group-text select {
   box-shadow: none !important;
   border-radius: 0px !important;
@@ -375,7 +368,6 @@ input:focus {
 
 .input-group-text select.form-select {
   height: 100%;
-  //  border: .2px solid #4e626e;
 }
 
 .text-one {
@@ -401,7 +393,7 @@ input:focus {
     margin-bottom: 0.5rem;
   }
 
-  input[type="radio"] {
+  input[type='radio'] {
     accent-color: red;
     margin-right: 8px;
 
@@ -419,7 +411,7 @@ input:focus {
 }
 
 .custom-input-group {
-  max-width: 429px;
+  max-width: 442px;
   border: 1px solid #ced4da;
   overflow: hidden;
   display: flex;
@@ -438,8 +430,6 @@ input:focus {
     padding: 8px 20px;
 
     &:hover {
-
-
     }
   }
 }
@@ -451,11 +441,11 @@ input:focus {
 }
 
 .error-message {
-  color: #dc3545;
+  color: red;
   font-size: 13px;
 
   a {
-    color: #dc3545;
+    color: red;
     text-decoration: underline;
   }
 }
@@ -539,7 +529,7 @@ input:focus {
     padding: 10px 20px;
     height: 40px;
     margin-top: 10px;
-    border-radius: 0;
+    border-radius: 0 !important;
     font-weight: 500;
 
     &:hover {
@@ -578,7 +568,7 @@ input:focus {
     padding: 15px;
     margin-bottom: 20px;
     background-color: transparent;
-    border-radius: 0;
+    border-radius: 0 !important;
     border: 1px solid #dee2e6;
     font-size: 14px;
     line-height: 1.4;
@@ -634,13 +624,15 @@ input:focus {
   }
 }
 
-.tittle-size{
-  font-size: 24px;
+.tittle-size {
+  font-size: 21px;
+  color: #10100f;
+  font-weight: 500;
 }
 
 .align-items-center {
-    align-items: center !important;
-    margin-top: -10px;
+  align-items: center !important;
+  margin-top: -10px;
 }
 
 .form-control.bgcolor {
@@ -649,4 +641,50 @@ input:focus {
 
 select.form-select {
   border-right: none !important;
+}
+
+.custom-input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: green;
+  margin-left: -50px;
+  margin-top: 15px;
+}
+.optional-text {
+  color: #6895a7;
+}
+
+.input-group:not(.has-validation)
+  > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(
+    .form-floating
+  ),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n + 3),
+.input-group:not(.has-validation)
+  > .form-floating:not(:last-child)
+  > .form-control,
+.input-group:not(.has-validation)
+  > .form-floating:not(:last-child)
+  > .form-select {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+  border-color: #768c96;
+}
+.form-select {
+  font-size: 14px !important;
+}
+.ctlg {
+  color: green;
+  font-size: 14px;
+}
+.lleft {
+  font-size: 12px;
+  z-index: 999;
+  color: green;
+  margin-left: 15px;
+  margin-top: 5px;
 }
