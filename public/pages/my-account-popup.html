@@ -203,17 +203,17 @@
                     <div class="form-box">
                         <h4 class="mb-3 tittle-size">Adicionar Perfil</h4>
                         <form>
-                            <div class="custom-input-group mb-3">
-                                <label class="lleft" for="confirm-password">Código</label>
-                                <input type="text" placeholder="Código" value="xxxxxxxxx">
+                    <div class="custom-input-group mb-3">
+                        <label class="lleft" for="codigo">Código</label>
+                        <input type="text" id="codigo" placeholder="" value="xxxxxxxxx">
+                        <button>Gravar</button>
+                    </div>
 
-                                <button>Gravar</button>
-                            </div>
 
 
                             <!-- Success Message -->
                             <div class="success-message">
-                                Perfil <strong>Professor</strong> <span style="color: red;"> criado com sucesso.</span>
+                                Perfil <strong>Professor</strong> criado com sucesso.</span>
                             </div>
 
                             <div class="my-1 ctlg">ou</div>
@@ -344,6 +344,18 @@
             });
         });
     </script>
+
+<script>
+    const input = document.getElementById('codigo');
+
+    input.addEventListener('focus', function () {
+        // focus হলে prefilled "xxxxxxxxx" চলে যাবে
+        if (input.value === 'xxxxxxxxx') {
+            input.value = '';
+        }
+    });
+</script>
+
 
     <script type="module" src="../../resources/js/layout.js"></script>
 </body>
