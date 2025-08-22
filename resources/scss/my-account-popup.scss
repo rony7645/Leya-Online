@@ -9,7 +9,7 @@
   }
 
   > label {
-    color: #42606e;
+    color: #8ba0ab;
     font-size: 14px;
   }
 }
@@ -300,7 +300,7 @@ input:focus {
 
 .custom-check-label {
   font-size: 14px !important;
-  color: #3c4b54 !important;
+  color: #3a525c !important;
 }
 
 .forgot-link {
@@ -313,7 +313,7 @@ input:focus {
   font-size: 14px;
   color: #304852;
   font-weight: 400;
-  margin-top: 5px;
+  margin-top: 30px;
   text-align: center;
 }
 
@@ -689,4 +689,60 @@ select.form-select {
   color: #456270;
   margin-left: 15px;
   margin-top: 5px;
+}
+
+.password-rules {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  list-style: none;
+  padding: 0;
+}
+
+.password-rules li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.password-rules li img {
+  width: 13px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+/* green success */
+.password-rules li.valid {
+  color: #42a15c;
+}
+
+/* red error */
+.password-rules li.invalid {
+  color: #8ba0ab;
+}
+.Campo{
+font-size: 14px;
+    line-height: 12px;
+    font-weight: 300;
+    color: red;
+    margin-top: 12px;
+    font-weight: 400;
+}
+.Campo-tow{
+  color: red;
+}
+
+label.Campo-tow {
+  color: red !important;
+}
+
+i.Campo-tow {
+  color: red !important;
+}
+
+.password-wrapper-tow{
+  border: 1px solid red;
 }
