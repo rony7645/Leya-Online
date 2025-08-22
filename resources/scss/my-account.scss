@@ -125,6 +125,7 @@
     border: 1px solid #7694a6;
     border-radius: 0px;
     padding: 11px;
+    color: #000;
 
     &:focus {
       border-color: #7694a6;
@@ -140,6 +141,16 @@
     .form-control {
       border-left: none;
     }
+  }
+  .country-select {
+    appearance: none; /* Default arrow hide */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235a768c' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>")
+      no-repeat right 20px center;
+    background-size: 18px;
+    padding-right: 35px;
   }
 
   .radio-group {
@@ -184,8 +195,8 @@
     color: #3c4b54;
     border: 1px solid #3c4b54;
     border-radius: 0;
-    padding: 12px 25px;
-    font-weight: 500;
+    padding: 8px 25px;
+    font-weight: 400;
     display: block;
     margin-top: 30px;
     width: 162px;
@@ -338,7 +349,7 @@
   width: 100%;
 }
 
-/* input  default width */
+/* input default width */
 .input-wrapper .form-control {
   width: 100%;
   padding-right: 40px;
@@ -351,7 +362,7 @@
   top: 50%;
   transform: translateY(-50%);
   font-size: 18px;
-  color: #666;
+  color: #6895a7;
   cursor: pointer;
 }
 .marggin {
