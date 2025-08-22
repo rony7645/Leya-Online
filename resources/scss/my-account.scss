@@ -349,22 +349,35 @@
   width: 100%;
 }
 
-/* input default width */
+/* input  default width */
 .input-wrapper .form-control {
   width: 100%;
   padding-right: 40px;
 }
 
-/* pencil icon style */
-.pencil-tow {
-  position: absolute;
-  right: -30px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  color: #6895a7;
-  cursor: pointer;
-}
 .marggin {
   margin-top: 0px !important;
+}
+
+.icon-input .form-control {
+  width: 100%;
+  padding-right: 70px;
+  box-sizing: border-box;
+}
+
+.icon-input img,
+.icon-input i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  width: 4%;
+}
+
+.icon-input img {
+  right: -41px;
+}
+
+.icon-input .toggle-password {
+  right: 40px;
 }
