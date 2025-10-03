@@ -251,7 +251,8 @@
 }
 
 .pad-item {
-  padding-right: 20px;
+   padding-left: 50px !important;
+  padding-right: 0 !important;
 }
 
 // Product carousel
@@ -564,4 +565,9 @@ margin-top: -25px;
 
 .paddion-o{
   padding: 0px;
+}
+
+.color-b{
+  color: #000000;
+  font-weight: 400;
 }
