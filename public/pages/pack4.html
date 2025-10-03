@@ -9,8 +9,910 @@
 
 <body>
   <!-- import header  -->
-  <div id="header"></div>
-  <script src="../layout/header.js"></script>
+  <!-- <div id="header"></div>
+  <script src="../layout/header.js"></script> -->
+
+      <header>
+        <!-- Top bar area  -->
+        <div class="top-bar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 d-flex align-items-center justify-content-center py-2">
+                <p class="m-0 fw-semibold">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container my-4 d-none d-md-block position-relative">
+          <!-- Header top area  -->
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex gap-4">
+                <a href="#"><img class="livr" src="../img/livr.png" alt=""></a>
+                <a href="#"><img class="leytura" src="../img/leytura.png" alt=""></a>
+              </div>
+            </div>
+            <div class="col-6 d-flex justify-content-end">
+              <ul class="inline-list">
+                <li class="inline-list-item">
+                  <a href="#">
+                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.66 16.25">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <path fill="none" stroke-miterlimit="10" stroke-width="1.5"
+                          d="M10.05,4.47c0,2.05-1.67,3.72-3.72,3.72s-3.72-1.67-3.72-3.72S4.28.75,6.33.75s3.72,1.67,3.72,3.72Z" />
+                        <path fill="none" stroke-miterlimit="10" stroke-width="1.5"
+                          d="M11.91,16.25c0-3.08-2.5-5.58-5.58-5.58S.75,13.17.75,16.25" />
+                      </g>
+                    </svg>
+                    <span class="icon-list-text">A MINHA CONTA</span>
+                    <span class="arrow-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                  </a>
+
+                  <!-- subment  -->
+                  <div class="submenu-container">
+                    <div class="btn-group">
+                      <div class="submenu-btn">
+                        <a href="#">Entrar</a>
+                      </div>
+                      <div class="secondary-btn">
+                        <a class="text-capitalize" href="#">Criar Conta</a>
+                      </div>
+                    </div>
+                    <ul class="list">
+                      <li><a href="#">Gerir Conta</a></li>
+                      <li><a href="#">Histórico de Encomendas</a></li>
+                      <li><a href="#">Biblioteca Digital</a></li>
+                      <li><a href="#">Gerir Subscrições</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="inline-list-item">
+                  <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.24 15.67">
+                      <path fill="none" stroke-miterlimit="10" stroke-width="1.5"
+                        d="M8.11,14.75c3.99-2.87,5.99-5.49,6.93-7.49,1.1-2.34.14-5.24-2.25-6.21-2.81-1.14-4.68,1.49-4.68,1.49,0,0-1.85-2.65-4.66-1.5C1.06,2.01.11,4.91,1.2,7.25c.94,2,2.92,4.63,6.91,7.5Z" />
+                    </svg>
+                    <span class="icon-list-text">FAVORITOS</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Search bar wrapper  -->
+          <div class="row mt-4 d-flex align-content-center">
+            <!-- site logo  -->
+            <div class="col-4 col-md-3 ">
+              <div class="site-logo"><a href="./home.html"><img src="../img/logo.png" alt=""></a></div>
+            </div>
+            <div class="col-8 col-md-9 d-flex justify-content-end align-items-center gap-3">
+              <div class="search-bar">
+                <form action="">
+                  <div class="categories-dropdown">
+                    <button class="btn dropdown-toggle category-btn" type="button" id="categoryDropdown"
+                      data-bs-toggle="dropdown" aria-expanded="false">
+                      <span class="categories-selected-text">TUDO</span>
+                      <div class="arrow"><i class="fa-solid fa-chevron-down"></i></div>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
+                      <li><span class="dropdown-item">Todos</span></li>
+                      <li><span class="dropdown-item">Livros</span></li>
+                      <li><span class="dropdown-item">Ficção</span></li>
+                      <li><span class="dropdown-item">Não Ficção</span></li>
+                      <li><span class="dropdown-item">Infantil & Juvenil</span></li>
+                      <li><span class="dropdown-item">eBooks</span></li>
+                      <li><span class="dropdown-item">Audiolivros</span></li>
+                      <li><span class="dropdown-item">Apoio Escolar</span></li>
+                      <li><span class="dropdown-item">Tecnologia</span></li>
+                    </ul>
+                  </div>
+                  <div class="input-group position-relative">
+                    <input id="header-search-input-desktop" type="text" class="form-control" placeholder="Pesquisa">
+                    <span id="clear-btn-desktop" class="clear-icon" style="display: none;">
+                      <i class="fa-solid fa-xmark"></i>
+                    </span>
+                  </div>
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+              <div class="cart-icon position-relative" data-bs-toggle="offcanvas" data-bs-target="#sideCartOffcanvas"
+                aria-controls="offcanvasRight">
+                <div class="count-indicator"><span>10</span></div>
+                <div class="icon"><svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 29.76 29.03">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <g>
+                        <path class="cls-1"
+                          d="m29.76,3.82H6.03l-1.02-2.8L.37,0l-.37,1.65,3.75.83,7.32,20.43h13.96v-1.68h-12.77l-1.55-4.36h15.51l3.54-13.05ZM10.09,15.18l-3.45-9.66h20.91l-2.62,9.66h-14.84Z" />
+                        <path class="cls-1"
+                          d="m14.07,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
+                        <path class="cls-1"
+                          d="m24.01,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
+                      </g>
+                    </g>
+                  </svg></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Header navigation menu -->
+          <div class="row mt-4">
+            <div class="col-12">
+              <nav class="menu-wrapper">
+                <ul class="menu-list">
+                  <li class="menu-item active has-Livros-mega">
+                    <a class="menu-link" href="#">Livros</a>
+                  </li>
+                  <li class="menu-item"><a class="menu-link" href="./shop.html">Ficção</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Não Ficção</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Infantil&Juvenil</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">eBooks</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Audiolivros</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Apoio Escolar</a></li>
+                  <li class="menu-item"><a class="menu-link" href="#">Tecnologia</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <!-- Livros Mega Menu  -->
+              <div class="mega-menu" id="livrosMegaMenu">
+                <!-- grid wrapper  -->
+                <div class="menu-box-wrapper">
+                  <div class="menu-box">
+                    <h5 class="menu-heading">Mais vendidos</h5>
+                    <ul class="list">
+                      <li><a href="#">Os mais vendidos da B&N</a></li>
+                      <li><a href="#">Best-sellers do NY Times</a></li>
+                      <li><a href="#">30% de desconto em best-sellers</a></li>
+                      <li><a href="#">Todos os mais vendidos</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-box mt-4">
+                    <h5 class="menu-heading">NÓS RECOMENDAMOS</h5>
+                    <ul class="list">
+                      <li><a href="#">Melhores livros de 2024</a></li>
+                      <li><a href="#">Escolhas mensais da B&N</a></li>
+                      <li><a href="#">Clube do Livro B&N</a></li>
+                      <li><a href="#">Escolhas de descoberta da B&N</a></li>
+                      <li><a href="#">Livro do Ano da B&N</a></li>
+                      <li><a href="#">Prémio B&N Discover</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- grid wrapper  -->
+                <div class="menu-box-wrapper">
+                  <div class="menu-box">
+                    <h5 class="menu-heading">FAVORITOS DO CLIENTE</h5>
+                    <ul class="list">
+                      <li><a href="#">Novos lançamentos</a></li>
+                      <li><a href="#">Em breve</a></li>
+                      <li><a href="#">Edições especiais</a></li>
+                    </ul>
+                  </div>
+                  <div class="menu-box mt-4">
+                    <h5 class="menu-heading">PESQUISE</h5>
+                    <ul class="list">
+                      <li><a href="#">Exclusivos B&N</a></li>
+                      <li><a href="#">Livros Proibidos</a></li>
+                      <li><a href="#">Melhores livros do ano</a></li>
+                      <li><a href="#">Vozes Negras</a></li>
+                      <li><a href="#">Prémios de livros</a></li>
+                      <li><a href="#">Escolhas do Clube do Livro</a></li>
+                      <li><a href="#">LivroTok</a></li>
+                      <li><a href="#">Livros em Línguas Estrangeiras</a></li>
+                      <li><a href="#">Conjuntos em caixa</a></li>
+                      <li><a href="#">Livros de bolso até 25% de desconto</a></li>
+                      <li><a href="#">Livros Autografados</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- grid wrapper  -->
+                <div class="menu-box-wrapper">
+                  <div class="menu-box">
+                    <h5 class="menu-heading">PRINCIPAIS ASSUNTOS</h5>
+                    <ul class="list">
+                      <li><a href="#">Bíblias e Vida Cristã</a></li>
+                      <li><a href="#">Biografia</a></li>
+                      <li><a href="#">Livros de culinária, comida e vinho</a></li>
+                      <li><a href="#">Ficção Geral</a></li>
+                      <li><a href="#">Ficção Histórica</a></li>
+                      <li><a href="#">História</a></li>
+                      <li><a href="#">Horror</a></li>
+                      <li><a href="#">Mangá</a></li>
+                      <li><a href="#">Mistério e suspense</a></li>
+                      <li><a href="#">Religião</a></li>
+                      <li><a href="#">Romance</a></li>
+                      <li><a href="#">Ficção científica e fantasia</a></li>
+                      <li><a href="#">Autoajuda e Relações</a></li>
+                      <li><a href="#">Ver todos os assuntos &gt;</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- grid wrapper  -->
+                <div class="menu-box-wrapper">
+                  <div class="menu-box">
+                    <h5 class="menu-heading">DEPARTAMENTOS</h5>
+                    <ul class="list">
+                      <li><a href="#">Loja de audiolivros</a></li>
+                      <li><a href="#">Assinaturas de audiolivros</a></li>
+                      <li><a href="#">Loja de livros de bolso</a></li>
+                      <li><a href="#">Livros em espanhol</a></li>
+                      <li><a href="#">Anexo do livro</a></li>
+                      <li><a href="#">e-books e NOOK</a></li>
+                      <li><a href="#">Livros Indie</a></li>
+                      <li><a href="#">Livros com letras grandes</a></li>
+                      <li><a href="#">Livros em CD</a></li>
+                      <li><a href="#">Banca de jornais</a></li>
+                      <li><a href="#">Livros didáticos</a></li>
+                      <li><a href="#">Cartões de oferta</a></li>
+                      <li><a href="#">Acessórios de leitura</a></li>
+                      <li><a href="#">Aplicações B&amp;N</a></li>
+                      <li><a href="#">Blog de imprensa da B&amp;N</a></li>
+                      <li><a href="#">B&amp;N Reads - O nosso blog de livros</a></li>
+                      <li><a href="#">Poured Over - O Nosso Podcast</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- grid wrapper  -->
+                <div class="menu-box-wrapper">
+                  <div class="menu-box">
+                    <!-- product thumbnail  -->
+                    <div class="product-thumbnail">
+                      <div class="ribon-wrapper">
+                        <div class="ribon"> - 10%</div>
+                        <div class="favorite active">
+                          <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.67 12.12">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                              <path class="cls-1"
+                                d="m6.33,11.81c3.3-2.37,4.94-4.54,5.72-6.19.91-1.93.12-4.33-1.86-5.13-2.32-.94-3.86,1.23-3.86,1.23,0,0-1.53-2.18-3.85-1.24C.51,1.29-.28,3.68.62,5.62c.78,1.65,2.41,3.82,5.71,6.19h0Z" />
+                            </g>
+                          </svg>
+                        </div>
+                      </div>
+                      <a href="#" class="thumbnail-img">
+                        <img class="w-100" src="../../public/img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="leya-btn mt-3 ">
+                      <a href="#">
+                        <span class="btn-icon">
+                        </span>ADICIONAR AO CARRINHO
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile header  -->
+        <div class="container-md mobile-navbar py-4 d-md-none">
+          <div class="row">
+            <div class="col-7 d-flex gap-3">
+              <button class="mobile-menu-toggle mr-1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#mobileOffcanvas" aria-controls="mobileOffcanvas">
+                <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.29 20.16">
+                  <g id="Layer_1-2" data-name="Layer 1">
+                    <g>
+                      <line class="cls-1" x1="1.5" y1="1.5" x2="36.79" y2="1.5" />
+                      <line class="cls-1" x1="1.5" y1="10.08" x2="36.79" y2="10.08" />
+                      <line class="cls-1" x1="1.5" y1="18.66" x2="36.79" y2="18.66" />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+              <div class="mobile-site-logo d-flex gap-2 justify-content-start">
+                <a href="#"><img src="../img/logo.png" alt=""></a>
+                <div class="other-logo-arrow" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><i
+                    class="fa-solid fa-chevron-down"></i>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade custom-effect-modal" id="staticBackdrop" data-bs-backdrop="strue"
+                  data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-bottom">
+                    <div class="modal-content">
+                      <div class="modal-body py-5 px-4">
+                        <ul class="logo-list">
+                          <li>
+                            <div class="circle active"><span></span></div>
+                            <img src="../img/logo.png">
+
+                          </li>
+                          <li>
+                            <div class="circle"><span></span></div>
+                            <img src="../img/livr.png">
+                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                          </li>
+                          <li>
+                            <div class="circle"><span></span></div>
+                            <img src="../img/leytura.png">
+                            <a href="#" class="link"><i class="fa-solid fa-up-right-from-square"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-5 d-flex justify-content-end position-relative">
+              <ul class="icon-wrapper d-flex gap-3 justify-content-end">
+
+                <!-- User icon  -->
+                <li class="user" id="user-btn">
+                  <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.59 29.59">
+                    <g id="Layer_1-2" data-name="Layer 1">
+                      <g>
+                        <circle class="cls-1" cx="11.29" cy="7.86" r="6.86" />
+                        <path class="cls-1" d="m21.59,29.59c0-5.68-4.61-10.29-10.29-10.29S1,23.91,1,29.59" />
+                      </g>
+                    </g>
+                  </svg>
+                </li>
+
+                <!-- favorite icon  -->
+                <li class="favorite-list">
+                  <a href="#">
+                    <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.36 31.36">
+                      <g id="Layer_1-2" data-name="Layer 1">
+                        <g>
+                          <path class="cls-1"
+                            d="m15.67,24.21c4.15-2.98,6.22-5.7,7.19-7.78,1.14-2.43.15-5.44-2.34-6.45-2.92-1.19-4.86,1.55-4.86,1.55,0,0-1.92-2.75-4.84-1.56-2.49,1.01-3.48,4.02-2.34,6.45.98,2.08,3.03,4.81,7.18,7.79h0Z" />
+                          <circle class="cls-1" cx="15.68" cy="15.68" r="14.78" />
+                        </g>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+
+                <!-- Cart icon  -->
+                <li class="cart">
+                  <div class="cart-icon position-relative" data-bs-toggle="offcanvas" data-bs-target="#sideCartOffcanvas"
+                    aria-controls="offcanvasRight">
+                    <div class="count-indicator"><span>10</span></div>
+                    <div class="icon">
+                      <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29.76 29.03">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                          <g>
+                            <path class="cls-1"
+                              d="m29.76,3.82H6.03l-1.02-2.8L.37,0l-.37,1.65,3.75.83,7.32,20.43h13.96v-1.68h-12.77l-1.55-4.36h15.51l3.54-13.05ZM10.09,15.18l-3.45-9.66h20.91l-2.62,9.66h-14.84Z" />
+                            <path class="cls-1"
+                              d="m14.07,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
+                            <path class="cls-1"
+                              d="m24.01,23.58c-1.5,0-2.72,1.22-2.72,2.72s1.22,2.74,2.72,2.74,2.74-1.23,2.74-2.74-1.23-2.72-2.74-2.72Zm0,3.48c-.4,0-.74-.35-.74-.76s.33-.76.74-.76.75.33.75.76-.33.76-.75.76Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- user submenu for mobile -->
+              <div class="submenu-container mobile-submenu-container">
+                <div class="btn-group">
+                  <div class="submenu-btn">
+                    <a href="#">Entrar</a>
+                  </div>
+                  <div class="secondary-btn">
+                    <a class="text-capitalize" href="#">Criar Conta</a>
+                  </div>
+                </div>
+                <ul class="list">
+                  <li><a href="#">Gerir Conta</a></li>
+                  <li><a href="#">Histórico de Encomendas</a></li>
+                  <li><a href="#">Biblioteca Digital</a></li>
+                  <li><a href="#">Gerir Subscrições</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <div class="search-bar">
+                <form action="">
+                  <div class="input-group position-relative">
+                    <input id="header-search-input-mobile" type="text" class="form-control" placeholder="Pesquisa">
+                    <span id="clear-btn-mobile" class="clear-icon" style="display: none;">
+                      <i class="fa-solid fa-xmark"></i>
+                    </span>
+                  </div>
+                  <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Search window wrapper  -->
+        <div class="container container-md-fluid collapse " id="search-wrapper">
+          <div class="row">
+            <div class="col-12 position-relative">
+              <div class="search-wrapper">
+                <div class="search-result">
+                  <h6>Resultados para a pesquisa “<span>Romance</span>”</h6>
+                  <div class="search-item-wrapper">
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789895813285_corrupt.jpg" alt="">
+                        <h5>Corrupt</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                        <h5>Despedidas Impo...</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg" alt="">
+                        <h5>Caneta</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                        <h5>Ainda Estou Aqui</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/Mockup-DeixarAfrica-Livro3D-01.png" alt="">
+                        <h5>Deixar Africa</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789892364179_o_lamento_dos_rios.jpg" alt="">
+                        <h5>O Lamento dos Rios</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789722083959_despedidas_impossiveis.jpg" alt="">
+                        <h5>Despedidas Impo...</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/250_9789722084413_ainda_estou_aqui.jpg" alt="">
+                        <h5>Ainda Estou Aqui</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="search-result mt-5">
+                  <h6>Resultados de autores para a pesquisa “<span>han</span>”</h6>
+                  <div class="search-item-wrapper">
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/hankangcglportraitalamystockphotofotobanco_1737711594.pt_2.jpg" alt="">
+                        <h5 class="text-uppercase fw-normal">HAN KANG</h5>
+                      </a>
+                    </div>
+                    <div class="search-item">
+                      <a href="#">
+                        <img src="../img/sem_img_prod_m.jpg" alt="">
+                        <h5 class="text-uppercase fw-normal">Han eun-mi</h5>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="leya-btn mt-4 text-center"><a href="#">Ver todos os resultados</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobiel canvas  -->
+        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="mobileOffcanvas"
+          aria-labelledby="mobileOffcanvasLabel">
+          <p class="text-uppercase text-center mb-0 fw-semibold bg-light-blue-500">LOREM IPSUM IS SIMPLY DUMMY TEXT
+          </p>
+          <div class="offcanvas-header justify-content-between bg-light-blue">
+
+            <div class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></div>
+            <img style="width: 150px;" id="mobileOffcanvasLabel" src="../img/logo.png">
+            <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          </div>
+          <div class="offcanvas-body position-relative">
+            <div class="menu-container">
+              <nav class="main-menu" id="main-menu">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link" data-submenu="homeSubmenu">Livros
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Ficção</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Não Ficção</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Infantil&Juvenil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">eBooks</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Audiolivros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Apoio Escolar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Tecnologia</a>
+                  </li>
+                </ul>
+              </nav>
+
+              <nav class="submenu" id="homeSubmenu">
+                <div class="sidebar-header">
+                  <div class="back-btn" data-back="main-menu">
+                    <i class="fa-solid fa-chevron-left"></i> Livros
+                  </div>
+                </div>
+                <!-- new menu here -->
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Mais vendidos
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Nós recomendamos
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Favoritos do cliente
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Pesquise
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Principais assuntos
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <div class="nav-link canvas-dropdown-toggle collapsed" aria-expanded="false" role="button" tabindex="0">
+                      Departamentos
+                      <span class="icon">
+                        <!-- Plus icon -->
+                        <svg class="icon-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path
+                            d="M8 1a.5.5 0 0 1 .5.5V7h5.5a.5.5 0 0 1 0 1H8.5v5.5a.5.5 0 0 1-1 0V8H2a.5.5 0 0 1 0-1h5.5V1.5A.5.5 0 0 1 8 1z" />
+                        </svg>
+                        <!-- Minus icon -->
+                        <svg class="icon-minus d-none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                          <path d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8z" />
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="canvas-dropdown-menu">
+                      <a href="#">Os mais vendidos da LYVROS</a>
+                      <a href="#">Best-sellers do NY Times</a>
+                      <a href="#">30% de desconto em best-sellers</a>
+                      <a href="#">Todos os mais vendidos</a>
+                    </div>
+                  </li>
+                </ul>
+                <!-- new menu here -->
+              </nav>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Side cart Modal Popup  -->
+        <div class="offcanvas offcanvas-end p-2" tabindex="-1" id="sideCartOffcanvas" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header d-flex justify-content-between">
+            <h5 id="sideCartOffcanvasLabel">O seu carrinho</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="side-cart">
+              <!-- side cart accordion  -->
+              <div class="accordion accordion-default-none d-flex flex-column gap-3" id="sideCart">
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <div class="d-flex gap-3">
+                      <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+                        data-bs-target="#livr" aria-expanded="true" aria-controls="livr">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                          <img src="../img/logo.png" alt="">
+                          <span>1 Artigo</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="livr" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <!-- product  box  -->
+                      <div class="side-cart-product-wrapper">
+                        <div class="side-cart-product">
+                          <!-- product image  -->
+                          <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
+                          <!-- product details  -->
+                          <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                            <div class="d-flex gap-3 align-items-center">
+                              <div class="cart-product-details">
+                                <h4 class="title">Despedidas Impossíveis</h4>
+                                <h5 class="cart-product-cat">HAN KANG</h5>
+                                <!-- product pricing  -->
+                                <div class="product-price">
+                                  <span class="cart-product-author">Livro</span>
+                                  <span class="sale-price">19,71€</span>
+                                  <span class="regular-price"><del>21,90€</del></span>
+                                </div>
+                                <!-- product quantitiy  -->
+                                <div class="product-qty">
+                                  <button class="quantity-button">-</button>
+                                  <input type="text" class="quantity-input" value="2" readonly>
+                                  <button class="quantity-button">+</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="trash-product"><i class="bi bi-trash"></i></div>
+                        </div>
+
+                        <!-- Offer box  -->
+                        <div class="offer-box mt-3">
+                          <div class="offer-title text-center">
+                            <h6>OFERTA</h6>
+                          </div>
+                          <div class="px-4 d-flex gap-3 align-items-center">
+                            <div>
+                              <div class="product-img"><img src="../img/caneta-parker-im-metal-polido-gt-1931649.jpg">
+                              </div>
+                            </div>
+                            <div class="cart-product-details">
+                              <h4 class="title">Caneta</h4>
+                              <p>Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <div class="d-flex gap-3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#artigoTwo" aria-expanded="true" aria-controls="artigoTwo">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                          <img src="../img/livr.png" alt="">
+                          <span>1 Artigo</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="artigoTwo" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <!-- product  box  -->
+                      <div class="side-cart-product-wrapper">
+                        <div class="side-cart-product">
+                          <!-- product image  -->
+                          <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
+                          <!-- product details  -->
+                          <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                            <div class="d-flex gap-3 align-items-center">
+                              <div class="cart-product-details">
+                                <h4 class="title">Despedidas Impossíveis</h4>
+                                <h5 class="cart-product-cat">HAN KANG</h5>
+                                <!-- product pricing  -->
+                                <div class="product-price">
+                                  <span class="cart-product-author">Livro</span>
+                                  <span class="sale-price">19,71€</span>
+                                  <span class="regular-price"><del>21,90€</del></span>
+                                </div>
+                                <!-- product quantitiy  -->
+                                <div class="product-qty">
+                                  <button class="quantity-button">-</button>
+                                  <input type="text" class="quantity-input" value="2" readonly>
+                                  <button class="quantity-button">+</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="trash-product"><i class="bi bi-trash"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Item 1 -->
+                <div class="accordion-item">
+                  <div class="accordion-header">
+                    <div class="d-flex gap-3">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#artigoThree" aria-expanded="true" aria-controls="artigoThree">
+                        <div class="w-100 d-flex justify-content-between align-items-center">
+                          <img src="../img/livr.png" alt="">
+                          <span>1 Artigo</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                  <div id="artigoThree" class="accordion-collapse collapse show">
+                    <div class="accordion-body">
+                      <!-- product  box  -->
+                      <div class="side-cart-product-wrapper">
+                        <div class="side-cart-product">
+                          <!-- product image  -->
+                          <div class="product-img"><img src="../img/250_9789895813285_corrupt.jpg" alt=""></div>
+                          <!-- product details  -->
+                          <div class="d-lg-flex justify-content-between align-items-md-center w-100">
+                            <div class="d-flex gap-3 align-items-center">
+                              <div class="cart-product-details">
+                                <h4 class="title">Despedidas Impossíveis</h4>
+                                <h5 class="cart-product-cat">HAN KANG</h5>
+                                <!-- product pricing  -->
+                                <div class="product-price">
+                                  <span class="cart-product-author">Livro</span>
+                                  <span class="sale-price">19,71€</span>
+                                  <span class="regular-price"><del>21,90€</del></span>
+                                </div>
+                                <!-- product quantitiy  -->
+                                <div class="product-qty">
+                                  <button class="quantity-button">-</button>
+                                  <input type="text" class="quantity-input" value="2" readonly>
+                                  <button class="quantity-button">+</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="trash-product"><i class="bi bi-trash"></i></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Side cart summery  -->
+              <div class="side-cart-summery">
+                <div class="d-flex justify-content-between">
+                  <span class="text text-accent">Subtotal (4 Artigos)</span>
+                  <span class="price text-accent">47,34€</span>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <span class="text text-accent">Poupança</span>
+                  <span class="price text-accent">20€</span>
+                </div>
+                <div class="leya-btn mt-3"><a href="http://192.168.1.2:5173/public/pages/checkout.html"><span
+                      class="btn-icon">
+                      <svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.77 18.31">
+                        <g id="Layer_1-2" data-name="Layer 1">
+                          <g>
+                            <path class="cls-1"
+                              d="M18.77,2.41H3.81l-.64-1.77L.23,0l-.23,1.04,2.37.52,4.62,12.88h8.8v-1.06H7.73l-.98-2.75h9.78l2.23-8.23ZM6.36,9.57l-2.17-6.09h13.18l-1.65,6.09H6.36Z" />
+                            <path class="cls-1"
+                              d="M8.87,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM8.87,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                            <path class="cls-1"
+                              d="M15.14,14.87c-.94,0-1.71.77-1.71,1.72s.77,1.73,1.71,1.73,1.72-.77,1.72-1.73-.77-1.72-1.72-1.72ZM15.14,17.07c-.25,0-.46-.22-.46-.48s.21-.48.46-.48.47.21.47.48-.21.48-.47.48Z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </span>comprar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </header>
 
   <!-- banner section start  -->
 
