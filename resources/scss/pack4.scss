@@ -15,7 +15,7 @@
 
   .btn-danger {
     background-color: #fff;
-    color: red;
+    color: #ff2d1c;
     font-size: 20px;
     border: none;
     border-radius: 0 !important;
@@ -55,7 +55,7 @@
   clip-path: polygon(0 0, calc(121% - 100px) 0, 104% 50px, 100% 100%, 0 100%);
 
   &.best-option {
-    border: 3px solid #e60000;
+    border: 3px solid #ff2d1c;
   }
 }
 
@@ -71,7 +71,7 @@
 }
 
 .badge-offer {
-  background: #e60000;
+  background: #ff2d1c;
   color: #fff;
   font-weight: bold;
   padding: 8px 18px;
@@ -88,7 +88,7 @@
 }
 
 .note {
-  font-size: 12px;
+  font-size: 13px;
   color: #fff;
   margin-top: 10px;
 }
@@ -115,16 +115,16 @@
 .my-border {
   position: relative;
   overflow: hidden;
-  border: 10px solid red;
-  border-top: 30px solid red;
-  background-color: red;
+  border: 10px solid #ff2d1c;
+  border-top: 30px solid #ff2d1c;
+  background-color:#ff2d1c;
 
   &::before {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 50px solid red !important;
+    border-top: 50px solid #ff2d1c!important;
     border-left: 50px solid transparent;
   }
 }
@@ -161,10 +161,11 @@
 
   .ebook-title {
     font-size: 30px;
-    font-weight: 700;
-    color: #304a54;
+    font-weight: 600;
+    color: #304a55;
     margin: 0 0 0 -20px;
     text-align: left;
+    line-height: 30px;
   }
 }
 
@@ -175,11 +176,11 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 15px;
-  color: #3b525b;
+  color: #304955;
 }
 
 .btondan {
-  background-color: red;
+  background-color: #ff2d1c;
   color: #fff;
   border: none;
   border-radius: 0;
@@ -197,9 +198,9 @@
 .card-top-title {
   color: #fff;
   font-family: 'Times New Roman', Times, serif; /* Times font */
-  font-size: 22px;
-  line-height: 35px;
-  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  font-weight: 500;
   padding: 10px;
   margin: 0 0 0 30px;
 }
@@ -207,7 +208,7 @@
 
 // Reasons section
 .reasons-section {
-  padding: 60px 0;
+  padding: 70px 0;
 
   .icon i {
     color: #314a54 !important;
@@ -226,7 +227,6 @@
   }
 
   h6 {
-    font-size: 16px !important;
     color: #304953;
     font-size: 16px!important;
     font-weight: 500;
@@ -234,16 +234,14 @@
 }
 
 .text-muted {
-  color: #304953 !important;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
+    color: #304953 !important;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 }
 
 .reasons-border {
-  border: 1px solid #ddd;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  border: 0px solid #ddd;
 }
 
 .reason-item-tow {
@@ -255,16 +253,19 @@
   padding-right: 0 !important;
 }
 
+
 // Product carousel
 .product-carousel-tow {
   padding: 80px 0;
 }
 .colodr {
   color: #31b8c9 !important;
+  font-weight: 500;
 }
 .colodr-tow {
   color: #0da87e !important;
   font-family: 'Times New Roman', Times, serif !important;
+  font-weight: 500;
 }
 
 // Devices
@@ -277,7 +278,8 @@
   .accordion-button {
     font-weight: 500;
     color: #304953;
-    font-size: 23px;
+    font-size: 20px;
+    padding: 16px 0px;
     background-color: transparent !important;
     box-shadow: none !important;
 
@@ -297,13 +299,14 @@
     font-size: 17px !important;
     font-weight: 400;
     color: #314a54;
+    padding: 16px 0px;
   }
 }
 
 .image-box {
   background-color: #dce8ed;
   display: inline-block;
-  padding: 16px 40px !important;
+  padding: 16px 50px !important;
 }
 .my-counter {
   padding: 0 20px;
@@ -313,12 +316,13 @@
 .faq-section {
   .accordion-button {
     background-color: transparent !important;
-    color: #2a2a2a;
-    font-weight: 500;
+    color: #314b55;
+    font-weight: 400;
     box-shadow: none !important;
+    padding: 16px 0px;
 
     &:not(.collapsed) {
-      color: #2a2a2a;
+      color: #314b55;
       background-color: transparent !important;
     }
   }
@@ -329,14 +333,15 @@
   }
 
   .accordion-body {
-    font-size: 0.95rem;
-    color: #2a2a2a;
+    font-size: 16px;
+    color: #314b55;
+    padding: 16px 0px;
   }
 }
 
 .special-question {
   font-weight: bold !important;
-  color: #2a2a2a !important;
+  color: #314b55 !important;
 }
 
 // Responsive
@@ -529,7 +534,7 @@
 
 .custom-section {
   position: relative;
-  z-index: -10;
+  z-index: 10;
   margin-top: -20px;
   background: #304a54;
 }
@@ -537,14 +542,13 @@
     position: absolute;
     top: 0px;
     right: 116px;
-    /* background-color: #e60000; */
     color: #fff;
-    font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
     padding: 5px 12px;
     text-transform: uppercase;
     z-index: 10;
     border-radius: 2px;
+    font-weight: 500;
 }
 
 .pricing-card-tow {
@@ -555,23 +559,76 @@
   overflow: hidden;
 
   &.best-option {
-    border: 3px solid #e60000;
+    border: 3px solid #ff2d1c;
   }
 }
 
 .my-p{
 margin-top: -25px;
+line-height: 17px;
+color: #304955;
 }
 
 .paddion-o{
   padding: 0px;
 }
-
-.color-b{
-  color: #000000;
-  font-weight: 400;
+.color-b {
+    color: #212222;
+    font-weight: 400;
+}
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+    border-top-left-radius: var(--bs-accordion-inner-border-radius);
+    border-top-right-radius: var(--bs-accordion-inner-border-radius);
+    padding: 16px 0px;
 }
 
 .faq-section {
   padding: 60px 0px 140px 0px;
+  font-size: 16px;
+}
+
+
+.reasons-section .reasons-border {
+  display: flex;
+  align-items: stretch;
+}
+
+.reasons-section .image-wrapper,
+.reasons-section .pad-item {
+  height: 100%;
+}
+
+.reasons-section .image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 1px solid #ddd;
+  border-right: none;
+
+}
+
+.reasons-section .pad-item {
+  background: #fff;
+  padding: 32px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #ddd;
+  border-left: none;
+
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 16px;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: var(--bs-accordion-btn-bg);
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
 }
