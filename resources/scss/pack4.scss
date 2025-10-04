@@ -647,7 +647,7 @@ color: #304955;
 
 
 .custom-content {
-  width: 44%;         /* Default desktop view */
+  width: 44%;
   padding: 20px;
 }
 
@@ -660,7 +660,7 @@ color: #304955;
 /* Tablet responsive (≤992px) */
 @media (max-width: 992px) {
   .custom-content {
-    width: 100%;      /* Tablet এ পুরো প্রস্থ */
+    width: 100%;
     margin-top: 20px;
     padding: 15px;
   }
@@ -669,8 +669,8 @@ color: #304955;
 /* Mobile responsive (≤576px) */
 @media (max-width: 576px) {
   .custom-content {
-    width: 88.99%;    /* Mobile এ 88.99% */
-    margin: 0 auto;   /* মাঝখানে আনার জন্য */
+    width: 88.99%; 
+    margin: 0 auto;
     padding: 10px;
   }
 
