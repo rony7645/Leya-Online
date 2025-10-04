@@ -61,6 +61,11 @@
 }
 
 // Pricing
+.pricing-card-wrapper {
+  display: inline-block;
+  transition: transform 0.3s ease;
+    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15)); /* shadow fix */
+}
 .pricing-card {
   border-radius: 0 !important;
   font-size: 16px;
@@ -68,11 +73,11 @@
   background: #fff;
   overflow: hidden;
   clip-path: polygon(0 0, calc(121% - 100px) 0, 104% 50px, 100% 100%, 0 100%);
-
-  &.best-option {
-    border: 3px solid #ff2d1c;
-  }
 }
+
+
+
+
 
 .ebook-title {
   font-size: 25px;
@@ -669,7 +674,7 @@ color: #304955;
 /* Mobile responsive (≤576px) */
 @media (max-width: 576px) {
   .custom-content {
-    width: 88.99%; 
+    width: 88.99%;
     margin: 0 auto;
     padding: 10px;
   }
@@ -687,5 +692,80 @@ color: #304955;
   .reasons-section .pad-item {
     border: none;
     width: 80% !important;
+  }
+}
+
+@media (max-width: 890px) {
+  .reasons-section .image-wrapper {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .reasons-section .image-wrapper img {
+    height: auto;
+    border-right: 1px solid #ddd; /* optional */
+  }
+
+  .reasons-section .pad-item {
+    width: 100% !important;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reasons-section .image-wrapper {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .reasons-section .image-wrapper img {
+    height: auto;
+    border-right: 1px solid #ddd;
+  }
+
+  .reasons-section .pad-item {
+    width: 100% !important;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reasons-section .pad-item {
+    width: 50% !important;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-top: 1px solid #ddd;
+  }
+}
+@media (max-width: 1200px) {
+  .reasons-section .image-wrapper img {
+    height: 415px;
+    border-right: 1px solid #ddd;
+  }
+}
+
+@media (max-width: 1200px) {
+  .reasons-section .pad-item {
+    width: 50% !important;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none !important;
+  }
+}
+@media (max-width: 780px) {
+  .reasons-section .pad-item {
+    width: 82% !important;
+    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    border: none !important;
   }
 }
