@@ -19,31 +19,32 @@
       text-align: center;
       border: 1px solid rgba(0, 0, 0, 0.03);
       margin: auto;
+      position: relative;
     }
 
-    .redirect-card h1 {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      font-weight: 700;
+    .redirect-card h2 {
+      font-family: 'Times New Roman', Times, serif Arial;
+      font-weight: 600;
       font-size: 32px;
       letter-spacing: 0.6px;
       margin-bottom: 22px;
       color: #1c1c1a;
     }
 
-.redirect-card p.lead {
-    font-size: 26px;
+ .redirect-card p.lead {
+    font-size: 23px;
     font-weight: 400;
-    line-height: 1.6;
+    line-height: 35px;
     color: #1c1c1a;
-    max-width: 760px;
-    margin: 0 auto 30px;
+    max-width: 700px;
+    margin: 0px auto 30px;
 }
 
     .btn-kobo {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: #ea3524;
+      background: #ff2c1e;
       color: #fff;
       border: none;
       padding: 8px 18px;
@@ -64,6 +65,21 @@
       transform: translateX(4px);
     }
 
+    /* Position and style of close button */
+    .btn-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      padding: 10px;
+      transition: background-color 0.2s ease;
+    }
+
+    .btn-close:hover {
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+
     @media (max-width: 768px) {
       .redirect-card {
         padding: 30px 20px;
@@ -82,7 +98,7 @@
 
 <body class="p-5">
 
-  <!-- Trigger Button (for demo, can be hidden if you want auto modal) -->
+  <!-- Trigger Button (for demo, optional) -->
   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#redirectModal">
     Abrir Modal
   </button>
@@ -99,9 +115,12 @@
       <div class="modal-content">
         <div class="modal-body p-0">
           <div class="redirect-card">
-            <h1>VAI SER REDIRECCIONADO PARA O SITE KOBO.COM</h1>
+            <!-- Close Button Added -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <h2>VAI SER REDIRECCIONADO PARA O SITE KOBO.COM</h2>
             <p class="lead">
-              Ao clicar em <strong>«30 DIAS GRÁTIS»</strong> vai sair do site leyaonline.com
+              Ao clicar em «30 DIAS GRÁTIS» vai sair do site leyaonline.com
               e ser redirecionado para o site kobo.com para poder escolher
               a subscrição que pretende e iniciar os seus 30 dias grátis de Kobo Plus.
             </p>
@@ -121,11 +140,12 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Optional: Auto-open modal on page load -->
+  <!-- Auto-open modal on page load -->
   <script>
     var redirectModal = new bootstrap.Modal(document.getElementById('redirectModal'));
     redirectModal.show();
   </script>
+
 </body>
 
 </html>
