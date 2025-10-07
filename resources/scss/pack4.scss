@@ -1,6 +1,6 @@
 // Banner
 .banner {
-  background: url('/public/img/banner.png') no-repeat center center;
+  background: url("/public/img/banner.png") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 265px;
@@ -52,9 +52,6 @@
   }
 }
 
-
-
-
 .align-items-center {
   align-items: center !important;
   margin-top: 0 !important;
@@ -64,20 +61,47 @@
 .pricing-card-wrapper {
   display: inline-block;
   transition: transform 0.3s ease;
-    filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15)); /* shadow fix */
+  filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.15)); /* shadow fix */
+}
+.pricing-card:after {
+  content: "";
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  border: 25px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #304a55;
+  border-top-color: transparent;
+  transform: rotate(45deg);
+}
+.pricing-card::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  box-shadow: 5px 10px 10px #0000004a;
 }
 .pricing-card {
   border-radius: 0 !important;
   font-size: 16px;
   position: relative;
-  background: #fff;
-  overflow: hidden;
-  clip-path: polygon(0 0, calc(121% - 100px) 0, 104% 50px, 100% 100%, 0 100%);
 }
-
-
-
-
+.pricing-card-active {
+  box-shadow: 12px 13px 30px #000000e2;
+  background: #ff2e1e;
+  padding: 8px;
+  margin-bottom: -8px;
+  .pricing-card {
+    margin-top: 8px;
+    &::after {
+      border-bottom-color: #ff2e1e;
+    }
+    
+  }
+}
 
 .ebook-title {
   font-size: 25px;
@@ -116,7 +140,6 @@
 .best-option-card {
   position: relative;
   overflow: hidden;
-
 }
 
 .my-top {
@@ -137,14 +160,14 @@
   overflow: hidden;
   border: 10px solid #ff2d1c;
   border-top: 30px solid #ff2d1c;
-  background-color:#ff2d1c;
+  background-color: #ff2d1c;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
-    border-top: 50px solid #ff2d1c!important;
+    border-top: 50px solid #ff2d1c !important;
     border-left: 50px solid transparent;
   }
 }
@@ -217,14 +240,13 @@
 
 .card-top-title {
   color: #fff;
-  font-family: 'Times New Roman', Times, serif; /* Times font */
+  font-family: "Times New Roman", Times, serif; /* Times font */
   font-size: 23px;
   line-height: 30px;
   font-weight: 500;
   padding: 10px;
   margin: 0 0 0 30px;
 }
-
 
 // Reasons section
 .reasons-section {
@@ -248,16 +270,16 @@
 
   h6 {
     color: #304953;
-    font-size: 16px!important;
+    font-size: 16px !important;
     font-weight: 500;
   }
 }
 
 .text-muted {
-    color: #304953 !important;
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 300;
+  color: #304953 !important;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
 }
 
 .reasons-border {
@@ -269,10 +291,9 @@
 }
 
 .pad-item {
-   padding-left: 50px !important;
+  padding-left: 50px !important;
   padding-right: 0 !important;
 }
-
 
 // Product carousel
 .product-carousel-tow {
@@ -284,7 +305,7 @@
 }
 .colodr-tow {
   color: #0da87e !important;
-  font-family: 'Times New Roman', Times, serif !important;
+  font-family: "Times New Roman", Times, serif !important;
   font-weight: 500;
 }
 
@@ -434,8 +455,6 @@
     padding: 8px 6px;
   }
 
-
-
   .justify-content-center {
     padding: 10px 50px;
   }
@@ -524,7 +543,6 @@
     padding: 8px 12px;
   }
 
-
   .pad-item {
     padding-bottom: 20px;
   }
@@ -545,11 +563,10 @@
   }
 }
 
-
 .icon-siz {
-    width: 20px;
-    height: 20px;
-    margin-top: -7px;
+  width: 20px;
+  height: 20px;
+  margin-top: -7px;
 }
 
 .custom-section {
@@ -557,16 +574,13 @@
   background: #304a54;
 }
 .best-label {
-    position: absolute;
-    top: 0px;
-    right: 116px;
-    color: #fff;
-    font-size: 13px;
-    padding: 5px 12px;
-    text-transform: uppercase;
-    z-index: 10;
-    border-radius: 2px;
-    font-weight: 500;
+  color: #fff;
+  font-size: 13px;
+  text-transform: uppercase;
+  z-index: 10;
+  border-radius: 2px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .pricing-card-tow {
@@ -581,29 +595,28 @@
   }
 }
 
-.my-p{
-line-height: 17px;
-color: #304955;
+.my-p {
+  line-height: 17px;
+  color: #304955;
 }
 
-.paddion-o{
+.paddion-o {
   padding: 0px;
 }
 .color-b {
-    color: #212222;
-    font-weight: 400;
+  color: #212222;
+  font-weight: 400;
 }
 .accordion-item:first-of-type > .accordion-header .accordion-button {
-    border-top-left-radius: var(--bs-accordion-inner-border-radius);
-    border-top-right-radius: var(--bs-accordion-inner-border-radius);
-    padding: 16px 0px;
+  border-top-left-radius: var(--bs-accordion-inner-border-radius);
+  border-top-right-radius: var(--bs-accordion-inner-border-radius);
+  padding: 16px 0px;
 }
 
 .faq-section {
   padding: 60px 0px 140px 0px;
   font-size: 16px;
 }
-
 
 .reasons-section .reasons-border {
   display: flex;
@@ -621,7 +634,6 @@ color: #304955;
   object-fit: cover;
   border: 1px solid #ddd;
   border-right: none;
-
 }
 
 .reasons-section .pad-item {
@@ -632,24 +644,22 @@ color: #304955;
   justify-content: center;
   border: 1px solid #ddd;
   border-left: none;
-
 }
 .accordion-button {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-    font-size: 16px;
-    color: var(--bs-accordion-btn-color);
-    text-align: left;
-    background-color: var(--bs-accordion-btn-bg);
-    border: 0;
-    border-radius: 0;
-    overflow-anchor: none;
-    transition: var(--bs-accordion-transition);
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+  font-size: 16px;
+  color: var(--bs-accordion-btn-color);
+  text-align: left;
+  background-color: var(--bs-accordion-btn-bg);
+  border: 0;
+  border-radius: 0;
+  overflow-anchor: none;
+  transition: var(--bs-accordion-transition);
 }
-
 
 .custom-content {
   width: 44%;
@@ -660,7 +670,6 @@ color: #304955;
   width: 24px;
   height: 24px;
 }
-
 
 /* Tablet responsive (≤992px) */
 @media (max-width: 992px) {
