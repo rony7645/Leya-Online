@@ -1,0 +1,504 @@
+.kobo-hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  margin-bottom: -30px;
+  overflow: hidden;
+  .kobo-left {
+    background-color: #000;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 25px;
+    height: 322px;
+    padding-right: 40px;
+    img {
+      width: 25%;
+    }
+    h2 {
+      font-size: clamp(20px, 3.2vw, 40px);
+      color: #fff;
+      font-weight: 600;
+      // width: 465px;
+    }
+  }
+  .kobo-right {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+    .line-spacing {
+      background: #dc2529;
+      width: 111px;
+      height: 100%;
+      clip-path: polygon(0 0, 100% 7%, 100% 93%, 0% 100%);
+    }
+    .content-wrapper {
+      background: #ff2d1e;
+      width: 100%;
+      height: 277px;
+      margin-left: -2px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding-left: 40px;
+    }
+    h2 {
+      font-size: clamp(20px, 2.4vw, 33px);
+      color: #fff;
+      font-weight: 600;
+      text-align: center;
+    }
+    .kobo-btn {
+      a {
+        display: inline-block;
+        background: #fff;
+        padding: 10px 25px;
+        color: #ff2c1d;
+        font-weight: 700;
+        font-size: 24px;
+        box-shadow: 2px 2px 6px #00000061;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+.pricing {
+  padding-top: 100px;
+  background: $secondary-color;
+  .mobile-heading {
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  .pricing-heading {
+    color: #fff;
+    font-family: $font-secondary;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
+  .pricing-card-active {
+    background: #ff2d1e;
+    padding: 10px;
+    box-shadow: 5px 10px 10px #0000004a;
+    margin-bottom: -10px;
+    .pricing-card {
+      &::after {
+        border-bottom-color: #ff2d1e !important;
+      }
+    }
+    .active-title {
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  }
+  .pricing-card {
+    background: #fff;
+    padding: 35px 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -25px;
+      right: -25px;
+      border: 25px solid;
+      border-right-color: transparent;
+      border-left-color: transparent;
+      border-bottom-color: $secondary-color;
+      border-top-color: transparent;
+      transform: rotate(45deg);
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 90%;
+      box-shadow: 5px 10px 10px #0000004a;
+      z-index: -1;
+    }
+    p {
+      font-weight: 400;
+      line-height: 18px;
+      height: 70px;
+    }
+    .pricing-btn a {
+      display: inline-block;
+      background: #ff2c1c;
+      padding: 10px 15px;
+      color: #fff;
+      font-weight: 600;
+      font-size: 20px;
+      box-shadow: 2px 2px 6px #00000061;
+    }
+    h6 {
+      font-weight: 500;
+      font-size: 15px;
+      margin: 20px 0 28px 0;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+    }
+  }
+  .pricing-card-icon {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    img {
+      width: 80px;
+    }
+    h4 {
+      font-size: 27px;
+      text-align: left;
+    }
+  }
+  .bottom-text {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 40px;
+  }
+}
+.mais-razoes {
+  .mais-razoes-wrapper {
+    border: 1px solid #8f9ea880;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .left-wrapper {
+      background-image: url("../../public/img/Kobo_Luna_16.jpg");
+      background-position: 12% 45%;
+      background-repeat: no-repeat;
+      background-size: 230%;
+    }
+
+    .right-wrapper {
+      padding: 50px;
+
+      h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        color: $secondary-color;
+      }
+
+      .kobo-icon-box-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        .kobo-icon {
+          width: 30px;
+          svg {
+            fill: $secondary-color;
+            margin-top: -5px;
+          }
+        }
+        .kobo-icon-download {
+          svg {
+            width: 20px;
+            .cls-2 {
+              fill: $secondary-color;
+            }
+            .cls-1 {
+              fill: none;
+              stroke: $secondary-color;
+              stroke-miterlimit: 10;
+              stroke-width: 2px;
+            }
+          }
+        }
+        .kobo-icon-heart {
+          svg {
+            width: 25px;
+            fill: none;
+            stroke: $secondary-color;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          }
+        }
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+          color: $secondary-color;
+        }
+
+        p {
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.ebooks-kobo {
+  .carousel-title {
+    font-weight: 500;
+    color: #009f79;
+  }
+}
+
+.audiolivros-kobo {
+  .carousel-title {
+    font-weight: 500;
+    color: #00a0b8;
+  }
+}
+
+.favorites-devices {
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .accordion-item {
+    border-bottom: 1px solid #8f9ea880;
+    padding: 23px 0;
+    .accordion-button {
+      font-size: 21px;
+      font-weight: 600;
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2017.07'%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='10.83'%20y='7.1'%20width='18.27'%20height='2.87'%20transform='translate(.25%2017.68)%20rotate(-45)'/%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='-2.1'%20y='7.1'%20width='18.27'%20height='2.87'%20transform='translate(8.54%2020.61)%20rotate(-135)'/%3E%3C/svg%3E");
+        background-position: center 5px;
+        display: block;
+      }
+    }
+    .accordion-body {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+  .device-book-img {
+    background: #dee6ed;
+    padding: 50px;
+  }
+}
+
+.kobo-faq {
+  h2 {
+    font-family: $font-secondary;
+    font-size: 30px;
+    font-weight: 400;
+    color: #000;
+  }
+  .accordion-item {
+    border-bottom: 1px solid #8f9ea880;
+    padding: 23px 0;
+    .accordion-button {
+      font-size: 20px;
+      font-weight: 600;
+      color: #000;
+      &::after {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 17.07'%3E%3Crect fill='%233c4b54' stroke-width='0' x='10.83' y='7.1' width='18.27' height='2.87' transform='translate(.25 17.68) rotate(-45)'/%3E%3Crect fill='%233c4b54' stroke-width='0' x='-2.1' y='7.1' width='18.27' height='2.87' transform='translate(8.54 20.61) rotate(-135)'/%3E%3C/svg%3E");
+        background-position: center 5px;
+        display: block;
+      }
+    }
+    .accordion-button.collapsed {
+      font-weight: 400;
+    }
+    .accordion-body {
+      margin-top: 15px;
+      font-size: 19px;
+      font-weight: 400;
+      font-family: $font-secondary;
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .kobo-hero {
+    grid-template-columns: 1fr;
+    .kobo-left {
+      justify-content: center;
+      height: 200px !important;
+    }
+    .kobo-right {
+      .line-spacing {
+        display: none;
+      }
+      .content-wrapper {
+        padding: 0 20px;
+        height: 120px !important;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          h2 {
+            text-align: left;
+          }
+          .kobo-btn a {
+            margin-top: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Tablet CSS
+@media (max-width: 996px) {
+  .kobo-hero {
+    .kobo-left {
+      height: 255px;
+      padding-left: 20px;
+      h2 {
+        font-size: 28px !important;
+      }
+      img {
+        width: 150px !important;
+      }
+    }
+    .kobo-right {
+      .content-wrapper {
+        height: 220px;
+        .kobo-btn {
+          a {
+            display: inline-block;
+            background: #fff;
+            padding: 10px 25px;
+            color: #ff2c1d;
+            font-weight: 700;
+            font-size: 18px;
+            box-shadow: 2px 2px 6px #00000061;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+  .pricing {
+    .pricing-heading {
+      color: #fff;
+      span {
+        color: #ff2c1c;
+      }
+    }
+    .pricing-card {
+      padding: 20px 5px;
+    }
+    .pricing-card p {
+      font-size: 14px;
+      height: 100px;
+    }
+    .pricing-card-icon h4 {
+      font-size: 20px;
+    }
+    .pricing-card-icon img {
+      width: 50px;
+    }
+    .pricing-btn a {
+      font-size: 16px !important;
+    }
+    .pricing-card h6 {
+      font-size: 13px !important;
+    }
+  }
+  .mais-razoes {
+    .mais-razoes-wrapper {
+      .left-wrapper {
+        background-size: 250% !important;
+      }
+      .right-wrapper {
+        padding: 20px !important;
+        h2 {
+          font-size: 24px !important;
+          margin-bottom: 20px !important;
+        }
+        .kobo-icon-box-wrapper {
+          gap: 18px !important;
+          h5 {
+            font-size: 16px !important;
+          }
+          p {
+            font-size: 16px !important;
+          }
+        }
+      }
+    }
+  }
+
+  .favorites-devices {
+    .device-book-img {
+      text-align: center;
+      img {
+        width: 350px;
+      }
+    }
+    .device-left {
+      padding: 40px;
+      border: 1px solid #8f9ea880;
+    }
+  }
+}
+
+// mobile CSS
+@media (max-width: 768px) {
+  .pricing {
+    .mobile-gap {
+      gap: 40px;
+    }
+    .pricing-card-active {
+      margin-bottom: 0;
+      .pricing-card p {
+        height: 200px;
+      }
+    }
+    .pricing-card {
+      padding: 50px;
+    }
+    .pricing-card-icon h4 {
+      font-size: 40px;
+    }
+    .pricing-card p {
+      font-size: 30px !important;
+      font-weight: 300;
+      line-height: 36px;
+      height: 150px;
+    }
+    .pricing-card-icon img {
+      width: 120px;
+    }
+    .pricing-btn a {
+      font-size: 30px !important;
+      margin-bottom: 35px;
+    }
+    .pricing-card h6 {
+      display: none;
+    }
+    .price {
+      font-size: 28px !important;
+    }
+  }
+  .mais-razoes {
+    .mais-razoes-wrapper {
+      grid-template-columns: repeat(1, 1fr);
+      .left-wrapper {
+        background-size: 150% !important;
+        background-position: 12% 40%;
+        height: 200px;
+      }
+      .right-wrapper {
+        padding: 20px !important;
+        h2 {
+          font-size: 28px !important;
+        }
+      }
+    }
+  }
+}
