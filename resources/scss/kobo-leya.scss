@@ -65,34 +65,39 @@
 }
 .pricing {
   padding-top: 100px;
-  background: $secondary-color;
+  background: #19252aff;
   .mobile-heading {
     color: #fff;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
-    font-size: 28px;
-    margin-bottom: 30px;
+    font-size: 30px;
+    margin-bottom: 50px;
   }
   .pricing-heading {
     color: #fff;
     font-family: $font-secondary;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
+    font-size: 30px;
+    line-height: 36px;
+    span {
+      color: #ff2c1c;
+    }
   }
   .pricing-card-active {
-    background: #ff2d1e;
+    background: #ff2d1eff;
     padding: 10px;
     box-shadow: 5px 10px 10px #0000004a;
     margin-bottom: -10px;
     .pricing-card {
       &::after {
-        border-bottom-color: #ff2d1e !important;
+        border-bottom-color: #ff2d1eff !important;
       }
     }
     .active-title {
       text-transform: uppercase;
-      font-size: 15px;
-      font-weight: 600;
+      font-size: 14px;
+      font-weight: 700;
       color: #fff;
       margin-bottom: 10px;
       text-align: center;
@@ -112,7 +117,7 @@
       border: 25px solid;
       border-right-color: transparent;
       border-left-color: transparent;
-      border-bottom-color: $secondary-color;
+      border-bottom-color: #19252aff;
       border-top-color: transparent;
       transform: rotate(45deg);
     }
@@ -127,28 +132,33 @@
       z-index: -1;
     }
     p {
+      color: #42626fff;
       font-weight: 400;
-      line-height: 18px;
+      font-size: 14px;
+      line-height: 17px;
       height: 70px;
     }
     .pricing-btn a {
       display: inline-block;
-      background: #ff2c1c;
+      background: #ff2d1eff;
       padding: 10px 15px;
       color: #fff;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 23px;
+      line-height: 27.6px;
       box-shadow: 2px 2px 6px #00000061;
     }
     h6 {
+      color: #314a54ff;
       font-weight: 500;
-      font-size: 15px;
+      font-size: 16px;
+      line-height: 19px;
       margin: 20px 0 28px 0;
     }
     .price {
       font-size: 20px;
-      font-weight: 600;
-      color: #000;
+      font-weight: 700;
+      color: #000000ff;
     }
   }
   .pricing-card-icon {
@@ -160,14 +170,17 @@
       width: 80px;
     }
     h4 {
-      font-size: 27px;
+      color: #314a54ff;
+      font-size: 30px;
+      line-height: 36px;
       text-align: left;
+      font-weight: 700;
     }
   }
   .bottom-text {
     color: #fff;
-    font-size: 18px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     margin-top: 40px;
   }
 }
@@ -188,10 +201,10 @@
       padding: 50px;
 
       h2 {
+        color: $secondary-color;
         font-size: 30px;
         margin-bottom: 30px;
-        font-weight: 600;
-        color: $secondary-color;
+        font-weight: 700;
       }
 
       .kobo-icon-box-wrapper {
@@ -229,13 +242,17 @@
           }
         }
         h5 {
+          color: #314a54ff;
           font-size: 20px;
           font-weight: 600;
           color: $secondary-color;
         }
 
         p {
+          color:#314a54ff;
           font-size: 20px;
+          font-weight: 400;
+          line-height: 24.4px;
           margin-bottom: 0;
         }
       }
@@ -245,29 +262,32 @@
 
 .ebooks-kobo {
   .carousel-title {
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     color: #009f79;
   }
 }
 
 .audiolivros-kobo {
   .carousel-title {
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: 400;
     color: #00a0b8;
   }
 }
 
 .favorites-devices {
   h2 {
-    font-size: 25px;
-    font-weight: 600;
+    color: #314a54ff;
+    font-size: 26px;
+    font-weight: 700;
     margin-bottom: 25px;
   }
   .accordion-item {
     border-bottom: 1px solid #8f9ea880;
     padding: 23px 0;
     .accordion-button {
-      font-size: 21px;
+      font-size: 22px;
       font-weight: 600;
       &::after {
         background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2030%2017.07'%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='10.83'%20y='7.1'%20width='18.27'%20height='2.87'%20transform='translate(.25%2017.68)%20rotate(-45)'/%3E%3Crect%20fill='%233c4b54'%20stroke-width='0'%20x='-2.1'%20y='7.1'%20width='18.27'%20height='2.87'%20transform='translate(8.54%2020.61)%20rotate(-135)'/%3E%3C/svg%3E");
@@ -298,8 +318,8 @@
     border-bottom: 1px solid #8f9ea880;
     padding: 23px 0;
     .accordion-button {
-      font-size: 20px;
-      font-weight: 600;
+      font-size: 19px;
+      font-weight: 700;
       color: #000;
       &::after {
         background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 17.07'%3E%3Crect fill='%233c4b54' stroke-width='0' x='10.83' y='7.1' width='18.27' height='2.87' transform='translate(.25 17.68) rotate(-45)'/%3E%3Crect fill='%233c4b54' stroke-width='0' x='-2.1' y='7.1' width='18.27' height='2.87' transform='translate(8.54 20.61) rotate(-135)'/%3E%3C/svg%3E");
@@ -315,7 +335,7 @@
       font-size: 19px;
       font-weight: 400;
       font-family: $font-secondary;
-      color: $secondary-color;
+      color: #42626fff;
     }
   }
 }
@@ -384,12 +404,6 @@
     }
   }
   .pricing {
-    .pricing-heading {
-      color: #fff;
-      span {
-        color: #ff2c1c;
-      }
-    }
     .pricing-card {
       padding: 20px 5px;
     }
@@ -450,7 +464,11 @@
 
 // mobile CSS
 @media (max-width: 768px) {
+  .kobo-hero {
+    margin-bottom: 0px !important;
+  }
   .pricing {
+    padding-top: 30px !important;
     .mobile-gap {
       gap: 40px;
     }
@@ -464,7 +482,8 @@
       padding: 50px;
     }
     .pricing-card-icon h4 {
-      font-size: 40px;
+      font-size: 45.66px;
+      line-height: 48px;
     }
     .pricing-card p {
       font-size: 30px !important;
@@ -476,14 +495,18 @@
       width: 120px;
     }
     .pricing-btn a {
-      font-size: 30px !important;
+      font-size: 34px !important;
       margin-bottom: 35px;
+      padding: 25px 20px !important;
     }
     .pricing-card h6 {
       display: none;
     }
     .price {
-      font-size: 28px !important;
+      font-size: 30px !important;
+    }
+    .active-title {
+      font-size: 26px !important;
     }
   }
   .mais-razoes {
@@ -497,9 +520,25 @@
       .right-wrapper {
         padding: 20px !important;
         h2 {
-          font-size: 28px !important;
+          font-size: 36px !important;
+          margin-bottom: 40px !important;
+        }
+        .kobo-icon-box-wrapper {
+          h5,
+          p {
+            font-size: 18px !important;
+          }
         }
       }
+    }
+  }
+  .carousel-title {
+    font-size: 36px !important;
+  }
+  .kobo-faq {
+    .accordion-button,
+    .accordion-body {
+      font-size: 24px !important;
     }
   }
 }
